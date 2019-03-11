@@ -1,0 +1,17 @@
+<table class="table table-bordered table-striped">
+	<thead>
+		<tr>
+			<th width="35%">NAME</th>
+			<th width="35%">RECEIVED</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% for contact in @contacts %>
+			<tr>
+				<td><%= link_to contact.name, admins_contact_path(contact), style: "font-weight:600" %></td>
+				<td><%= contact.created_at.to_s(:long) %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
+<%= paginate @contacts %>

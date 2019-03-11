@@ -1,0 +1,58 @@
+<div class="main_color avia-builder-el-0  avia-builder-el-no-sibling  avia-no-border-styling masonry-not-first container_wrap fullsize">
+   <div id="av-masonry-1" class="av-masonry  noHover av-fixed-size av-large-gap av-hover-overlay-active av-masonry-col-3 av-caption-always av-caption-style- avia_sortable_active">
+      <div class="av-masonry-sort main_color av-sort-yes-tax" data-masonry-id="1" style="visibility: visible; opacity: 1;">
+				<div class="av-current-sort-title">
+					<span class="inner_sort_button">
+						<span>Portfolio's</span>
+					</span>
+				</div>
+				<div class="av-sort-by-term" data-av-allowed-sort="[&quot;other_sort&quot;,&quot;landscape_sort&quot;,&quot;portrait_sort&quot;]">
+					<a href="#" data-filter="all_sort" class="all_sort_button active_sort">
+						<span class="inner_sort_button">
+							<span>All</span>
+						</span>
+					</a>
+					<span class="text-sep other_sort_sep avia_show_sort">/</span>
+					<a href="#" data-filter="other_sort" class="other_sort_button avia_show_sort">
+						<span class="inner_sort_button">
+							<span>Others</span>
+						</span>
+					</a>
+					<span class="text-sep landscape_sort_sep avia_show_sort">/</span>
+					<a href="#" data-filter="landscape_sort" class="landscape_sort_button avia_show_sort">
+						<span class="inner_sort_button">
+							<span>Landscape</span>
+						</span>
+					</a>
+					<span class="text-sep portrait_sort_sep avia_show_sort">/</span>
+					<a href="#" data-filter="portrait_sort" class="portrait_sort_button avia_show_sort">
+						<span class="inner_sort_button">
+							<span>Portrait</span>
+						</span>
+					</a>
+				</div>
+      </div>
+      <div class="av-masonry-container isotope">
+         <div class="av-masonry-entry isotope-item av-masonry-item-no-image all_sort events_sort landscape_sort wedding_sort av-masonry-item-loaded"></div>
+				 <% @portfolios.each_with_index do |portfolio, index| %>
+					 <a href="<%= portfolio_path(portfolio) %>" class="av-masonry-entry isotope-item portfolio type-portfolio status-publish has-post-thumbnail hentry all_sort <%= portfolio.category.name.downcase %>_sort av-masonry-item-with-image av-<%= portfolio.pictures.first.orientation %>-img av-masonry-item-loaded" title="<%= portfolio.title %>">
+							<div class="av-inner-masonry-sizer"></div>
+							<figure class="av-inner-masonry main_color">
+								 <div class="av-masonry-outerimage-container">
+									 <div class="av-masonry-image-container" style="background-image: url(<%= portfolio.pictures.first.image_url %>);"></div>
+								 </div>
+								 <figcaption class="av-inner-masonry-content site-background">
+										<div class="av-inner-masonry-content-pos">
+											 <div class="av-inner-masonry-content-pos-content">
+													<div class="avia-arrow"></div>
+													<h3 class="av-masonry-entry-title entry-title"><%= portfolio.title %></h3>
+											 </div>
+										</div>
+								 </figcaption>
+							</figure>
+					 </a>
+				 <% end %>
+         <!--end av-masonry entry-->
+      </div>
+   </div>
+</div>

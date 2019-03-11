@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+		<meta name="robots" content="noindex,follow">
+		<title>SSOM – Architecture Firm</title>
+		<link rel="stylesheet" type="text/css" href="http://quart.mikado-themes.com/wp-content/cache/minify/bfea1.css" media="all">
+		<link rel="profile" href="http://gmpg.org/xfn/11">
+		<link rel="dns-prefetch" href="//toolbar.qodeinteractive.com">
+		<link rel="dns-prefetch" href="//s.w.org">
+		<link rel="alternate" type="application/rss+xml" title="Quart » Feed" href="http://quart.mikado-themes.com/feed/">
+		<link rel="alternate" type="application/rss+xml" title="Quart » Comments Feed" href="http://quart.mikado-themes.com/comments/feed/">
+		<link rel="stylesheet" id="rabbit_css-css" href="https://toolbar.qodeinteractive.com/_toolbar/assets/css/rbt-modules.css?ver=4.9.9" type="text/css" media="all">
+
+<style id="rs-plugin-settings-inline-css" type="text/css">
+#rs-demo-id {}
+#rev_slider_2_1 .quart1.tparrows {
+	cursor:pointer;
+	background:#000000;
+	width:81px;
+	height:59px;
+	position:absolute;
+	display:block;
+	z-index:100;
+}
+
+#rev_slider_2_1 .quart1.tparrows:hover { }
+
+#rev_slider_2_1 .quart1.tparrows:before {
+	font-family: "ElegantIcons";
+	font-size:16px;
+	color: #fff;
+	display:block;
+	line-height: 59px;
+	text-align: center;
+	position: relative;
+}
+
+#rev_slider_2_1 .quart1.tparrows.tp-leftarrow{
+	-webkit-transform: translateY(55%);
+	-moz-transform: translateY(55%);
+	transform: translateY(55%);
+	right: 7px;
+	left: initial;
+}
+
+#rev_slider_2_1 .quart1.tparrows.tp-leftarrow:before {
+	content: "\23";
+}
+
+#rev_slider_2_1 .quart1.tparrows.tp-rightarrow{
+	-webkit-transform: translateY(-55%);
+	-moz-transform: translateY(-55%);
+	transform: translateY(-55%);
+	right: 7px;
+	left: initial;
+}
+
+#rev_slider_2_1 .quart1.tparrows.tp-rightarrow:before {
+	content: "\24";
+}
+
+#rev_slider_2_1 .quart1.tparrows.tp-leftarrow:hover:before {
+	animation: mkdf-move-prev .5s !important;
+}
+#rev_slider_2_1 .quart1.tparrows.tp-rightarrow:hover:before {
+	animation: mkdf-move-next .5s !important;
+}
+#rev_slider_2_1 .quart1.tp-bullets {
+	top: 47% !important;
+}
+
+#rev_slider_2_1 .quart1 .tp-bullet {
+	display: none;
+	 width:50px;
+	position: absolute;
+	left: 20px !important;
+}
+
+#rev_slider_2_1 .quart1 .tp-bullet.selected {
+	display:block;
+    background: transparent !important;
+}
+
+#rev_slider_2_1 .quart1 .tp-bullet.selected > span {
+  background: transparent;
+  padding:5px;
+  color: #000;
+}
+
+@media screen and (max-width: 768px){
+	#rev_slider_2_1 .quart1 .tp-bullet.selected > span {
+		background: #fff;
+	}
+
+	#rev_slider_2_1 .quart1.tp-bullets{
+		transform: unset !important;
+		left: 11% !important;
+		top: 38% !important;
+	}
+}
+
+@media screen and (max-width: 680px){
+	#rev_slider_2_1 .quart1 .tp-bullet.selected > span {
+		background: #fff;
+	}
+
+	#rev_slider_2_1 .quart1.tp-bullets{
+		transform: unset !important;
+		left: 40% !important;
+		top: 90% !important;
+	}
+}
+</style>
+<link rel="stylesheet" id="quart-mikado-google-fonts-css" href="http://fonts.googleapis.com/css?family=Heebo%3A300%2C400%2C500%7CRoboto%3A300%2C400%2C500&amp;subset=latin-ext&amp;ver=1.0.0" type="text/css" media="all">
+<style type="text/css">
+@font-face {
+	font-family: 'ElegantIcons';
+	font-weight: normal;
+	font-style: normal;
+	src: url('<%= asset_url("ElegantIcons.eot") %>');
+	src: url('<%= asset_url("ElegantIcons.eot?#iefix") %>') format('embedded-opentype'),
+	url('<%= asset_url("ElegantIcons.woff") %>') format('woff'),
+	url('<%= asset_url("ElegantIcons.ttf") %>') format('truetype'),
+	url('<%= asset_url("ElegantIcons.svg#ElegantIcons") %>') format('svg');
+}
+@font-face {
+	font-family: 'Bebas';
+	font-weight: normal;
+	font-style: normal;
+	src: url('<%= asset_url("BEBAS.ttf") %>') format('truetype');
+}
+</style>
+
+<script type="text/javascript" src="http://quart.mikado-themes.com/wp-content/cache/minify/e58d4.js"></script>
+<script type="text/javascript" src="http://quart.mikado-themes.com/wp-content/cache/minify/f1253.js"></script>
+<script type="text/javascript" src="http://quart.mikado-themes.com/wp-content/cache/minify/864c2.js"></script>
+<script type="text/javascript" src="http://quart.mikado-themes.com/wp-content/cache/minify/56ac9.js"></script>
+
+<script type="text/javascript">
+function setREVStartSize(e){
+	try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+		if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})
+	}catch(d){console.log("Failure at Presize of Slider:"+d)}
+};
+</script>
+<style type="text/css">
+body {
+	font-family: 'Bebas' !important;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Bebas' !important;
+}
+.mkdf-drop-down .second .inner ul li a .item_outer, .mkdf-main-menu>ul>li>a {
+	font-family: 'Bebas' !important;
+}
+
+.mkdf-main-menu>ul>li>a>span.item_outer .item_text {
+font-size: 32px;
+font-weight: 600;
+}
+.mkdf-main-menu>ul>li>a>span.item_outer:after {
+	height:0px;
+}
+#respond input[type=text], #respond textarea, .mkdf-style-form textarea, .post-password-form input[type=password], .wpcf7-form-control.wpcf7-date, .wpcf7-form-control.wpcf7-number, .wpcf7-form-control.wpcf7-quiz, .wpcf7-form-control.wpcf7-select, .wpcf7-form-control.wpcf7-text, .wpcf7-form-control.wpcf7-textarea, input[type=text], input[type=email], input[type=password] {
+	border-color: #000;
+}
+.ssom-btn-icon-1,
+.ssom-btn-icon-2,
+.ssom-btn-icon-3,
+.ssom-btn-icon-4,
+.ssom-btn-icon-5 {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 150px;
+	height: 50px;
+}
+.ssom-btn-icon-1 {
+	background-image: url('assets/ssom_icons/1.png');
+}
+.ssom-btn-icon-2 {
+	background-image: url('assets/ssom_icons/2.png');
+}
+.ssom-btn-icon-3 {
+	background-image: url('assets/ssom_icons/3.png');
+}
+.ssom-btn-icon-4 {
+	background-image: url('assets/ssom_icons/4.png');
+}
+.ssom-btn-icon-5 {
+	background-image: url('assets/ssom_icons/5.png');
+}
+.mkdf-btn.mkdf-btn-outline:not(.mkdf-btn-custom-hover-bg):hover {
+	background-color: #FE2036 !important;
+}
+@media only screen and (max-width: 1366px) and (min-width: 1025px) {
+.mkdf-eh-item-content.mkdf-eh-custom-3514 {
+    padding: 30px 2.3% 30px !important;
+}
+}
+</style>
+<body class="home page-template page-template-full-width page-template-full-width-php page page-id-59 quart-core-1.0 woocommerce-js quart-ver-1.0 mkdf-grid-1200 mkdf-wide-dropdown-menu-content-in-grid mkdf-sticky-header-on-scroll-down-up mkdf-dropdown-animate-height mkdf-header-standard mkdf-menu-area-shadow-disable mkdf-menu-area-in-grid-shadow-disable mkdf-menu-area-border-disable mkdf-menu-area-in-grid-border-disable mkdf-logo-area-border-disable mkdf-logo-area-in-grid-border-disable mkdf-header-vertical-shadow-disable mkdf-header-vertical-border-disable mkdf-side-menu-slide-from-right mkdf-woocommerce-columns-2 mkdf-woo-tiny-space mkdf-woo-pl-info-below-image mkdf-woo-single-thumb-below-image mkdf-woo-single-has-pretty-photo mkdf-default-mobile-header mkdf-sticky-up-mobile-header wpb-js-composer js-comp-ver-5.5.5 vc_responsive mkdf-fullscreen-search mkdf-search-fade" itemscope="" itemtype="http://schema.org/WebPage">
+	<section class="mkdf-side-menu ps">
+	<a class="mkdf-close-side-menu mkdf-close-side-menu-predefined" href="#">
+		<span class="mkdf-icon-font-elegant icon_close "></span>	</a>
+	<div id="media_image-3" class="widget mkdf-sidearea widget_media_image"><a href="http://quart.mikado-themes.com/"><img width="43" height="65" src="http://quart.mikado-themes.com/wp-content/uploads/2018/11/logo-sidearea.png" class="image wp-image-5476  attachment-full size-full" alt="a" style="max-width: 100%; height: auto;"></a></div><div class="widget mkdf-separator-widget"><div class="mkdf-separator-holder clearfix  mkdf-separator-center mkdf-separator-normal">
+	<div class="mkdf-separator" style="border-style: solid;margin-top: 60px"></div>
+</div>
+</div><div id="nav_menu-4" class="widget mkdf-sidearea widget_nav_menu"><div class="menu-side-area-menu-container"><ul id="menu-side-area-menu" class="menu"><li id="menu-item-2733" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2733"><a target="_blank" href="https://www.facebook.com/Mikado-Themes-884182241781117">facebook</a></li>
+<li id="menu-item-2734" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2734"><a target="_blank" href="https://dribbble.com/MikadoThemes">dribbble</a></li>
+<li id="menu-item-2736" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2736"><a target="_blank" href="https://www.instagram.com/mikadothemes/">instagram</a></li>
+<li id="menu-item-2737" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2737"><a href="mailto:quart@mikado.com">email</a></li>
+</ul></div></div><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></section>
+    <div class="mkdf-wrapper"><div class="mkdf-cover"></div>
+        <div class="mkdf-wrapper-inner">
+            <div class="mkdf-fullscreen-search-holder">
+	<a class="mkdf-search-close mkdf-search-close-icon-pack" href="javascript:void(0)">
+		<span aria-hidden="true" class="mkdf-icon-font-elegant icon_close "></span>	</a>
+	<div class="mkdf-fullscreen-search-table">
+		<div class="mkdf-fullscreen-search-cell">
+			<div class="mkdf-fullscreen-search-inner">
+				<form action="http://quart.mikado-themes.com/" class="mkdf-fullscreen-search-form" method="get">
+					<div class="mkdf-form-holder">
+						<div class="mkdf-form-holder-inner">
+							<div class="mkdf-field-holder">
+								<input type="text" placeholder="Type your search" name="s" class="mkdf-search-field" autocomplete="off" required="">
+							</div>
+							<button type="submit" class="mkdf-search-submit mkdf-search-submit-icon-pack">
+								<span aria-hidden="true" class="mkdf-icon-font-elegant icon_search "></span>							</button>
+							<div class="mkdf-line"></div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<header class="mkdf-page-header">
+	<div class="mkdf-menu-area mkdf-menu-center">
+			<div class="mkdf-vertical-align-containers" style="padding-left:0px;">
+				<div class="mkdf-position-left"><!--
+				 --><div class="mkdf-position-left-inner">
+	<div class="mkdf-logo-wrapper">
+		<a itemprop="url" href="#" style="height: 180px;max-height:none;">
+			<img itemprop="image" class="mkdf-normal-logo" src="assets/logo.png" alt="logo">
+			<!--img itemprop="image" class="mkdf-dark-logo" src="assets/logo.png" width="184" height="144" alt="dark logo">
+			<img itemprop="image" class="mkdf-light-logo" src="assets/logo.png" width="184" height="144" alt="light logo"-->
+		</a>
+	</div>
+
+											</div>
+				</div>
+									<div class="mkdf-position-center"><!--
+					 --><div class="mkdf-position-center-inner">
+	<nav class="mkdf-main-menu mkdf-drop-down mkdf-default-nav">
+		<ul id="menu-main-menu-navigation" class="clearfix">
+			<li id="nav-menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children mkdf-active-item has_sub narrow">
+				<a href="#" class=" current no_link" onclick="JavaScript: return false;">
+					<span class="item_outer"><span class="item_text">HOME</span></span>
+				</a>
+			</li>
+			<li id="nav-menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children mkdf-active-item has_sub narrow">
+				<a href="#" class=" current no_link" onclick="JavaScript: return false;">
+					<span class="item_outer"><span class="item_text">ABOUT</span></span>
+				</a>
+			</li>
+			<li id="nav-menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children mkdf-active-item has_sub narrow">
+				<a href="#" class=" current no_link" onclick="JavaScript: return false;">
+					<span class="item_outer"><span class="item_text">PORTFOLIO</span></span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+						</div>
+					</div>
+								<div class="mkdf-position-right"><!--
+				 --><div class="mkdf-position-right-inner">
+		<a class="mkdf-side-menu-button-opener mkdf-icon-has-hover mkdf-side-menu-button-opener-predefined" href="javascript:void(0)">
+						<span class="mkdf-side-menu-icon">
+				<span class="mkdf-hm-lines-wrap"><span class="mkdf-hm-lines"><span class="mkdf-hm-line mkdf-line-1"></span><span class="mkdf-hm-line mkdf-line-2"></span></span></span>            </span>
+		</a>
+						</div>
+				</div>
+			</div>
+			</div>
+<div class="mkdf-sticky-header">
+        <div class="mkdf-sticky-holder mkdf-menu-center">
+                    <div class="mkdf-vertical-align-containers">
+                <div class="mkdf-position-left">
+                 <div class="mkdf-position-left-inner">
+	<div class="mkdf-logo-wrapper">
+		<a itemprop="url" href="http://quart.mikado-themes.com/" style="height: 72px;">
+			<img itemprop="image" class="mkdf-normal-logo" src="assets/logo-sticky-test.png" width="200" height="144" alt="logo">
+			<img itemprop="image" class="mkdf-dark-logo" src="assets/logo.png" width="184" height="144" alt="dark logo">			<img itemprop="image" class="mkdf-light-logo" src="assets/logo.png" width="184" height="144" alt="light logo">		</a>
+	</div>
+
+                                            </div>
+                </div>
+                                <div class="mkdf-position-right"><!--
+                 --><div class="mkdf-position-right-inner">
+		<a class="mkdf-side-menu-button-opener mkdf-icon-has-hover mkdf-side-menu-button-opener-predefined" href="javascript:void(0)">
+						<span class="mkdf-side-menu-icon">
+				<span class="mkdf-hm-lines-wrap"><span class="mkdf-hm-lines"><span class="mkdf-hm-line mkdf-line-1"></span><span class="mkdf-hm-line mkdf-line-2"></span></span></span>            </span>
+		</a>
+	                    </div>
+                </div>
+            </div>
+                </div>
+	</div>
+</header>
+
+            <div class="mkdf-content">
+                <div class="mkdf-content-inner">
+<div class="mkdf-full-width">
+    	<div class="mkdf-full-width-inner">
+        					<div class="mkdf-grid-row">
+				<div class="mkdf-page-content-holder mkdf-grid-col-12">
+					<div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="mkdf-elements-holder   mkdf-one-column  mkdf-responsive-mode-768 "><div class="mkdf-eh-item skrollable skrollable-before" data-item-class="mkdf-eh-custom-7468" data-1367-1600="65px 0 0 0" data-1025-1366="11px 0 0 0" data-769-1024="0 0 0 0" data-680="0 0 0 0">
+	<div class="mkdf-eh-item-inner">
+		<div class="mkdf-eh-item-content mkdf-eh-custom-7468" style="padding: 43px 0 0 0">
+			<div class="wpb_revslider_element wpb_content_element">
+<div class="forcefullwidth_wrapper_tp_banner" id="rev_slider_2_1_forcefullwidth" style="position:relative;width:100%;height:auto;margin-top:0px;margin-bottom:0px"><div id="rev_slider_2_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-source="gallery" style="margin: 0px auto; background: transparent; padding: 0px; height: 413px; position: absolute; overflow: visible; width: 1280px; left: 0px;">
+<!-- START REVOLUTION SLIDER 5.4.8 fullwidth mode -->
+	<div id="rev_slider_2_1" class="rev_slider fullwidthabanner revslider-initialised tp-simpleresponsive rev_redraw_on_blurfocus" style="max-height: 465px; margin-top: 0px; margin-bottom: 0px; height: 413px;" data-version="5.4.8" data-slideactive="rs-25">
+<ul class="tp-revslider-mainul" style="visibility: visible; display: block; overflow: hidden; width: 100%; height: 100%; max-height: none;">	<!-- SLIDE  -->
+	<li data-index="rs-2" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="1" data-param2="3" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" class="tp-revslider-slidesli" style="width: 100%; height: 100%; overflow: hidden; z-index: 18; visibility: hidden; opacity: 0; background-color: rgba(255, 255, 255, 0);">
+		<!-- MAIN IMAGE -->
+		<div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="http://quart.mikado-themes.com/wp-content/plugins/revslider/admin/assets/images/transparent.png" alt="" title="Main Home" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg defaultimg" data-no-retina="">--><div class="tp-bgimg defaultimg " data-bgcolor="undefined" style="background-repeat: no-repeat; background-image: url(&quot;http://quart.mikado-themes.com/wp-content/plugins/revslider/admin/assets/images/transparent.png&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit; z-index: 20;" src="http://quart.mikado-themes.com/wp-content/plugins/revslider/admin/assets/images/transparent.png"></div></div>
+		<!-- LAYERS -->
+
+		<!-- LAYER NR. 1 -->
+		<div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: hidden; left: 505px; top: -60px; z-index: 5;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);"><div class="tp-caption  " id="slide-2-layer-4" data-x="['right','right','center','center']" data-hoffset="['102','102','0','-36']" data-y="['bottom','bottom','middle','middle']" data-voffset="['0','0','-66','-37']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1100,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Expo.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 16px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 0.0001; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;"><img src="http://quart.mikado-themes.com/wp-content/uploads/2018/10/h1-slide-1.jpg" alt="a" data-ww="['1127px','673px','614px','924px']" data-hh="['792px','473px','432px','649px']" width="1127" height="792" data-no-retina="" style="width: 673px; height: 473px;"> </div></div></div></div>
+
+
+		<!-- LAYER NR. 3 -->
+		<div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: hidden; left: 108px; top: 95px; z-index: 7;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);"><div class="tp-caption  " id="slide-2-layer-2" data-x="['center','center','center','left']" data-hoffset="['-681','-440','-611','37']" data-y="['middle','middle','middle','top']" data-voffset="['-75','-66','53','126']" data-fontsize="['100','80','50','50']" data-lineheight="['110','90','70','90']" data-color="['rgb(0,0,0)','rgb(0,0,0)','rgb(0,0,0)','rgb(255,255,255)']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','on']" data-type="text" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames="[{&quot;delay&quot;:300,&quot;speed&quot;:1100,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Expo.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap; font-size: 80px; line-height: 90px; font-weight: 400; color: rgb(0, 0, 0); letter-spacing: 0px; font-family: Bebas; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; border-width: 0px; margin: 0px; padding: 0px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 0.0001; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">great </div></div></div></div>
+
+		<!-- LAYER NR. 4 -->
+		<div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: hidden; left: 110px; top: 182px; z-index: 8;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);"><div class="tp-caption  " id="slide-2-layer-3" data-x="['center','center','center','left']" data-hoffset="['-582','-360','-201','39']" data-y="['middle','middle','middle','top']" data-voffset="['14','12','249','197']" data-fontsize="['100','80','50','50']" data-lineheight="['100','73','70','50']" data-color="['rgb(0,0,0)','rgb(0,0,0)','rgb(0,0,0)','rgb(255,255,255)']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames="[{&quot;delay&quot;:400,&quot;speed&quot;:1100,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Expo.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8; white-space: nowrap; font-size: 80px; line-height: 73px; font-weight: 400; color: rgb(0, 0, 0); letter-spacing: 0px; font-family: Bebas; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; border-width: 0px; margin: 0px; padding: 0px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 0.0001; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">websites. </div></div></div></div>
+
+		<!-- LAYER NR. 5 -->
+		<div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: hidden; left: 112px; top: 303px; z-index: 9;">
+			<div class="tp-loop-wrap" style="position:absolute;display:block;">
+				<div class="tp-mask-wrap" style="position: absolute; display: block; overflow: visible;">
+					<div class="tp-caption" id="slide-2-layer-7" data-x="['center','center','center','center']" data-hoffset="['-691','-428','225','225']" data-y="['middle','middle','middle','middle']" data-voffset="['156','129','216','216']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','on','off']" data-type="text" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:800,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 9; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgb(76, 217, 100); letter-spacing: 0px; font-family: &quot;Open Sans&quot;; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; border-width: 0px; margin: 0px; padding: 0px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 0.0001; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">
+						<a itemprop="url" href="#" class="mkdf-btn mkdf-btn-huge mkdf-btn-outline ssom-btn-icon-3">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- LAYER NR. 6 -->
+		<div class="tp-parallax-wrap  tp-hidden-caption" style="position: absolute; display: block; visibility: hidden; left: -380px; top: 319px; z-index: 10;">
+			<div class="tp-loop-wrap" style="position:absolute;display:block;">
+				<div class="tp-mask-wrap" style="position: absolute; display: block; overflow: visible;">
+					<div class="tp-caption" id="slide-2-layer-16" data-x="['center','center','left','left']" data-hoffset="['-686','-380','-265','39']" data-y="['middle','middle','top','top']" data-voffset="['161','319','130','280']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['off','off','off','on']" data-type="text" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:800,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 10; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgb(76, 217, 100); letter-spacing: 0px; font-family: &quot;Open Sans&quot;; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; border-width: 0px; margin: 0px; padding: 0px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 0.0001; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">
+						<a itemprop="url" href="#" style="color: #ffffff;border-color: #ffffff" class="mkdf-btn mkdf-btn-medium mkdf-btn-outline ssom-btn-icon-4">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- LAYER NR. 7 -->
+		<div class="tp-parallax-wrap  tp-hidden-caption" style="position: absolute; display: block; visibility: hidden; left: -29px; top: 159px; z-index: 11;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);"><div class="tp-caption  " id="slide-2-layer-18" data-x="['center','center','center','center']" data-hoffset="['-29','-29','-142','-142']" data-y="['middle','middle','middle','middle']" data-voffset="['159','159','200','187']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['off','off','on','off']" data-type="text" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames="[{&quot;delay&quot;:200,&quot;speed&quot;:1100,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Expo.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 11; white-space: nowrap; font-size: 50px; line-height: 70px; font-weight: 400; color: rgb(0, 0, 0); letter-spacing: 0px; font-family: Bebas; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; border-width: 0px; margin: 0px; padding: 0px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 0.0001; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">We make great </div></div></div></div>
+	</li>
+	<!-- SLIDE  -->
+	<li data-index="rs-25" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="2" data-param2="3" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" class="tp-revslider-slidesli active-revslide" style="width: 100%; height: 100%; overflow: hidden; z-index: 20; visibility: inherit; opacity: 1; background-color: rgba(255, 255, 255, 0);">
+		<!-- MAIN IMAGE -->
+		<div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="http://quart.mikado-themes.com/wp-content/plugins/revslider/admin/assets/images/transparent.png" alt="" title="Main Home" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg defaultimg" data-no-retina="">--><div class="tp-bgimg defaultimg " data-bgcolor="undefined" style="background-repeat: no-repeat; background-image: url(&quot;http://quart.mikado-themes.com/wp-content/plugins/revslider/admin/assets/images/transparent.png&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit; z-index: 20;" src="http://quart.mikado-themes.com/wp-content/plugins/revslider/admin/assets/images/transparent.png"></div></div>
+		<!-- LAYERS -->
+
+		<!-- LAYER NR. 8 -->
+		<div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: visible; left: 505px; top: -60px; z-index: 5;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);"><div class="tp-caption  " id="slide-25-layer-13" data-x="['right','right','center','center']" data-hoffset="['102','102','0','-36']" data-y="['bottom','bottom','middle','middle']" data-voffset="['0','0','-66','-37']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1100,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Expo.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 300; font-size: 16px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;"><img src="assets/projects/section1/1.jpg" alt="a" data-ww="['1127px','673px','614px','924px']" data-hh="['792px','473px','432px','649px']" width="1127" height="792" data-no-retina="" style="width: 673px; height: 473px;"> </div></div></div></div>
+
+
+		<!-- LAYER NR. 10 -->
+		<div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: visible; left: 106px; top: 94px; z-index: 7;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);"><div class="tp-caption  " id="slide-25-layer-15" data-x="['center','center','center','left']" data-hoffset="['-670','-432','-611','37']" data-y="['middle','middle','middle','top']" data-voffset="['-75','-67','53','123']" data-fontsize="['100','80','50','50']" data-lineheight="['110','90','70','90']" data-color="['rgb(0,0,0)','rgb(0,0,0)','rgb(0,0,0)','rgb(255,255,255)']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','on']" data-type="text" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames="[{&quot;delay&quot;:300,&quot;speed&quot;:1100,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Expo.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap; font-size: 80px; line-height: 90px; font-weight: 400; color: rgb(0, 0, 0); letter-spacing: 0px; font-family: Bebas; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; border-width: 0px; margin: 0px; padding: 0px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">SSOM </div></div></div></div>
+
+		<!-- LAYER NR. 11 -->
+		<div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: visible; left: 108px; top: 168px; z-index: 8;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);"><div class="tp-caption  " id="slide-25-layer-16" data-x="['center','center','center','left']" data-hoffset="['-609','-382','-216','39']" data-y="['middle','middle','middle','top']" data-voffset="['14','12','250','194']" data-fontsize="['100','80','50','50']" data-lineheight="['110','100','70','50']" data-color="['rgb(0,0,0)','rgb(0,0,0)','rgb(0,0,0)','rgb(255,255,255)']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames="[{&quot;delay&quot;:400,&quot;speed&quot;:1100,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Expo.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8; white-space: nowrap; font-size: 80px; line-height: 100px; font-weight: 400; color: rgb(0, 0, 0); letter-spacing: 0px; font-family: Bebas; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; border-width: 0px; margin: 0px; padding: 0px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">STUDIO </div></div></div></div>
+
+		<!-- LAYER NR. 12 -->
+		<div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: visible; left: 110px; top: 304px; z-index: 9;">
+			<div class="tp-loop-wrap" style="position:absolute;display:block;">
+				<div class="tp-mask-wrap" style="position: absolute; display: block; overflow: visible;">
+					<div class="tp-caption  " id="slide-25-layer-17" data-x="['center','center','center','center']" data-hoffset="['-691','-430','227','227']" data-y="['middle','middle','middle','middle']" data-voffset="['155','130','216','240']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','on','off']" data-type="text" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:800,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 9; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgb(76, 217, 100); letter-spacing: 0px; font-family: &quot;Open Sans&quot;; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; border-width: 0px; margin: 0px; padding: 0px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">
+						<a itemprop="url" href="#" class="mkdf-btn mkdf-btn-huge mkdf-btn-outline ssom-btn-icon-5">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- LAYER NR. 13 -->
+		<div class="tp-parallax-wrap  tp-hidden-caption" style="position: absolute; display: block; visibility: visible; left: -380px; top: 319px; z-index: 10;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: visible;"><div class="tp-caption  " id="slide-25-layer-18" data-x="['center','center','left','left']" data-hoffset="['-686','-380','-265','39']" data-y="['middle','middle','top','top']" data-voffset="['161','319','130','277']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['off','off','off','on']" data-type="text" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:800,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 10; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgb(76, 217, 100); letter-spacing: 0px; font-family: &quot;Open Sans&quot;; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; border-width: 0px; margin: 0px; padding: 0px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;"><a itemprop="url" href="http://quart.mikado-themes.com/portfolio-showcase/" target="_self" style="color: #ffffff;border-color: #ffffff" class="mkdf-btn mkdf-btn-medium mkdf-btn-outline mkdf-btn-icon">
+    <span class="mkdf-btn-text">Discover</span>
+    <span aria-hidden="true" class="mkdf-icon-font-elegant arrow_right-up "></span></a> </div></div></div></div>
+
+		<!-- LAYER NR. 14 -->
+		<div class="tp-parallax-wrap  tp-hidden-caption" style="position: absolute; display: block; visibility: visible; left: -29px; top: 159px; z-index: 11;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: hidden; transform: matrix(1, 0, 0, 1, 0, 0);"><div class="tp-caption  " id="slide-25-layer-19" data-x="['center','center','center','center']" data-hoffset="['-29','-29','-142','-142']" data-y="['middle','middle','middle','middle']" data-voffset="['159','159','201','187']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['off','off','on','off']" data-type="text" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames="[{&quot;delay&quot;:200,&quot;speed&quot;:1100,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Expo.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 11; white-space: nowrap; font-size: 50px; line-height: 70px; font-weight: 400; color: rgb(0, 0, 0); letter-spacing: 0px; font-family: Bebas; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; border-width: 0px; margin: 0px; padding: 0px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">We make great </div></div></div></div>
+	</li>
+	<!-- SLIDE  -->
+	<li data-index="rs-26" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="3" data-param2="3" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" class="tp-revslider-slidesli rs-pause-timer-always" style="width: 100%; height: 100%; overflow: hidden;">
+		<!-- MAIN IMAGE -->
+		<div class="slotholder" style="position:absolute; top:0px; left:0px; z-index:0;width:100%;height:100%;"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="http://quart.mikado-themes.com/wp-content/plugins/revslider/admin/assets/images/transparent.png" alt="" title="Main Home" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg defaultimg" data-no-retina="">--><div class="tp-bgimg defaultimg " data-bgcolor="undefined" style="background-repeat: no-repeat; background-image: url(&quot;http://quart.mikado-themes.com/wp-content/plugins/revslider/admin/assets/images/transparent.png&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 0;" src="http://quart.mikado-themes.com/wp-content/plugins/revslider/admin/assets/images/transparent.png"></div></div>
+		<!-- LAYERS -->
+
+		<!-- LAYER NR. 15 -->
+		<div class="tp-parallax-wrap " style=" position:absolute;display:block;;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position:absolute;display:block;;"><div class="tp-caption   tp-videolayer" id="slide-26-layer-13" data-x="['right','right','center','center']" data-hoffset="['102','102','4','6']" data-y="['bottom','bottom','middle','middle']" data-voffset="['0','0','-93','0']" data-whitespace="nowrap" data-type="video" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1100,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Expo.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-videocontrols="controls" data-videowidth="['1130px','704px','831px','824px']" data-videoheight="['792px','495px','502px','804px']" data-videoposter="http://quart.mikado-themes.com/wp-content/uploads/2018/11/Sequence-1_3.mp4" data-videoogv="http://quart.mikado-themes.com/wp-content/uploads/2018/11/Sequence-1_3.mp4" data-videowebm="http://quart.mikado-themes.com/wp-content/uploads/2018/11/Sequence-1_3.mp4" data-videomp4="http://quart.mikado-themes.com/wp-content/uploads/2018/11/Sequence-1_3.mp4" data-noposteronmobile="off" data-videopreload="auto" data-videoloop="none" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-autoplay="on" data-nextslideatend="true" data-volume="100" style="z-index: 5; visibility: hidden;"> </div></div></div></div>
+
+		<!-- LAYER NR. 16 -->
+		<div class="tp-parallax-wrap " style=" position:absolute;display:block;;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position:absolute;display:block;;"><div class="tp-caption  " id="slide-26-layer-2" data-x="['center','center','center','left']" data-hoffset="['-585','-366','-606','38']" data-y="['middle','middle','middle','top']" data-voffset="['-164','-143','166','92']" data-fontsize="['100','80','50','50']" data-lineheight="['100','80','70','50']" data-color="['rgb(0,0,0)','rgb(0,0,0)','rgb(0,0,0)','rgb(255,255,255)']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','on']" data-type="text" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames="[{&quot;delay&quot;:200,&quot;speed&quot;:1100,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Expo.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; white-space: nowrap; font-size: 100px; line-height: 100px; font-weight: 400; color: rgb(0, 0, 0); letter-spacing: 0px; font-family: Bebas; visibility: hidden;">We make </div></div></div></div>
+
+		<!-- LAYER NR. 17 -->
+		<div class="tp-parallax-wrap " style=" position:absolute;display:block;;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position:absolute;display:block;;"><div class="tp-caption  " id="slide-26-layer-3" data-x="['center','center','center','left']" data-hoffset="['-661','-426','-611','37']" data-y="['middle','middle','middle','top']" data-voffset="['-78','-66','53','123']" data-fontsize="['100','80','50','50']" data-lineheight="['110','90','70','90']" data-color="['rgb(0,0,0)','rgb(0,0,0)','rgb(0,0,0)','rgb(255,255,255)']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','off','on']" data-type="text" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames="[{&quot;delay&quot;:300,&quot;speed&quot;:1100,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Expo.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap; font-size: 100px; line-height: 110px; font-weight: 400; color: rgb(0, 0, 0); letter-spacing: 0px; font-family: Bebas; visibility: hidden;">happy </div></div></div></div>
+
+		<!-- LAYER NR. 18 -->
+		<div class="tp-parallax-wrap " style=" position:absolute;display:block;;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position:absolute;display:block;;"><div class="tp-caption  " id="slide-26-layer-4" data-x="['center','center','center','left']" data-hoffset="['-559','-344','-189','39']" data-y="['middle','middle','middle','top']" data-voffset="['14','13','250','194']" data-fontsize="['100','80','50','50']" data-lineheight="['100','73','70','50']" data-color="['rgb(0,0,0)','rgb(0,0,0)','rgb(0,0,0)','rgb(255,255,255)']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames="[{&quot;delay&quot;:400,&quot;speed&quot;:1100,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Expo.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8; white-space: nowrap; font-size: 100px; line-height: 100px; font-weight: 400; color: rgb(0, 0, 0); letter-spacing: 0px; font-family: Bebas; visibility: hidden;">memories. </div></div></div></div>
+
+		<!-- LAYER NR. 19 -->
+		<div class="tp-parallax-wrap " style=" position:absolute;display:block;;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position:absolute;display:block;;"><div class="tp-caption  " id="slide-26-layer-5" data-x="['center','center','left','left']" data-hoffset="['-694','-380','-265','39']" data-y="['middle','middle','top','top']" data-voffset="['142','299','130','277']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['off','off','off','on']" data-type="text" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:800,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 9; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgb(76, 217, 100); letter-spacing: 0px; font-family: &quot;Open Sans&quot;; visibility: hidden;"><a itemprop="url" href="http://quart.mikado-themes.com/portfolio-showcase/" target="_self" style="color: #ffffff;border-color: #ffffff" class="mkdf-btn mkdf-btn-medium mkdf-btn-outline mkdf-btn-icon">
+    <span class="mkdf-btn-text">Discover</span>
+    <span aria-hidden="true" class="mkdf-icon-font-elegant arrow_right-up "></span></a> </div></div></div></div>
+
+		<!-- LAYER NR. 20 -->
+		<div class="tp-parallax-wrap " style=" position:absolute;display:block;;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position:absolute;display:block;;"><div class="tp-caption  " id="slide-26-layer-6" data-x="['center','center','center','center']" data-hoffset="['-689','-429','235','235']" data-y="['middle','middle','middle','middle']" data-voffset="['157','130','221','221']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','on','on','off']" data-type="text" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:800,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 10; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgb(76, 217, 100); letter-spacing: 0px; font-family: &quot;Open Sans&quot;; visibility: hidden;"><a itemprop="url" href="http://quart.mikado-themes.com/portfolio-showcase/" target="_self" class="mkdf-btn mkdf-btn-huge mkdf-btn-outline mkdf-btn-icon">
+    <span class="mkdf-btn-text">Discover</span>
+    <span aria-hidden="true" class="mkdf-icon-font-elegant arrow_right-up "></span></a> </div></div></div></div>
+
+		<!-- LAYER NR. 21 -->
+		<div class="tp-parallax-wrap " style=" position:absolute;display:block;;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position:absolute;display:block;;"><div class="tp-caption  " id="slide-26-layer-7" data-x="['center','center','center','center']" data-hoffset="['-29','-29','-131','-142']" data-y="['middle','middle','middle','middle']" data-voffset="['159','159','207','187']" data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['off','off','on','off']" data-type="text" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames="[{&quot;delay&quot;:200,&quot;speed&quot;:1100,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Expo.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 11; white-space: nowrap; font-size: 50px; line-height: 70px; font-weight: 400; color: rgb(0, 0, 0); letter-spacing: 0px; font-family: Bebas; visibility: hidden;">We make happy </div></div></div></div>
+	</li>
+</ul>
+<script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss="";
+						if(htmlDiv) {
+							htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+						}else{
+							var htmlDiv = document.createElement("div");
+							htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+							document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+						}
+					</script>
+<div class="tp-bannertimer tp-bottom" style="visibility: hidden; width: 43.825%; transform: translate3d(0px, 0px, 0px);"></div>	<div class="tp-loader off" style="display: none;"><div class="dot1"></div><div class="dot2"></div><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div><div class="tp-leftarrow tparrows quart1" style="top: 100%; transform: matrix(1, 0, 0, 1, -183, -59); left: 100%;"></div><div class="tp-rightarrow tparrows quart1" style="top: 100%; transform: matrix(1, 0, 0, 1, -183, -124); left: 100%;"></div><div class="tp-bullets quart1 horizontal nav-pos-hor-left nav-pos-ver-center nav-dir-horizontal" style="width: 160px; height: 15px; top: 50%; transform: matrix(1, 0, 0, 1, 40, 13); left: 0px;"><div class="tp-bullet" style="left: 0px; top: 0px;"><span><span>1</span> / <span>3</span></span></div><div class="tp-bullet selected" style="left: 55px; top: 0px;"><span><span>2</span> / <span>3</span></span></div><div class="tp-bullet" style="left: 110px; top: 0px;"><span><span>3</span> / <span>3</span></span></div></div></div>
+<script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss="";
+				if(htmlDiv) {
+					htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+				}else{
+					var htmlDiv = document.createElement("div");
+					htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+					document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+				}
+			</script>
+		<script type="text/javascript">
+if (setREVStartSize!==undefined) setREVStartSize(
+	{c: '#rev_slider_2_1', responsiveLevels: [1920,1900,1025,480], gridwidth: [1920,1441,1025,480], gridheight: [790,465,760,650], sliderLayout: 'fullwidth'});
+var revapi2,
+	tpj;
+(function() {
+	if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded",onLoad); else onLoad();
+	function onLoad() {
+		if (tpj===undefined) { tpj = jQuery; if("off" == "on") tpj.noConflict();}
+	if(tpj("#rev_slider_2_1").revolution == undefined){
+		revslider_showDoubleJqueryError("#rev_slider_2_1");
+	}else{
+		revapi2 = tpj("#rev_slider_2_1").show().revolution({
+			sliderType:"standard",
+			jsFileLocation:"//quart.mikado-themes.com/wp-content/plugins/revslider/public/assets/js/",
+			sliderLayout:"fullwidth",
+			dottedOverlay:"none",
+			delay:4000,
+			navigation: {
+				keyboardNavigation:"off",
+				keyboard_direction: "horizontal",
+				mouseScrollNavigation:"off",
+ 							mouseScrollReverse:"default",
+				onHoverStop:"off",
+				touch:{
+					touchenabled:"on",
+					touchOnDesktop:"off",
+					swipe_threshold: 75,
+					swipe_min_touches: 1,
+					swipe_direction: "horizontal",
+					drag_block_vertical: false
+				}
+				,
+				arrows: {
+					style:"quart1",
+					enable:true,
+					hide_onmobile:true,
+					hide_under:1025,
+					hide_onleave:false,
+					tmp:'',
+					left: {
+						h_align:"right",
+						v_align:"bottom",
+						h_offset:102,
+						v_offset:0
+					},
+					right: {
+						h_align:"right",
+						v_align:"bottom",
+						h_offset:102,
+						v_offset:65
+					}
+				}
+				,
+				bullets: {
+					enable:true,
+					hide_onmobile:false,
+					style:"quart1",
+					hide_onleave:false,
+					direction:"horizontal",
+					h_align:"left",
+					v_align:"center",
+					h_offset:40,
+					v_offset:20,
+					space:5,
+					tmp:'<span><span>{{param1}}</span> / <span>{{param2}}</span></span>'
+				}
+			},
+			viewPort: {
+				enable:true,
+				outof:"wait",
+				visible_area:"80%",
+				presize:false
+			},
+			responsiveLevels:[1920,1900,1025,480],
+			visibilityLevels:[1920,1900,1025,480],
+			gridwidth:[1920,1441,1025,480],
+			gridheight:[790,465,760,650],
+			lazyType:"none",
+			shadow:0,
+			spinner:"off",
+			stopLoop:"off",
+			stopAfterLoops:-1,
+			stopAtSlide:-1,
+			shuffle:"off",
+			autoHeight:"off",
+			disableProgressBar:"on",
+			hideThumbsOnMobile:"off",
+			hideSliderAtLimit:0,
+			hideCaptionAtLimit:0,
+			hideAllCaptionAtLilmit:0,
+			debugMode:false,
+			fallbacks: {
+				simplifyAll:"off",
+				nextSlideOnWindowFocus:"off",
+				disableFocusListener:false,
+			}
+		});
+	}; /* END OF revapi call */
+ }; /* END OF ON LOAD FUNCTION */
+}()); /* END OF WRAPPING FUNCTION */
+</script>
+		<script>
+					var htmlDivCss = unescape("%23rev_slider_2_1%20.quart1.tparrows%20%7B%0A%09cursor%3Apointer%3B%0A%09background%3A%23000000%3B%0A%09width%3A81px%3B%0A%09height%3A59px%3B%0A%09position%3Aabsolute%3B%0A%09display%3Ablock%3B%0A%09z-index%3A100%3B%0A%7D%0A%0A%23rev_slider_2_1%20.quart1.tparrows%3Ahover%20%7B%0A%0A%7D%0A%0A%23rev_slider_2_1%20.quart1.tparrows%3Abefore%20%7B%0A%09font-family%3A%20%22ElegantIcons%22%3B%0A%09font-size%3A16px%3B%0A%09color%3A%20%23fff%3B%0A%09display%3Ablock%3B%0A%09line-height%3A%2059px%3B%0A%09text-align%3A%20center%3B%0A%20%20%20%20position%3A%20relative%3B%0A%7D%0A%0A%23rev_slider_2_1%20.quart1.tparrows.tp-leftarrow%7B%0A%09-webkit-transform%3A%20translateY%2855%25%29%3B%0A%20%20%20%20-moz-transform%3A%20translateY%2855%25%29%3B%0A%20%20%20%20transform%3A%20translateY%2855%25%29%3B%0A%20%20%20%20right%3A%207px%3B%0A%20%20%20%20left%3A%20initial%3B%0A%7D%0A%0A%23rev_slider_2_1%20.quart1.tparrows.tp-leftarrow%3Abefore%20%7B%0A%09%20%20content%3A%20%22%5C23%22%3B%0A%7D%0A%0A%23rev_slider_2_1%20.quart1.tparrows.tp-rightarrow%7B%0A%09-webkit-transform%3A%20translateY%28-55%25%29%3B%0A%20%20%20%20-moz-transform%3A%20translateY%28-55%25%29%3B%0A%20%20%20%20transform%3A%20translateY%28-55%25%29%3B%0A%20%20%20%20right%3A%207px%3B%0A%20%20%20%20left%3A%20initial%3B%0A%7D%0A%0A%23rev_slider_2_1%20.quart1.tparrows.tp-rightarrow%3Abefore%20%7B%0A%09%20%20content%3A%20%22%5C24%22%3B%0A%7D%0A%0A%23rev_slider_2_1%20.quart1.tparrows.tp-leftarrow%3Ahover%3Abefore%20%7B%0A%09%20%20animation%3A%20mkdf-move-prev%20.5s%20%21important%3B%0A%7D%0A%23rev_slider_2_1%20.quart1.tparrows.tp-rightarrow%3Ahover%3Abefore%20%7B%0A%09%20%20animation%3A%20mkdf-move-next%20.5s%20%21important%3B%0A%7D%0A%23rev_slider_2_1%20.quart1.tp-bullets%20%7B%0Atop%3A%2047%25%20%21important%3B%0A%7D%0A%0A%23rev_slider_2_1%20.quart1%20.tp-bullet%20%7B%0A%09display%3A%20none%3B%0A%20%20%20width%3A50px%3B%0A%20%20%20%20position%3A%20absolute%3B%0A%20%20%20%20left%3A%2020px%20%21important%3B%0A%7D%0A%0A%23rev_slider_2_1%20.quart1%20.tp-bullet.selected%20%7B%0A%09display%3Ablock%3B%0A%20%20%20%20background%3A%20transparent%20%21important%3B%0A%7D%0A%0A%23rev_slider_2_1%20.quart1%20.tp-bullet.selected%20%3E%20span%20%7B%0A%20%20background%3A%20transparent%3B%0A%20%20padding%3A5px%3B%0A%20%20color%3A%20%23000%3B%0A%7D%0A%0A%40media%20screen%20and%20%28max-width%3A%20768px%29%7B%0A%23rev_slider_2_1%20.quart1%20.tp-bullet.selected%20%3E%20span%20%7B%0A%20%20background%3A%20%23fff%3B%0A%7D%0A%0A%23rev_slider_2_1%20.quart1.tp-bullets%7B%0A%20%20transform%3A%20unset%20%21important%3B%0A%20%20left%3A%2011%25%20%21important%3B%0A%20%20top%3A%2038%25%20%21important%3B%0A%7D%0A%7D%0A%0A%40media%20screen%20and%20%28max-width%3A%20680px%29%7B%0A%23rev_slider_2_1%20.quart1%20.tp-bullet.selected%20%3E%20span%20%7B%0A%20%20background%3A%20%23fff%3B%0A%7D%0A%0A%23rev_slider_2_1%20.quart1.tp-bullets%7B%0A%20%20transform%3A%20unset%20%21important%3B%0A%20%20left%3A%2040%25%20%21important%3B%0A%20%20top%3A%2090%25%20%21important%3B%0A%7D%0A%7D%0A");
+					var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+					if(htmlDiv) {
+						htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+					}
+					else{
+						var htmlDiv = document.createElement('div');
+						htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+						document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+					}
+				  </script>
+				</div><div class="tp-fullwidth-forcer" style="width: 100%; height: 413px;"></div></div><!-- END REVOLUTION SLIDER --></div>		</div>
+	</div>
+</div></div></div></div></div></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="mkdf-elements-holder   mkdf-one-column  mkdf-responsive-mode-768 "><div class="mkdf-eh-item skrollable skrollable-before" data-item-class="mkdf-eh-custom-9949" data-1367-1600="130px 17.7% 120px" data-1025-1366="115px 14% 100px" data-769-1024="0px 11.2% 100px" data-681-768="83px 9% 35px" data-680="62px 0% 22px 8%">
+	<div class="mkdf-eh-item-inner">
+		<div class="mkdf-eh-item-content mkdf-eh-custom-9949" style="padding: 115px 17.7% 120px">
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<h2>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			</h2>
+		</div>
+	</div>
+			<div class="vc_empty_space" style="height: 55px"><span class="vc_empty_space_inner"></span></div>
+			<a href="#" class="mkdf-btn mkdf-btn-large mkdf-btn-outline ssom-btn-icon-2">
+			</a>
+		</div>
+	</div>
+</div></div></div></div></div></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="mkdf-elements-holder mkdf-one-column mkdf-responsive-mode-768 "><div class="mkdf-eh-item skrollable skrollable-before" data-item-class="mkdf-eh-custom-2333" data-1025-1366="0 140px" data-681-768="0 17%" data-680="0 150px">
+	<div class="mkdf-eh-item-inner">
+		<div class="mkdf-eh-item-content mkdf-eh-custom-2333" style="padding: 0 160px">
+			<div class="mkdf-portfolio-list-holder mkdf-grid-list mkdf-grid-masonry-list mkdf-disable-bottom-space mkdf-pl-masonry mkdf-three-columns mkdf-huge-space mkdf-pl-gallery-overlay mkdf-pl-pag-no-pagination portfolio-scattered" data-type="masonry" data-scattered-option="yes" data-number-of-columns="three" data-space-between-items="huge" data-number-of-items="-1" data-image-proportions="full" data-enable-fixed-proportions="no" data-enable-image-shadow="no" data-category="creative" data-orderby="date" data-order="ASC" data-item-style="gallery-overlay" data-enable-title="yes" data-title-tag="h4" data-enable-category="yes" data-enable-count-images="yes" data-enable-excerpt="no" data-excerpt-length="20" data-pagination-type="no-pagination" data-filter="no" data-filter-order-by="name" data-enable-article-animation="no" data-enable-light-skin="no" data-enable-parallax="yes" data-portfolio-slider-on="no" data-enable-loop="yes" data-enable-autoplay="yes" data-slider-speed="5000" data-slider-speed-animation="600" data-enable-navigation="yes" data-enable-pagination="yes" data-max-num-pages="0" data-next-page="2">
+		<div class="mkdf-pl-inner mkdf-outer-space mkdf-masonry-list-wrapper clearfix" style="position: relative; height: 1430.14px; opacity: 1;">
+		<div class="mkdf-masonry-grid-sizer"></div>
+		<div class="mkdf-masonry-grid-gutter"></div>
+<article class="mkdf-pl-item mkdf-item-space mkdf-masonry-size-large-width post-407 portfolio-item type-portfolio-item status-publish has-post-thumbnail hentry portfolio-category-creative" style="position: absolute; left: 0%; top: 0px;">
+	<div class="mkdf-pl-item-inner" data-parallax="{&quot;y&quot;: -92, &quot;smoothness&quot;: 20}" style="transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
+	<div class="mkdf-pli-image">
+		<img width="927" height="654" src="assets/projects/section2/1.jpg" class="attachment-full size-full wp-post-image" alt="b" srcset="assets/projects/section2/1.jpg 927w, assets/projects/section2/1.jpg 800w, assets/projects/section2/1.jpg 300w, assets/projects/section2/1.jpg 768w" sizes="(max-width: 927px) 100vw, 927px">	</div>
+
+
+<div class="mkdf-pli-text-holder">
+	<div class="mkdf-pli-text-wrapper">
+		<div class="mkdf-pli-text">
+					<div class="mkdf-pli-category-holder">
+							<a itemprop="url" class="mkdf-pli-category" href="http://quart.mikado-themes.com/portfolio-category/creative/">Creative</a>
+					</div>
+				<h4 itemprop="name" class="mkdf-pli-title entry-title">
+		Classic Design	</h4>
+
+					</div>
+	</div>
+</div>
+		<a itemprop="url" class="mkdf-pli-link mkdf-block-drag-link" href="http://quart.mikado-themes.com/portfolio-item/classic-design/" target="_self"></a>
+	</div>
+
+	</article>
+<article class="mkdf-pl-item mkdf-item-space  post-449 portfolio-item type-portfolio-item status-publish has-post-thumbnail hentry portfolio-category-creative" style="position: absolute; left: 66.6667%; top: 0px;">
+	<div class="mkdf-pl-item-inner" data-parallax="{&quot;y&quot;: -90, &quot;smoothness&quot;: 20}" style="transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
+		
+	<div class="mkdf-pli-image">
+		<img width="444" height="440" src="assets/projects/section2/2.jpg" class="attachment-full size-full wp-post-image" alt="f" srcset="assets/projects/section2/2.jpg 444w, assets/projects/section2/2.jpg 150w, assets/projects/section2/2.jpg 300w, assets/projects/section2/2.jpg 100w" sizes="(max-width: 444px) 100vw, 444px">	</div>
+
+
+<div class="mkdf-pli-text-holder">
+	<div class="mkdf-pli-text-wrapper">
+		<div class="mkdf-pli-text">
+					<div class="mkdf-pli-category-holder">
+							<a itemprop="url" class="mkdf-pli-category" href="http://quart.mikado-themes.com/portfolio-category/creative/">Creative</a>
+					</div>
+	
+				<h4 itemprop="name" class="mkdf-pli-title entry-title">
+		Fresh Start	</h4>
+
+					</div>
+	</div>
+</div>
+		<a itemprop="url" class="mkdf-pli-link mkdf-block-drag-link" href="http://quart.mikado-themes.com/portfolio-item/fresh-start/" target="_self"></a>
+	</div>
+
+	</article>
+<article class="mkdf-pl-item mkdf-item-space  post-452 portfolio-item type-portfolio-item status-publish has-post-thumbnail hentry portfolio-category-creative" style="position: absolute; left: 66.6667%; top: 373px;">
+	<div class="mkdf-pl-item-inner" data-parallax="{&quot;y&quot;: -97, &quot;smoothness&quot;: 20}" style="transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
+		
+	<div class="mkdf-pli-image">
+		<img width="444" height="440" src="assets/projects/section2/3.jpg" class="attachment-full size-full wp-post-image" alt="b" srcset="assets/projects/section2/3.jpg 444w, assets/projects/section2/3.jpg 150w, assets/projects/section2/3.jpg 300w, assets/projects/section2/3.jpg 100w" sizes="(max-width: 444px) 100vw, 444px">	</div>
+
+
+<div class="mkdf-pli-text-holder">
+	<div class="mkdf-pli-text-wrapper">
+		<div class="mkdf-pli-text">
+					<div class="mkdf-pli-category-holder">
+							<a itemprop="url" class="mkdf-pli-category" href="http://quart.mikado-themes.com/portfolio-category/creative/">Creative</a>
+					</div>
+	
+				<h4 itemprop="name" class="mkdf-pli-title entry-title">
+		New Campaign	</h4>
+
+					</div>
+	</div>
+</div>
+		<a itemprop="url" class="mkdf-pli-link mkdf-block-drag-link" href="http://quart.mikado-themes.com/portfolio-item/new-campaign/" target="_self"></a>
+	</div>
+
+	</article>
+<article class="mkdf-pl-item mkdf-item-space  post-453 portfolio-item type-portfolio-item status-publish has-post-thumbnail hentry portfolio-category-creative" style="position: absolute; left: 0%; top: 682px;">
+	<div class="mkdf-pl-item-inner" data-parallax="{&quot;y&quot;: -82, &quot;smoothness&quot;: 20}" style="transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
+		
+	<div class="mkdf-pli-image">
+		<img width="444" height="440" src="assets/projects/section2/5.jpg" class="attachment-full size-full wp-post-image" alt="b" srcset="assets/projects/section2/5.jpg 444w, assets/projects/section2/5.jpg 150w, assets/projects/section2/5.jpg 300w, assets/projects/section2/5.jpg 100w" sizes="(max-width: 444px) 100vw, 444px">	</div>
+
+
+<div class="mkdf-pli-text-holder">
+	<div class="mkdf-pli-text-wrapper">
+		<div class="mkdf-pli-text">
+					<div class="mkdf-pli-category-holder">
+							<a itemprop="url" class="mkdf-pli-category" href="http://quart.mikado-themes.com/portfolio-category/creative/">Creative</a>
+					</div>
+	
+				<h4 itemprop="name" class="mkdf-pli-title entry-title">
+		Fashion Trends	</h4>
+
+					</div>
+	</div>
+</div>
+		<a itemprop="url" class="mkdf-pli-link mkdf-block-drag-link" href="http://quart.mikado-themes.com/portfolio-item/fashion-trends/" target="_self"></a>
+	</div>
+
+	</article>
+<article class="mkdf-pl-item mkdf-item-space mkdf-masonry-size-large-width post-458 portfolio-item type-portfolio-item status-publish has-post-thumbnail hentry portfolio-category-creative" style="position: absolute; left: 33.25%; top: 747px;">
+	<div class="mkdf-pl-item-inner" data-parallax="{&quot;y&quot;: -86, &quot;smoothness&quot;: 20}" style="transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
+		
+	<div class="mkdf-pli-image">
+		<img width="927" height="654" src="assets/projects/section2/4.jpg" class="attachment-full size-full wp-post-image" alt="b" srcset="assets/projects/section2/4.jpg 927w, assets/projects/section2/4.jpg 800w, assets/projects/section2/4.jpg 300w, assets/projects/section2/4.jpg 768w" sizes="(max-width: 927px) 100vw, 927px">	</div>
+
+
+<div class="mkdf-pli-text-holder">
+	<div class="mkdf-pli-text-wrapper">
+		<div class="mkdf-pli-text">
+					<div class="mkdf-pli-category-holder">
+							<a itemprop="url" class="mkdf-pli-category" href="http://quart.mikado-themes.com/portfolio-category/creative/">Creative</a>
+					</div>
+	
+				<h4 itemprop="name" class="mkdf-pli-title entry-title">
+		Worldwide Campaign	</h4>
+
+					</div>
+	</div>
+</div>
+		<a itemprop="url" class="mkdf-pli-link mkdf-block-drag-link" href="http://quart.mikado-themes.com/portfolio-item/worldwide-campaign/" target="_self"></a>
+	</div>
+
+	</article>
+<article class="mkdf-pl-item mkdf-item-space  post-459 portfolio-item type-portfolio-item status-publish has-post-thumbnail hentry portfolio-category-creative" style="position: absolute; left: 0%; top: 1056px;">
+	<div class="mkdf-pl-item-inner" data-parallax="{&quot;y&quot;: -95, &quot;smoothness&quot;: 20}" style="transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
+		
+	<div class="mkdf-pli-image">
+		<img width="444" height="440" src="assets/projects/section2/6.jpg" class="attachment-full size-full wp-post-image" alt="b" srcset="assets/projects/section2/6.jpg 444w, assets/projects/section2/6.jpg 150w, assets/projects/section2/6.jpg 300w, assets/projects/section2/6.jpg 100w" sizes="(max-width: 444px) 100vw, 444px">	</div>
+
+
+<div class="mkdf-pli-text-holder">
+	<div class="mkdf-pli-text-wrapper">
+		<div class="mkdf-pli-text">
+					<div class="mkdf-pli-category-holder">
+							<a itemprop="url" class="mkdf-pli-category" href="http://quart.mikado-themes.com/portfolio-category/creative/">Creative</a>
+					</div>
+	
+				<h4 itemprop="name" class="mkdf-pli-title entry-title">
+		The Joy of Art	</h4>
+
+					</div>
+	</div>
+</div>
+		<a itemprop="url" class="mkdf-pli-link mkdf-block-drag-link" href="http://quart.mikado-themes.com/portfolio-item/the-joy-of-art/" target="_self"></a>
+	</div>
+
+	</article>	</div>
+	
+	</div>		</div>
+	</div>
+					</div></div></div></div></div></div>
+
+					<div class="vc_row wpb_row vc_row-fluid">
+						<div class="wpb_column vc_column_container vc_col-sm-12">
+							<div class="vc_column-inner">
+								<div class="wpb_wrapper">
+									<div class="mkdf-elements-holder mkdf-one-column mkdf-responsive-mode-768">
+										<div class="mkdf-eh-item skrollable skrollable-before" data-item-class="mkdf-eh-custom-4085" data-1367-1600="45px 2.6% 145px 3.6%" data-1025-1366="50px 1.6% 145px 2.6%" data-769-1024="142px 0 145px 1.4%" data-681-768="123px 0 105px 0" data-680="130px 0.6% 0px 1.8%">
+											<div class="mkdf-eh-item-inner">
+												<div class="mkdf-eh-item-content mkdf-eh-custom-4085" style="padding: 3px 0 145px 1.4%">
+													<div class="mkdf-clients-carousel-holder mkdf-cc-hover-roll-over">
+														<div class="mkdf-cc-inner mkdf-owl-slider owl-loaded owl-drag" data-number-of-items="5" data-enable-loop="no" data-enable-autoplay="no" data-slider-speed="5000" data-slider-speed-animation="600" data-enable-navigation="no" data-enable-pagination="no" style="visibility: visible;">
+															<div class="owl-stage-outer">
+																<div class="owl-stage">
+																	<div class="owl-item vc_col-md-3 vc_col-sm-6 vc_col-xs-6">
+																		<div class="mkdf-cc-item mkdf-item-space mkdf-cci-no-link">
+																			<img itemprop="image" class="mkdf-cc-image" src="assets/ssom_icons/1.png">
+																			<img itemprop="image" class="mkdf-cc-hover-image" src="assets/ssom_icons/1_hover.png">
+																		</div>
+																	</div>
+																	<div class="owl-item vc_col-md-3 vc_col-sm-6 vc_col-xs-6">
+																		<div class="mkdf-cc-item mkdf-item-space mkdf-cci-no-link">
+																			<img itemprop="image" class="mkdf-cc-image" src="assets/ssom_icons/2.png">
+																			<img itemprop="image" class="mkdf-cc-hover-image" src="assets/ssom_icons/2_hover.png">
+																		</div>
+																	</div>
+																	<div class="owl-item vc_col-md-3 vc_col-sm-6 vc_col-xs-6">
+																		<div class="mkdf-cc-item mkdf-item-space mkdf-cci-no-link">
+																			<img itemprop="image" class="mkdf-cc-image" src="assets/ssom_icons/3.png">
+																			<img itemprop="image" class="mkdf-cc-hover-image" src="assets/ssom_icons/3_hover.png">
+																		</div>
+																	</div>
+																	<div class="owl-item vc_col-md-3 vc_col-sm-6 vc_col-xs-6">
+																		<div class="mkdf-cc-item mkdf-item-space mkdf-cci-no-link">
+																			<img itemprop="image" class="mkdf-cc-image" src="assets/ssom_icons/4.png">
+																			<img itemprop="image" class="mkdf-cc-hover-image" src="assets/ssom_icons/4_hover.png">
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="vc_row wpb_row vc_row-fluid vc_custom_1540816028679">
+						<div class="wpb_column vc_column_container vc_col-sm-12">
+							<div class="vc_column-inner">
+								<div class="wpb_wrapper">
+									<div class="mkdf-row-grid-section-wrapper" style="margin-bottom:45px;">
+										<h1 style="width: 400px; margin: 0; margin-left: 120px; padding: 5px; background-color: white; position: absolute; z-index: 999; font-size: 70px; ">THE TEAM:</h1>
+										<div class="mkdf-row-grid-section" style="background-color:#7AA575;margin-right:0px;padding-top:100px;">
+											<div class="vc_row wpb_row vc_inner vc_row-fluid" style="margin-left:20px;margin-top:20px;">
+												<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-4">
+													<div class="vc_column-inner">
+														<div class="wpb_wrapper">
+															<div class="mkdf-elements-holder mkdf-one-column mkdf-responsive-mode-768 ">
+																<div class="mkdf-eh-item skrollable skrollable-before" data-item-class="mkdf-eh-custom-8595" data-1367-1600="0 0% 105px 24%" data-1025-1366="0 0% 105px 24%" data-769-1024="0 0 105 px 0%" data-681-768="0 0 0px 0%" data-680="0 0 0px 0%">
+																	<div class="mkdf-eh-item-inner">
+																		<div class="mkdf-eh-item-content mkdf-eh-custom-8595" style="padding: 0 0% 105px 0%">
+																			<div class="mkdf-team-holder mkdf-team-info-below-image mkdf-team-grayscale-image">
+																				<div class="mkdf-team-inner">
+																					<div class="mkdf-team-image">
+																						<img width="325" height="300" src="assets/rovalino.png" class="attachment-full size-full" alt="a" srcset="assets/rovalino.png 325w, assets/rovalino.png 300w" sizes="(max-width: 325px) 100vw, 325px">
+																					</div>
+																					<div class="mkdf-team-info">
+																						<h6 class="mkdf-team-position">ARCHITECT</h6>
+																						<h3 class="mkdf-team-name">ROVALINO</h3>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-4">
+													<div class="vc_column-inner">
+														<div class="wpb_wrapper">
+															<div class="mkdf-elements-holder mkdf-one-column mkdf-responsive-mode-768">
+																<div class="mkdf-eh-item skrollable skrollable-before" data-item-class="mkdf-eh-custom-1276" data-1367-1600="0 12% 105px" data-1025-1366="0 12% 105px" data-769-1024="0 0 105px 0%" data-681-768="0 0 0px 0%" data-680="0 0px 0%">
+																	<div class="mkdf-eh-item-inner">
+																		<div class="mkdf-eh-item-content mkdf-eh-custom-1276" style="padding: 0 0% 105px">
+																			<div class="mkdf-team-holder mkdf-team-info-below-image mkdf-team-grayscale-image">
+																				<div class="mkdf-team-inner">
+																					<div class="mkdf-team-image">
+																						<img width="325" height="300" src="assets/bran.png" class="attachment-full size-full" alt="a" srcset="assets/bran.png 325w, assets/bran.png 300w" sizes="(max-width: 325px) 100vw, 325px">
+																					</div>
+																					<div class="mkdf-team-info">
+																						<h6 class="mkdf-team-position">ARCHITECT</h6>
+																						<h3 class="mkdf-team-name">BRAN</h3>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div data-vc-parallax="" data-parallax-bg-image="assets/projects/section3/1.jpg" data-parallax-bg-speed="1.5" class="vc_row wpb_row vc_row-fluid vc_row-has-fill vc_general vc_parallax vc_parallax-content-moving mkdf-parallax-row-holder" style="background-image: url(&quot;assets/projects/section3/1.jpg&quot;); background-position: 50% 413px;">
+						<div class="wpb_column vc_column_container vc_col-sm-12">
+							<div class="vc_column-inner">
+								<div class="wpb_wrapper">
+									<div class="mkdf-elements-holder mkdf-one-column mkdf-responsive-mode-768">
+										<div class="mkdf-eh-item skrollable skrollable-before" data-item-class="mkdf-eh-custom-6292" data-769-1024="148px 40% 212px 10%" data-681-768="151px 15% 212px 10%" data-680="89px 13% 150px 9.2%">
+											<div class="mkdf-eh-item-inner">
+												<div class="mkdf-eh-item-content mkdf-eh-custom-6292" style="padding: 152px 0 217px 9.2%">
+													<div class="wpb_text_column wpb_content_element ">
+														<div class="wpb_wrapper">
+															<h1><span style="color: #ffffff;">Lorem ipsum dolor sit amet consectetur</span></h1>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="vc_parallax-inner skrollable skrollable-before" data-bottom-top="top: 100%;" data-top-bottom="top: 0%;" style="height: 0%; top: 100%;"></div>
+					</div>
+					<div class="vc_row wpb_row vc_row-fluid" style="background-color:#FE2036;">
+						<div class="wpb_column vc_column_container vc_col-sm-12">
+							<div class="vc_column-inner">
+								<div class="wpb_wrapper">
+									<div class="mkdf-elements-holder mkdf-one-column mkdf-responsive-mode-768">
+										<div class="mkdf-eh-item skrollable skrollable-before" data-item-class="mkdf-eh-custom-5691" data-680="0px 0 0 9.2%">
+											<div class="mkdf-eh-item-inner">
+												<div class="mkdf-eh-item-content mkdf-eh-custom-5691" style="padding: 0px 0 0 9.2%">
+													<div class="wpb_text_column wpb_content_element ">
+														<div class="wpb_wrapper">
+															<h1>CONTACT US</h1>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="vc_row wpb_row vc_row-fluid" style="background-color:#FE2036;padding-bottom:35px;">
+						<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-5">
+							<div class="vc_column-inner">
+								<div class="wpb_wrapper">
+									<div class="mkdf-elements-holder mkdf-one-column mkdf-responsive-mode-768">
+										<div class="mkdf-eh-item skrollable skrollable-before" data-item-class="mkdf-eh-custom-1854" data-769-1024="35px 0 37px 9%" data-681-768="35px 0 37px 9%" data-680="35px 0 37px 11%">
+											<div class="mkdf-eh-item-inner">
+												<div class="mkdf-eh-item-content mkdf-eh-custom-1854" style="padding: 35px 0 37px 45%">
+													<div class="wpb_text_column wpb_content_element ">
+														<div class="wpb_wrapper">
+															<h4>JAKARTA</h4>
+														</div>
+													</div>
+													<div class="vc_empty_space" style="height: 12px"><span class="vc_empty_space_inner"></span></div>
+													<div class="wpb_text_column wpb_content_element  home1pmargin">
+														<div class="wpb_wrapper">
+															<p><a href="#" target="_blank" rel="noopener">Jl. Ahmad Dahlan, Radio Dalam</a></p>
+															<p><a href="#">P : +62 812 34567</a></p>
+															<p><a href="#">F : +62 876 54321</a></p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-7">
+							<div class="vc_column-inner">
+								<div class="wpb_wrapper">
+									<div class="mkdf-elements-holder mkdf-one-column mkdf-responsive-mode-768">
+										<div class="mkdf-eh-item skrollable skrollable-before" data-item-class="mkdf-eh-custom-5312" data-769-1024="43px 32% 0 9%" data-681-768="43px 32% 0 9%" data-680="47px 7% 0 11%">
+											<div class="mkdf-eh-item-inner">
+												<div class="mkdf-eh-item-content mkdf-eh-custom-5312" style="padding: 43px 32% 0 5.5%">
+													<form action="" method="post" class="" novalidate="novalidate">
+														<span class="your-name">
+															<input type="text" name="your-name" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="Name">
+														</span><br/>
+														<span class="your-email">
+															<input type="email" name="your-email" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="Email">
+														</span><br/>
+														<span class="your-message">
+															<textarea name="your-message" cols="40" rows="1" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Message"></textarea>
+														</span>
+														<button type="submit" class="mkdf-btn mkdf-btn-medium mkdf-btn-outline ssom-btn-icon-1">
+														</button>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="vc_row wpb_row vc_row-fluid">
+						<div class="wpb_column vc_column_container vc_col-sm-12">
+							<div class="vc_column-inner">
+								<div class="wpb_wrapper">
+									<div class="mkdf-elements-holder mkdf-one-column mkdf-responsive-mode-768" style="margin-bottom:-40px;">
+										<div class="mkdf-eh-item skrollable skrollable-before" data-item-class="mkdf-eh-custom-3514" data-1367-1600="160px 2.2% 30px" data-1025-1366="160px 2.3% 30px" data-769-1024="160px 2.8% 30px" data-681-768="160px 3.8% 30px" data-680="120px 7.3% 30px">
+											<div class="mkdf-eh-item-inner">
+												<div class="mkdf-eh-item-content mkdf-eh-custom-3514" style="padding: 160px 1.6% 30px">
+													<div class="wpb_widgetised_column wpb_content_element">
+														<div class="wpb_wrapper">
+															<div class="widget widget_mkdf_instagram_widget">
+																<ul class="mkdf-instagram-feed clearfix mkdf-col-6 mkdf-instagram-gallery mkdf-normal-space">
+																	<li>
+																		<a href="#" target="_blank">
+																			<span class="mkdf-instagram-icon"><i class="social_instagram"></i></span>
+																			<img class="low_resolution" src="assets/projects/section4/1.jpg">
+																		</a>
+																	</li>
+																	<li>
+																		<a href="#" target="_blank">
+																			<span class="mkdf-instagram-icon"><i class="social_instagram"></i></span>
+																			<img class="low_resolution" src="assets/projects/section4/2.jpg">
+																		</a>
+																	</li>
+																	<li>
+																		<a href="#" target="_blank">
+																			<span class="mkdf-instagram-icon"><i class="social_instagram"></i></span>
+																			<img class="low_resolution" src="assets/projects/section4/3.jpg">
+																		</a>
+																	</li>
+																	<li>
+																		<a href="#" target="_blank">
+																			<span class="mkdf-instagram-icon"><i class="social_instagram"></i></span>
+																			<img class="low_resolution" src="assets/projects/section4/4.jpg">
+																		</a>
+																	</li>
+																	<li>
+																		<a href="#" target="_blank">
+																			<span class="mkdf-instagram-icon"><i class="social_instagram"></i></span>
+																			<img class="low_resolution" src="assets/projects/section4/5.jpg">
+																		</a>
+																	</li>
+																	<li>
+																		<a href="#" target="_blank">
+																			<span class="mkdf-instagram-icon"><i class="social_instagram"></i></span>
+																			<img class="low_resolution" src="assets/projects/section4/6.jpg">
+																		</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+									
+									</div>
+			</div>
+    </div>
+
+</div> <!-- close div.content_inner -->
+	</div>  <!-- close div.content -->
+
+<footer class="mkdf-page-footer ">
+	<div class="mkdf-footer-bottom-holder">
+		<div class="mkdf-footer-bottom-inner mkdf-grid">
+			<div class="mkdf-grid-row ">
+				<div class="mkdf-grid-col-12">
+					<div id="media_image-2" class="widget mkdf-footer-bottom-column-1 widget_media_image">
+						<a href="#">
+							<img src="assets/logo-white.png" class="image attachment-full size-full" alt="a" style="width: 20%;max-width: 20%; height: auto;">
+						</a>
+					</div>
+					<div class="widget mkdf-separator-widget">
+						<div class="mkdf-separator-holder clearfix mkdf-separator-center mkdf-separator-normal">
+							<div class="mkdf-separator" style="border-style: solid;margin-top: 13px"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+				</div> <!-- close div.mkdf-wrapper-inner  -->
+			</div>
+<script type="text/javascript" src="http://quart.mikado-themes.com/wp-content/cache/minify/0fef6.js"></script>
+<script type="text/javascript" src="https://toolbar.qodeinteractive.com/_toolbar/assets/js/jquery.lazy.min.js?ver=4.9.9"></script>
+<script type="text/javascript" src="https://toolbar.qodeinteractive.com/_toolbar/assets/js/rbt-modules.js?ver=4.9.9"></script>
+<script type="text/javascript" src="http://quart.mikado-themes.com/wp-content/cache/minify/63c68.js"></script>
+<script type="text/javascript" src="http://quart.mikado-themes.com/wp-content/cache/minify/63a69.js"></script>
+<script type="text/javascript" src="http://quart.mikado-themes.com/wp-content/cache/minify/1c4b9.js"></script>
+<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyCJoVEQmU99qRJghv4aQybojgnpCfiowuY&amp;ver=4.9.9"></script>
+<script type="text/javascript" src="http://quart.mikado-themes.com/wp-content/cache/minify/13638.js"></script>
+
+</body>
+</html>

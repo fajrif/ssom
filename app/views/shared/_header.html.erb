@@ -1,0 +1,110 @@
+<header id="header" class="all_colors header_color light_bg_color av_header_left av_header_sidebar av_conditional_sticky">
+<div id="header_main" class="container_wrap container_wrap_logo">
+	<div class="container av-logo-container">
+		<div class="inner-container">
+			<span class="logo">
+				<a href="<%= root_path %>">
+					<img src="<%= image_url('favicon/dap_192x192.png') %>" alt="D.A Photography">
+				</a>
+			</span>
+			<nav class="main_menu">
+				<div class="avia-menu av-main-nav-wrap">
+					<ul id="avia-menu" class="menu av-main-nav">
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level <%= current_path?(root_path) %>">
+							<a href="<%= root_path %>">
+								<span class="avia-bullet"></span>
+								<span class="avia-menu-text">Home</span>
+								<span class="avia-menu-subtext">Where the heart is</span>
+								<span class="avia-menu-fx">
+									<span class="avia-arrow-wrap">
+										<span class="avia-arrow"></span>
+									</span>
+								</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level <%= current_path?(portfolios_path) %>">
+							<a href="<%= portfolios_path %>">
+								<span class="avia-bullet"></span>
+								<span class="avia-menu-text">Portfolio</span>
+								<span class="avia-menu-subtext">Some work samples</span>
+								<span class="avia-menu-fx">
+									<span class="avia-arrow-wrap">
+										<span class="avia-arrow"></span>
+									</span>
+								</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level <%= current_path?(blogs_path) %>">
+							<a href="<%= blogs_path %>">
+								<span class="avia-bullet"></span>
+								<span class="avia-menu-text">Blog</span>
+								<span class="avia-menu-subtext">Exciting News</span>
+								<span class="avia-menu-fx">
+									<span class="avia-arrow-wrap">
+										<span class="avia-arrow"></span>
+									</span>
+								</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level <%= current_path?(about_path) %>">
+							<a href="<%= about_path %>">
+								<span class="avia-bullet"></span>
+								<span class="avia-menu-text">About</span>
+								<span class="avia-menu-subtext">Who I am</span>
+								<span class="avia-menu-fx">
+									<span class="avia-arrow-wrap">
+										<span class="avia-arrow"></span>
+									</span>
+								</span>
+							</a>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level <%= current_path?(contact_path) %>">
+							<a href="<%= contact_path %>">
+								<span class="avia-bullet"></span>
+								<span class="avia-menu-text">Contact</span>
+								<span class="avia-menu-subtext">Get in touch</span>
+								<span class="avia-menu-fx">
+									<span class="avia-arrow-wrap">
+										<span class="avia-arrow"></span>
+									</span>
+								</span>
+							</a>
+						</li>
+						<li class="av-burger-menu-main menu-item-avia-special">
+							<a href="#">
+								<span class="av-hamburger av-hamburger--spin av-js-hamburger">
+									<span class="av-hamburger-box">
+										<span class="av-hamburger-inner"></span>
+										<strong>Menu</strong>
+									</span>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="av-sidebar-social-container">
+				<ul class="noLightbox social_bookmarks icon_count_3">
+					<li class="social_bookmarks_twitter av-social-link-twitter social_icon_1">
+						<a target="_blank" href="http://twitter.com/" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" title="Twitter">
+							<span class="avia_hidden_link_text">Twitter</span>
+						</a>
+					</li>
+					<li class="social_bookmarks_dribbble av-social-link-dribbble social_icon_2">
+						<a target="_blank" href="http://dribbble.com/" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" title="Dribbble">
+							<span class="avia_hidden_link_text">Dribbble</span>
+						</a>
+					</li>
+					<li class="social_bookmarks_facebook av-social-link-facebook social_icon_3">
+						<a target="_blank" href="http://facebook.com/" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" title="Facebook">
+							<span class="avia_hidden_link_text">Facebook</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end container_wrap-->
+</header>
+<!-- end header -->

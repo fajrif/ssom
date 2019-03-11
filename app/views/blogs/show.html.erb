@@ -1,0 +1,37 @@
+<div class="container_wrap container_wrap_first main_color fullsize">
+   <div class="container template-blog template-single-blog ">
+      <main class="content units av-content-full alpha">
+         <article class="post-entry post-entry-type-standard post-loop-1 post-parity-odd post-entry-last single-big with-slider post type-post status-publish format-standard has-post-thumbnail hentry category-media category-news tag-food tag-fun tag-landscape tag-portrait">
+					 <div class="big-preview single-big"><a href="<%= @blog.image_url %>" title="<%= @blog.title %>" class="lightbox-added"><img width="845" height="423" src="<%= @blog.image_url %>" class="attachment-entry_without_sidebar size-entry_without_sidebar wp-post-image" alt="" srcset="<%= @blog.image_url %>" sizes="(max-width: 845px) 100vw, 845px"><span class="image-overlay overlay-type-image"><span class="image-overlay-inside"></span></span></a></div>
+            <div class="blog-meta"></div>
+            <div class="entry-content-wrapper clearfix standard-content">
+               <header class="entry-content-header">
+									<h1 class="post-title entry-title"><%= @blog.title %></h1>
+                  <span class="post-meta-infos"><time class="date-container minor-meta"><%= @blog.created_at.strftime("%B %-d, %Y") %></time></span>
+               </header>
+               <div class="entry-content">
+								  <%= raw @blog.description %>
+               </div>
+               <footer class="entry-footer">
+                  <div class="av-share-box">
+                     <h5 class="av-share-link-description">Share this entry</h5>
+                     <ul class="av-share-box-list noLightbox">
+											 <li class="av-share-link av-social-link-facebook"><a target="_blank" href="http://www.facebook.com/sharer.php?u=<%= blog_url(@blog) %>&amp;t=<%= URI.encode(@blog.title) %>" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" title="" data-avia-related-tooltip="Share on Facebook"><span class="avia_hidden_link_text">Share on Facebook</span></a></li>
+                        <li class="av-share-link av-social-link-twitter"><a target="_blank" href="https://twitter.com/share?text=<%= URI.encode(@blog.title) %>&amp;url=<%= blog_url(@blog) %>" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" title="" data-avia-related-tooltip="Share on Twitter"><span class="avia_hidden_link_text">Share on Twitter</span></a></li>
+                        <li class="av-share-link av-social-link-gplus"><a target="_blank" href="https://plus.google.com/share?url=<%= blog_url(@blog) %>" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" title="" data-avia-related-tooltip="Share on Google+"><span class="avia_hidden_link_text">Share on Google+</span></a></li>
+                        <li class="av-share-link av-social-link-pinterest"><a target="_blank" href="http://pinterest.com/pin/create/button/?url=<%= blog_url(@blog) %>&amp;description=<%= URI.encode(@blog.title) %>&amp;media=<%= @blog.image_url %>" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" title="" data-avia-related-tooltip="Share on Pinterest"><span class="avia_hidden_link_text">Share on Pinterest</span></a></li>
+                        <li class="av-share-link av-social-link-linkedin"><a target="_blank" href="http://linkedin.com/shareArticle?mini=true&amp;title=<%= URI.encode(@blog.title) %>&amp;url=<%= blog_url(@blog) %>" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" title="" data-avia-related-tooltip="Share on Linkedin"><span class="avia_hidden_link_text">Share on Linkedin</span></a></li>
+												<li class="av-share-link av-social-link-tumblr"><a target="_blank" href="http://www.tumblr.com/share/link?url=<%= blog_url(@blog) %>&amp;name=<%= URI.encode(@blog.title) %>&amp;description=<%= truncate_paragraph(@blog.description,200) %>" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" title="" data-avia-related-tooltip="Share on Tumblr"><span class="avia_hidden_link_text">Share on Tumblr</span></a></li>
+                        <li class="av-share-link av-social-link-vk"><a target="_blank" href="http://vk.com/share.php?url=<%= blog_url(@blog) %>" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" title="" data-avia-related-tooltip="Share on Vk"><span class="avia_hidden_link_text">Share on Vk</span></a></li>
+                        <li class="av-share-link av-social-link-reddit"><a target="_blank" href="http://reddit.com/submit?url=<%= blog_url(@blog) %>&amp;title=<%= URI.encode(@blog.title) %>" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" title="" data-avia-related-tooltip="Share on Reddit"><span class="avia_hidden_link_text">Share on Reddit</span></a></li>
+                        <li class="av-share-link av-social-link-mail"><a href="mailto:?subject=<%= URI.encode(@blog.title) %>&amp;body=<%= blog_url(@blog) %>" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" title="" data-avia-related-tooltip="Share by Mail"><span class="avia_hidden_link_text">Share by Mail</span></a></li>
+                     </ul>
+                  </div>
+               </footer>
+            </div>
+         </article>
+         <!--end content-->
+      </main>
+   </div>
+   <!--end container-->
+</div>

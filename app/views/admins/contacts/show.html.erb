@@ -1,0 +1,42 @@
+<div class="blogfullcontent">
+	<div class="blogtitle">
+		<h3>VIEW CONTACT</h3>
+	</div>
+	<table class="table table-bordered table-striped">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th><%= @contact.id %></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><b>Name</b></td>
+				<td><%= @contact.name %></td>
+			</tr>
+			<tr>
+				<td><b>Email Address</b></td>
+				<td><a href="mailto:<%= @contact.email %>"> <%= @contact.email %></a></td>
+			</tr>
+			<tr>
+				<td><b>Subject</b></td>
+				<td><%= @contact.subject %></td>
+			</tr>
+			<tr>
+				<td colspan="2"><b>Message</b></td>
+			</tr>
+			<tr>
+				<td colspan="2"><%= @contact.message %></td>
+			</tr>
+			<tr>
+				<td><b>Created at</b></td>
+				<td><%= @contact.created_at.to_s(:long) %></td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="text-center">
+		<%= link_to admins_contact_path(@contact), :data => { :confirm => 'Are you sure?' }, :method => :delete, :class => "btn btn-danger" do %>
+			Destroy
+		<% end %>
+	</div>
+</div>

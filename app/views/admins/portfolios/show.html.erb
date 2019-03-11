@@ -1,0 +1,35 @@
+<% title "Display portfolio (#{@portfolio.id})" %>
+
+<h3>Portfolio details</h3>
+<table class="table">
+  <tr>
+    <td><b>ID</b></td>
+    <td><%= @portfolio.id %></td>
+  </tr>
+  <tr>
+    <td><b>Title</b></td>
+    <td><%= @portfolio.title %></td>
+  </tr>
+  <tr>
+    <td><b>Category ID</b></td>
+    <td><%= "#{@portfolio.category.id} - #{@portfolio.category.name}" %></td>
+  </tr>
+  <tr>
+    <td><b>Total Pictures</b></td>
+    <td><%= @portfolio.pictures.count %></td>
+  </tr>
+  <tr>
+    <td><b>History</b></td>
+    <td><%= @portfolio.history %></td>
+  </tr>
+  <tr>
+    <td><b>Description</b></td>
+    <td><%= @portfolio.description %></td>
+  </tr>
+</table>
+
+<div class="form-actions">
+  <%= link_to 'Edit', edit_admins_portfolio_path(@portfolio), :class => 'btn btn-warning' %>
+  <%= link_to 'Destroy', admins_portfolio_path(@portfolio), :confirm => 'Are you sure?', :method => :delete, :class => 'btn btn-danger' %>
+  <%= link_to 'View All', admins_portfolios_path, :class => 'btn' %>
+</div>

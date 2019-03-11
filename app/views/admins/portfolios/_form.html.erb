@@ -1,0 +1,21 @@
+<% content_for :sidebar do %>
+  <%= render "admins/shared/error_messages", :target => @portfolio %>
+<% end %>
+
+<%= simple_form_for [:admins, @portfolio], :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.error_notification %>
+  <fieldset>
+    <%= f.input :title %>
+    <%= f.input :history, as: :text %>
+    <%= f.input :description, as: :text %>
+  </fieldset>
+  <%= f.error :base %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn btn-primary' %>
+    <% unless @portfolio.new_record? %>
+    <%= link_to "Cancel", admins_portfolio_path(@portfolio), :class => 'btn' %>
+    <% else %>
+    <%= link_to "Cancel", admins_portfolios_path, :class => 'btn' %>
+    <% end %>
+  </div>
+<% end %>

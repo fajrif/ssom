@@ -1,0 +1,58 @@
+.DS_Store
+.dotest
+config/database.yml
+db/*.sql
+log/*.log
+.env
+.ruby-version
+.ruby-gemset
+.bundle/
+pkg/
+/tmp
+#*/devise.rb
+#config/initializers/devise.rb
+public/uploads/**/*.*
+public/spree/products/*
+spec/dummy/db/*.sqlite3
+spec/dummy/db/*.sqlite3-journal
+spec/dummy/log/*.log
+spec/dummy/tmp/
+spec/dummy/public/spree
+spec/dummy/.sass-cache
+
+capybara-*.html
+.rspec
+/log
+/tmp
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/public/system
+/coverage/
+/spec/tmp
+**.orig
+rerun.txt
+pickle-email-*.html
+
+# TODO Comment out these rules if you are OK with secrets being uploaded to the repo
+#config/initializers/secret_token.rb
+#config/initializers/secrets.yml
+#config/secrets.yml
+## Environment normalisation:
+/.bundle
+/vendor/bundle
+
+# if using bower-rails ignore default bower_components path bower.json files
+/vendor/assets/bower_components
+*.bowerrc
+bower.json
+
+# Ignore pow environment settings
+.powenv
+#config/database.yml
+#config/elasticsearch.yml
+
+# if starting redis-server on local machine
+*.rdb
+
+# mongodb indexes
+/dump/

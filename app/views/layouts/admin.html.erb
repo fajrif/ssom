@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title><%= content_for?(:title) ? "#{configatron.site_name} - #{yield(:title)}" : configatron.site_name %></title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    <%= stylesheet_link_tag 'admin', :media => "all" %>
+    <%= javascript_include_tag 'admin' %>
+    <%= csrf_meta_tag %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.links').tooltip();
+      });
+    </script>
+    <%= yield :head %>
+  </head>
+  <body>
+    <div id="modal-form" class="modal hide fade">
+    </div>
+    <%= render :partial => 'admins/shared/links' if admin_signed_in? %>
+    <div class="container-fluid">
+      <div class="content">
+        <div class="row">
+          <div id="main" class="span9">
+            <h2><%= yield :title %></h2>
+            <%= yield %>
+          </div>
+					<% if content_for? :sidebar %>
+          <div class="span1">&nbsp;</div>
+          <div id="sidebar" class="span3">
+            <%= yield :sidebar %>
+          </div>
+					<% end %>
+        </div>
+      </div>
+    </div>
+    <%= yield :scripts %>
+  </body>
+</html>

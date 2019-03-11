@@ -1,0 +1,29 @@
+<p><small><%= "Display total #{@admins.count} admins" %></small></p>
+
+<table class="table table-striped table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th><%= sortable "email" %></th>
+      <th><%= sortable "sign_in_count", "login count" %></th>
+      <th><%= sortable "current_sign_in_at" %></th>
+      <th><%= sortable "last_sign_in_at" %></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for admin in @admins %>
+      <tr>
+        <td><%= admin.email %></td>
+        <td><%= admin.sign_in_count %></td>
+        <td><%= admin.current_sign_in_at.to_s(:long) unless admin.current_sign_in_at.blank? %></td>
+        <td><%= admin.last_sign_in_at.to_s(:long) unless admin.last_sign_in_at.blank? %></td>
+        <td class="actions">
+          <%= link_to 'Show', admins_admin_path(admin), :class => 'btn btn-mini btn-info' %>
+          <%= link_to 'Destroy', admins_admin_path(admin), :confirm => 'Are you sure?', :method => :delete, :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= paginate @admins %>

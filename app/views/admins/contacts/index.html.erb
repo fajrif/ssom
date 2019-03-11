@@ -1,0 +1,12 @@
+<div class="blogfullcontent">
+	<div class="blogtitle">
+		<h3>Manage Contacts</h3>
+		<span><%= "Display total #{@contacts.count} contacts" %></span>
+	</div>
+	<%= flash_message.html_safe %>
+	<% unless @contacts.empty? %>
+		<%= render 'table' %>
+	<% else %>
+		<h4 class="text-center">Empty Data</h4>
+	<% end %>
+</div>

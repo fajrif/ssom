@@ -1,0 +1,23 @@
+<% title "Display banner (#{@banner.id})" %>
+
+<h3>Banner details</h3>
+<table class="table">
+  <tr>
+    <td><b>ID</b></td>
+    <td><%= @banner.id %></td>
+  </tr>
+  <tr>
+    <td><b>Title</b></td>
+    <td><%= @banner.title %></td>
+  </tr>
+  <tr>
+    <td><b>Image</b></td>
+    <td><%= image_tag @banner.image_url %></td>
+  </tr>
+</table>
+
+<div class="form-actions">
+  <%= link_to 'Edit', edit_admins_banner_path(@banner), :class => 'btn btn-warning' %>
+  <%= link_to 'Destroy', admins_banner_path(@banner), :confirm => 'Are you sure?', :method => :delete, :class => 'btn btn-danger' %>
+  <%= link_to 'View All', admins_banners_path, :class => 'btn' %>
+</div>

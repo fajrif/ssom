@@ -1,0 +1,31 @@
+<% title "Display picture (#{@picture.id})" %>
+
+<h3>Picture details</h3>
+<table class="table">
+  <tr>
+    <td><b>ID</b></td>
+    <td><%= @picture.id %></td>
+  </tr>
+  <tr>
+    <td><b>Title</b></td>
+    <td><%= @picture.title %></td>
+  </tr>
+  <tr>
+    <td><b>Portfolio ID</b></td>
+    <td><%= "#{@picture.portfolio.id} - #{@picture.portfolio.title}" %></td>
+  </tr>
+  <tr>
+    <td><b>Image</b></td>
+    <td><%= image_tag @picture.image_url %></td>
+  </tr>
+  <tr>
+    <td><b>Description</b></td>
+    <td><%= @picture.description %></td>
+  </tr>
+</table>
+
+<div class="form-actions">
+  <%= link_to 'Edit', edit_admins_picture_path(@picture), :class => 'btn btn-warning' %>
+  <%= link_to 'Destroy', admins_picture_path(@picture), :confirm => 'Are you sure?', :method => :delete, :class => 'btn btn-danger' %>
+  <%= link_to 'View All', admins_pictures_path, :class => 'btn' %>
+</div>

@@ -1,0 +1,48 @@
+D.A Photography:
+* Admin
+
+* Banner
+		:title
+		:caption
+		:image
+
+* Portfolio
+    :title
+    :history
+    :description
+			has_many :pictures
+
+* Picture
+    :title
+    :description
+    :image
+			belongs_to :portfolio
+
+* Blog
+		:title
+		:image
+		:description
+			belongs_to :category
+
+* Category
+		:name
+			has_many :blogs
+
+* Contact
+		:name
+		:email
+		:subject
+		:message
+
+* Owner [Static Configuration]
+		:name
+		:photo
+		:email
+		:phone
+		:address
+		:about
+		:twitter
+		:facebook
+		:pinterest
+		:longitude
+		:latitude

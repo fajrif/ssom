@@ -1,0 +1,69 @@
+<div id="av-layout-grid-1" class="av-layout-grid-container entry-content-wrapper main_color av-flex-cells avia-builder-el-0 el_before_av_masonry_gallery avia-builder-el-first container_wrap fullsize">
+   <div class="flex_cell no_margin av_two_fifth avia-builder-el-1 el_before_av_cell_two_fifth avia-builder-el-first" style="vertical-align:top; padding:30px;">
+      <div class="flex_cell_inner">
+         <div style="padding-bottom:10px;" class="av-special-heading av-special-heading-h3 avia-builder-el-2 el_before_av_textblock  avia-builder-el-first">
+					 <h3 class="av-special-heading-tag " itemprop="headline"><%= @portfolio.title %></h3>
+            <div class="special-heading-border">
+               <div class="special-heading-inner-border"></div>
+            </div>
+         </div>
+         <section class="av_textblock_section ">
+            <div class="avia_textblock" itemprop="text">
+               <p><%= @portfolio.history %></p>
+            </div>
+         </section>
+      </div>
+   </div>
+   <div class="flex_cell no_margin av_two_fifth avia-builder-el-4 el_after_av_cell_two_fifth el_before_av_cell_one_fifth" style="vertical-align:top;padding:30px;background-color:#f7f7f7;">
+      <div class="flex_cell_inner">
+         <div style="padding-bottom:10px; " class="av-special-heading av-special-heading-h3 avia-builder-el-5  el_before_av_textblock  avia-builder-el-first   ">
+            <h3 class="av-special-heading-tag " itemprop="headline">Project description</h3>
+            <div class="special-heading-border">
+               <div class="special-heading-inner-border"></div>
+            </div>
+         </div>
+         <section class="av_textblock_section">
+            <div class="avia_textblock  " itemprop="text">
+               <p><%= @portfolio.description %></p>
+            </div>
+         </section>
+      </div>
+   </div>
+   <div class="flex_cell no_margin av_one_fifth  avia-builder-el-7  el_after_av_cell_two_fifth  avia-builder-el-last   " style="vertical-align:middle; padding:30px; background-color:#1F675F; ">
+      <div class="flex_cell_inner">
+         <div class="avia-animated-number av-force-default-color  avia-color-font-light  avia-builder-el-8  avia-builder-el-no-sibling  avia_animate_when_visible avia_sc_animated_number_active number_prepared avia_start_animation avia_animation_done">
+					 <strong class="heading avia-animated-number-title"><span class="avia-single-number __av-single-number"><%= @portfolio.pictures.count %></span></strong>
+            <div class="avia-animated-number-content">
+               <p>Pictures</p>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="main_color avia-builder-el-9 el_after_av_layout_row  avia-builder-el-last masonry-not-first container_wrap fullsize">
+   <div id="av-masonry-1" class="av-masonry noHover av-fixed-size av-large-gap av-hover-overlay- av-masonry-col-3 av-caption-on-hover av-caption-style- av-masonry-gallery avia_sortable_active">
+      <div class="av-masonry-container isotope">
+         <div class="av-masonry-entry isotope-item av-masonry-item-no-image av-masonry-item-loaded"></div>
+				 <% @portfolio.pictures.each do |picture| %>
+					 <a href="<%= picture.image_url %>" class="av-masonry-entry isotope-item attachment type-attachment status-inherit hentry av-masonry-item-with-image av-<%= picture.orientation %>-img lightbox-added av-masonry-item-loaded" title="<%= picture.title %>">
+							<div class="av-inner-masonry-sizer"></div>
+							<figure class="av-inner-masonry main_color">
+								 <div class="av-masonry-outerimage-container">
+										<div class="av-masonry-image-container" style="background-image: url(<%= picture.image_url %>);"></div>
+								 </div>
+								 <figcaption class="av-inner-masonry-content site-background">
+										<div class="av-inner-masonry-content-pos">
+											 <div class="av-inner-masonry-content-pos-content">
+													<div class="avia-arrow"></div>
+													<h3 class="av-masonry-entry-title entry-title" itemprop="headline"><%= picture.title %></h3>
+													<div class="av-masonry-entry-content entry-content" itemprop="text"><%= picture.description %></div>
+											 </div>
+										</div>
+								 </figcaption>
+							</figure>
+					 </a>
+					 <!--end av-masonry entry-->
+				 <% end %>
+      </div>
+   </div>
+</div>

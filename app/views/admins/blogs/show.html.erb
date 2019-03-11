@@ -1,0 +1,27 @@
+<% title "Display blog (#{@blog.id})" %>
+
+<h3>Blog details</h3>
+<table class="table">
+  <tr>
+    <td><b>ID</b></td>
+    <td><%= @blog.id %></td>
+  </tr>
+  <tr>
+    <td><b>Title</b></td>
+    <td><%= @blog.title %></td>
+  </tr>
+  <tr>
+    <td><b>Image</b></td>
+    <td><%= image_tag @blog.image_url %></td>
+  </tr>
+  <tr>
+    <td><b>Description</b></td>
+    <td><%= @blog.description %></td>
+  </tr>
+</table>
+
+<div class="form-actions">
+  <%= link_to 'Edit', edit_admins_blog_path(@blog), :class => 'btn btn-warning' %>
+  <%= link_to 'Destroy', admins_blog_path(@blog), :confirm => 'Are you sure?', :method => :delete, :class => 'btn btn-danger' %>
+  <%= link_to 'View All', admins_blogs_path, :class => 'btn' %>
+</div>

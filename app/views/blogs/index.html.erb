@@ -1,0 +1,30 @@
+<div class="main_color   avia-builder-el-0  avia-builder-el-no-sibling  avia-no-border-styling masonry-not-first container_wrap fullsize">
+   <div class="av-masonry noHover av-fixed-size av-large-gap av-hover-overlay-active av-masonry-col-flexible av-caption-always">
+      <div class="av-masonry-sort main_color av-sort-yes-tax">
+         <div class="av-current-sort-title"><span class="inner_sort_button"><span>Blog's</span></span></div>
+      </div>
+      <div class="av-masonry-container isotope">
+				<% @blogs.each_with_index do |blog,index| %>
+					<a href="<%= blog_path(blog) %>" class="av-masonry-entry isotope-item post type-post status-publish format-standard has-post-thumbnail hentry av-masonry-item-with-image <%= index == 0 ? 'av-portrait-img av-landscape-img' : '' %> av-masonry-item-loaded" title="<%= blog.title %>">
+            <div class="av-inner-masonry-sizer"></div>
+            <figure class="av-inner-masonry main_color">
+               <div class="av-masonry-outerimage-container">
+								 <div class="av-masonry-image-container" style="background-image: url(<%= blog.image_url %>);"></div>
+               </div>
+               <figcaption class="av-inner-masonry-content site-background">
+                  <div class="av-inner-masonry-content-pos">
+                     <div class="av-inner-masonry-content-pos-content">
+                        <div class="avia-arrow"></div>
+												<h3 class="av-masonry-entry-title entry-title"><%= blog.title %></h3>
+                        <div class="av-masonry-entry-content entry-content"><%= truncate_paragraph(blog.description,80) %></div>
+                        <span class="av-masonry-date meta-color"><%= blog.created_at.strftime("%B %-d, %Y") %></span>
+                     </div>
+                  </div>
+               </figcaption>
+            </figure>
+         </a>
+         <!--end av-masonry entry-->
+			 <% end %>
+		</div>
+ </div>
+</div>
