@@ -3,7 +3,6 @@ class CreateTableContacts < ActiveRecord::Migration
     create_table :contacts do |t|
       t.string   :name, null: false, default: ""
       t.string   :email, null: false, default: ""
-      t.string   :subject, null: false, default: ""
       t.text     :message, null: false
       t.timestamps null: false
     end

@@ -51,6 +51,12 @@ a, a:hover, a:focus {
 .btnStyle:hover {
   background: #fe2036;
 }
+.btnStyle.btnContact:hover {
+  background: black;
+}
+.btnStyle.btnContact:hover > span {
+  color: white;
+}
 .btnStyle img {
     max-width: 40px;
     object-fit: cover;

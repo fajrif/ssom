@@ -90,7 +90,7 @@
       <div class="row no-gutters">
       <div class="col-md-5 ">
         <div class="houseimg">
-					<img src="<%= image_url('house.jpg') %>" alt="house">
+					<img src="<%= image_url('team_bran.png') %>" id="the-team-pic">
         </div>
       </div>
       <div class="col-md-7 ">
@@ -161,3 +161,17 @@
 </div>
 </section>
 
+<%= content_for :tail do %>
+	<script>
+		$(document).ready(function() {
+			$('#collapseOne').on('show.bs.collapse', function () {
+				$("#the-team-pic").attr('src','<%= image_url("team_bran.png") %>');
+			});
+
+			$('#collapseTwo').on('show.bs.collapse', function () {
+				$("#the-team-pic").attr('src','<%= image_url("team_ovan.png") %>');
+			});
+
+		});
+	</script>
+<% end %>

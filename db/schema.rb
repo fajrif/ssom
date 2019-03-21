@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190220044107) do
+ActiveRecord::Schema.define(version: 20190206105606) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -39,19 +39,6 @@ ActiveRecord::Schema.define(version: 20190220044107) do
     t.datetime "updated_at",              null: false
   end
 
-  create_table "blogs", force: :cascade do |t|
-    t.string   "title",       default: "", null: false
-    t.string   "description", default: "", null: false
-    t.string   "image",       default: "", null: false
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
-    t.string   "slug"
-    t.string   "orientation"
-  end
-
-  add_index "blogs", ["slug"], name: "index_blogs_on_slug", unique: true
-  add_index "blogs", ["title"], name: "index_blogs_on_title", unique: true
-
   create_table "categories", force: :cascade do |t|
     t.string   "name",       default: "", null: false
     t.datetime "created_at",              null: false
@@ -63,7 +50,6 @@ ActiveRecord::Schema.define(version: 20190220044107) do
   create_table "contacts", force: :cascade do |t|
     t.string   "name",       default: "", null: false
     t.string   "email",      default: "", null: false
-    t.string   "subject",    default: "", null: false
     t.text     "message",                 null: false
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
@@ -86,27 +72,20 @@ ActiveRecord::Schema.define(version: 20190220044107) do
   add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type"
 
   create_table "pictures", force: :cascade do |t|
-    t.string   "title",        default: "", null: false
-    t.string   "description",  default: "", null: false
     t.string   "image",        default: "", null: false
     t.integer  "portfolio_id",              null: false
+    t.integer  "category_id",               null: false
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
-    t.string   "slug"
-    t.string   "orientation"
   end
-
-  add_index "pictures", ["slug"], name: "index_pictures_on_slug", unique: true
-  add_index "pictures", ["title"], name: "index_pictures_on_title"
 
   create_table "portfolios", force: :cascade do |t|
     t.string   "title",       default: "", null: false
-    t.string   "history",     default: "", null: false
+    t.string   "client_name", default: "", null: false
     t.string   "description", default: "", null: false
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
     t.string   "slug"
-    t.integer  "category_id"
   end
 
   add_index "portfolios", ["slug"], name: "index_portfolios_on_slug", unique: true

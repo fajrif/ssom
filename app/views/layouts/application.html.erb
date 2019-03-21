@@ -2,7 +2,7 @@
 <html lang="en-US" class="no-js">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 	<title><%= content_for?(:title) ? "#{configatron.site_name} - #{yield(:title)}" : configatron.site_name %></title>
 	<!-- Favicon icon -->
@@ -20,5 +20,6 @@
 	<%= yield %>
 	<%= render "shared/footer" %>
 	<%= javascript_include_tag :application %>
+	<%= yield :tail %>
 </body>
 </html>
