@@ -15,6 +15,9 @@
 body {
   font-family: 'Bebas-Regular', sans-serif;
 }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+ line-height: 1;
+}
 ul {
   list-style-type: none;
   padding: 0px;
@@ -240,7 +243,7 @@ a, a:hover, a:focus {
 }
 .overlayInfo > p {
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Heebo', sans-serif;
     background-color: #000;
      padding: 4px 10px;
 }
@@ -597,10 +600,10 @@ a, a:hover, a:focus {
 .portfolioLinks > ul > li > a {
     text-decoration: none;
     color: #000;
-    font-family: 'Open Sans', sans-serif;
-    border-bottom: 2px solid transparent;
+    font-family: 'Heebo', sans-serif;
+    border-bottom: 1px solid transparent;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 100;
 }
 .portfolioLinks > ul > li > a:hover{
 	border-color: #000;
@@ -672,7 +675,7 @@ a, a:hover, a:focus {
 .desc h6:nth-child(1) {
 	color:white;
 	background-color:black;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Heebo', sans-serif;
 	font-size: 11px;
 	padding:10px 30px 10px 10px;
 	display:inline-block;
@@ -767,7 +770,7 @@ a, a:hover, a:focus {
 .year span {
   padding: 2px 20px;
   font-size: 21px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Heebo', sans-serif;
   letter-spacing: -2px;
 }
 .yearImg {
@@ -786,9 +789,9 @@ a, a:hover, a:focus {
   word-spacing: -4px;
 }
 .yeartext h6 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Heebo';
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 100;
 }
 .yearcol2 {
 	display: flex;
@@ -798,7 +801,7 @@ a, a:hover, a:focus {
 .yearcol2 span {
   padding: 2px 20px 2px 20px;
   font-size: 21px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Heebo', sans-serif;
   letter-spacing: -2px;
 }
 
@@ -846,9 +849,9 @@ a, a:hover, a:focus {
   content:"\f067";
 }
 .card-body h6 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 100;
     padding-left: 60px;
     margin-top: 10px;
     margin-bottom: 0;
@@ -880,12 +883,12 @@ a, a:hover, a:focus {
     margin: 200px 0 80px;
 }
 .swiperContent > p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-size: 16px;
     color: #000;
 }
 .swiperContent > ul {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Heebo', sans-serif;
 }
 .swiperRow .swiper-wrapper, .swiperRow .swiper-slide {
     height: auto;
@@ -964,7 +967,7 @@ a, a:hover, a:focus {
      margin-top: 8px;
  }
 .btnStyle span {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Heebo', sans-serif;
     color:black;
 }
 .footerimgLeft img {
