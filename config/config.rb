@@ -4,17 +4,17 @@
 
 unless Rails.env.production?
   # only for :development & :test environment
-	configatron.site_name = "D.A Photography"
-	configatron.site_name_mobile = "D.A Photography"
+	configatron.site_name = "SSOM Studio"
+	configatron.site_name_mobile = "SSOM Studio"
   configatron.site_url = "localhost:3000"
 
   configatron.smtp_name = "smtp.gmail.com"
   configatron.smtp_port = 587
 
-	configatron.company_name = "D.A Photography"
+	configatron.company_name = "SSOM Studio"
 	configatron.admin_email = "admin@daphotography.com"
 
-	configatron.support_name = "D.A Photography"
+	configatron.support_name = "SSOM Studio"
 	configatron.support_email = "support@daphotography.com"
 
 	configatron.no_reply_email = "playayodev@gmail.com"
@@ -24,17 +24,17 @@ unless Rails.env.production?
 
 else
   # this is for production
-	configatron.site_name = "D.A Photography"
-	configatron.site_name_mobile = "D.A Photography"
+	configatron.site_name = "SSOM Studio"
+	configatron.site_name_mobile = "SSOM Studio"
   configatron.site_url = "localhost:3000"
 
   configatron.smtp_name = "smtp.gmail.com"
   configatron.smtp_port = 587
 
-	configatron.company_name = "D.A Photography"
+	configatron.company_name = "SSOM Studio"
 	configatron.admin_email = "admin@daphotography.com"
 
-	configatron.support_name = "D.A Photography"
+	configatron.support_name = "SSOM Studio"
 	configatron.support_email = "support@daphotography.com"
 
 	configatron.no_reply_email = "playayodev@gmail.com"
@@ -43,3 +43,5 @@ else
   configatron.site_env_note = "Production Server"
 
 end
+
+configatron.instagram_link = "https://www.instagram.com/ssomstudio/"

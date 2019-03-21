@@ -8,17 +8,13 @@ Rails.application.routes.draw do
     root :to => 'dashboard#index'
     resources :admins
     resources :banners
-    resources :categories
     resources :portfolios
-    resources :pictures
-    resources :blogs
 		resources :contacts, :only => [:index, :show, :destroy]
   end
 
-	resources :blogs, :only => [:index, :show]
-	resources :portfolios, :only => [:index, :show]
-  resource :contact, :only => [:show, :create]
+  resource :contact, :only => [:create]
 
+	match 'projects', to: 'home#projects', via: :get
 	match 'about', to: 'home#about', via: :get
   root :to => "home#index"
 

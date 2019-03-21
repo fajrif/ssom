@@ -32,6 +32,14 @@ module ApplicationHelper
 		request.path == root_path
 	end
 
+	def is_aboutpage?
+		request.path == about_path
+	end
+
+	def is_projectpage?
+		request.path == projects_path
+	end
+
 	def truncate_paragraph(desc, length=0)
 		if length > 0
 			truncate(Nokogiri::HTML.parse(desc).css('p')[0].text, length: length, omission: "...")

@@ -8,4 +8,8 @@ class HomeController < ApplicationController
 		# get public about
   end
 
+  def projects
+		# get public about
+  end
+
 end
