@@ -852,7 +852,7 @@ a, a:hover, a:focus {
     font-family: 'Heebo', sans-serif;
     font-size: 16px;
     font-weight: 100;
-    padding-left: 60px;
+    padding-left: 90px;
     margin-top: 10px;
     margin-bottom: 0;
 }
@@ -875,7 +875,8 @@ a, a:hover, a:focus {
   padding-right: 64px;
 }
 .aboutbannerimg {
- margin-right: 100px;
+ margin-right: 110px;
+ text-align: right;
 }
 /*ABOUT US SECTION ENDS*/
 /********* swiper-slider ************/
