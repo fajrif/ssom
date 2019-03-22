@@ -7,7 +7,7 @@
 					<div class="form-row">
 							<div class="col-md-6 col-sm-6">
 							<div class="colimg1 overlayHover">
-							<img src="<%= @pictures[0].image_url %>" alt="..." />
+							<a href="<%= project_path(@pictures[0].portfolio) %>"><img src="<%= @pictures[0].image_url %>" alt="..." /></a>
 							<div class="ImgOverlay">
 								<div class="overlayInfo">
 									<h2><%= @pictures[0].portfolio.title %></h2>
@@ -18,7 +18,7 @@
 						</div>
 					<div class="col-md-6 col-sm-6">
 					<div class="smallerimg overlayHover">
-						<img src="<%= @pictures[1].image_url %>" alt="..." />
+						<a href="<%= project_path(@pictures[1].portfolio) %>"><img src="<%= @pictures[1].image_url %>" alt="..." /></a>
 						<div class="ImgOverlay">
 							<div class="overlayInfo">
 								<h2><%= @pictures[1].portfolio.title %></h2>
@@ -27,7 +27,7 @@
 						</div>
 					</div>
 					<div class="smallerimg overlayHover">
-						<img src="<%= @pictures[2].image_url %>" alt="..." />
+						<a href="<%= project_path(@pictures[2].portfolio) %>"><img src="<%= @pictures[2].image_url %>" alt="..." /></a>
 						<div class="ImgOverlay">
 							<div class="overlayInfo">
 								<h2><%= @pictures[2].portfolio.title %></h2>
@@ -41,21 +41,21 @@
 		</div>
 		<div class="col-md-6 ">
 				<div class="biggerimg1 overlayHover">
-					<img src="<%= @pictures[3].image_url %>" alt="..." />
-				<div class="ImgOverlay">
-					<div class="overlayInfo">
-							<h2><%= @pictures[3].portfolio.title %></h2>
-							<p><%= @pictures[3].category.name %></p>
+					<a href="<%= project_path(@pictures[3].portfolio) %>"><img src="<%= @pictures[3].image_url %>" alt="..." /></a>
+					<div class="ImgOverlay">
+						<div class="overlayInfo">
+								<h2><%= @pictures[3].portfolio.title %></h2>
+								<p><%= @pictures[3].category.name %></p>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 		</div>
 	<div class=imgsection>
 		<div class="form-row">
 			<div class="col-md-6 ">
 				<div class="biggerimg1 overlayHover">
-						<img src="<%= @pictures[4].image_url %>" alt="..." />
+						<a href="<%= project_path(@pictures[4].portfolio) %>"><img src="<%= @pictures[4].image_url %>" alt="..." /></a>
 						<div class="ImgOverlay">
 							<div class="overlayInfo">
 								<h2><%= @pictures[4].portfolio.title %></h2>
@@ -69,7 +69,7 @@
 					<div class="form-row ">
 							<div class="col-md-6 col-sm-6">
 							<div class="colimg1 overlayHover">
-							<img src="<%= @pictures[5].image_url %>" alt="..." />
+							<a href="<%= project_path(@pictures[5].portfolio) %>"><img src="<%= @pictures[5].image_url %>" alt="..." /></a>
 							<div class="ImgOverlay">
 								<div class="overlayInfo">
 									<h2><%= @pictures[5].portfolio.title %></h2>
@@ -80,7 +80,7 @@
 						</div>
 					<div class="col-md-6  col-sm-6">
 					<div class="smallerimg overlayHover">
-						<img src="<%= @pictures[6].image_url %>" alt="..." />
+						<a href="<%= project_path(@pictures[6].portfolio) %>"><img src="<%= @pictures[6].image_url %>" alt="..." /></a>
 						<div class="ImgOverlay">
 							<div class="overlayInfo">
 								<h2><%= @pictures[6].portfolio.title %></h2>
@@ -89,7 +89,7 @@
 						</div>
 					</div>
 					<div class="smallerimg overlayHover">
-						<img src="<%= @pictures[7].image_url %>" alt="..." />
+						<a href="<%= project_path(@pictures[7].portfolio) %>"><img src="<%= @pictures[7].image_url %>" alt="..." /></a>
 						<div class="ImgOverlay">
 							<div class="overlayInfo">
 								<h2><%= @pictures[7].portfolio.title %></h2>

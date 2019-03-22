@@ -35,6 +35,10 @@ a, a:hover, a:focus {
   color: inherit;
   outline: none;
 }
+.btn {
+	line-height: 3rem;
+	font-family: 'Heebo'
+}
 .btn.focus, .btn:focus {
     box-shadow: none;
 }
@@ -885,6 +889,10 @@ a, a:hover, a:focus {
  margin-right: 110px;
  text-align: right;
 }
+.container.tagline {
+ margin-left: 150px;
+ padding-right: 80px;
+}
 /*ABOUT US SECTION ENDS*/
 /********* swiper-slider ************/
 .swiperSlider {
@@ -1079,6 +1087,10 @@ a, a:hover, a:focus {
 
 
 @media (max-width: 991px){
+	.container.tagline {
+	 margin-left: auto;
+	 padding-right: 15px;
+	}
 
 
 .stickyHeader .mainLogo > a {
