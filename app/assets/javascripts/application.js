@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery-3.2.1.slim.min.js
 //= require popper.min.js
 //= require bootstrap.min.js
 //= require slick.min.js

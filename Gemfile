@@ -62,6 +62,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'rspec-rails', '3.4.1'
 	gem 'ffaker'
+	gem 'rb-readline'
 end
 
 group :development do

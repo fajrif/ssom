@@ -6,5 +6,6 @@
 	*= require bootstrap.min.css
 	*= require slick.css
 	*= require slick-theme.css
+	*= require swiper.min.css
 	*= require style.css
 */

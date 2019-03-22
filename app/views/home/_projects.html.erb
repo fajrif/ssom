@@ -1,110 +1,107 @@
-	<section>
-		<div class="container-fluid ">
-			<div class="form-row ">
-			<!-- 	Three images collage column starts -->
-				<div class="col-md-6 col-sm-12 ">
-					<div class="imgsizing ">
-						<div class="form-row">
-								<div class="col-md-6 col-sm-6">
-								<div class="colimg1 overlayHover">
-									<img src="<%= image_url('colimg1.jpg') %>" alt="..." />
-								<div class="ImgOverlay">
-									<div class="overlayInfo">
-										<h2>BRUNHOUSE</h2>
-										<p>Private residental</p>
-									</div>
-								</div>
-								</div>
-							</div>
-						<div class="col-md-6 col-sm-6"">
-						<div class="smallerimg overlayHover">
-							<img src="<%= image_url('img3.jpg') %>" alt="..." />
+<section>
+	<div class="container-fluid ">
+		<div class="form-row ">
+		<!-- 	Three images collage column starts -->
+			<div class="col-md-6 col-sm-12 ">
+				<div class="imgsizing ">
+					<div class="form-row">
+							<div class="col-md-6 col-sm-6">
+							<div class="colimg1 overlayHover">
+							<img src="<%= @pictures[0].image_url %>" alt="..." />
 							<div class="ImgOverlay">
 								<div class="overlayInfo">
-									<h2>BRUNHOUSE</h2>
-									<p>Private residental</p>
+									<h2><%= @pictures[0].portfolio.title %></h2>
+									<p><%= @pictures[0].category.name %></p>
 								</div>
 							</div>
-						</div>
-						<div class="smallerimg overlayHover">
-							<img src="<%= image_url('img2.jpg') %>" alt="..." />
-							<div class="ImgOverlay">
-								<div class="overlayInfo">
-									<h2>BRUNHOUSE</h2>
-									<p>Private residental</p>
-								</div>
 							</div>
 						</div>
-							
+					<div class="col-md-6 col-sm-6">
+					<div class="smallerimg overlayHover">
+						<img src="<%= @pictures[1].image_url %>" alt="..." />
+						<div class="ImgOverlay">
+							<div class="overlayInfo">
+								<h2><%= @pictures[1].portfolio.title %></h2>
+								<p><%= @pictures[1].category.name %></p>
+							</div>
+						</div>
+					</div>
+					<div class="smallerimg overlayHover">
+						<img src="<%= @pictures[2].image_url %>" alt="..." />
+						<div class="ImgOverlay">
+							<div class="overlayInfo">
+								<h2><%= @pictures[2].portfolio.title %></h2>
+								<p><%= @pictures[2].category.name %></p>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6 ">
+				<div class="biggerimg1 overlayHover">
+					<img src="<%= @pictures[3].image_url %>" alt="..." />
+				<div class="ImgOverlay">
+					<div class="overlayInfo">
+							<h2><%= @pictures[3].portfolio.title %></h2>
+							<p><%= @pictures[3].category.name %></p>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+	<div class=imgsection>
+		<div class="form-row">
 			<div class="col-md-6 ">
-					<div class="biggerimg1 overlayHover">
-						<img src="<%= image_url('img11.jpg') %>" alt="..." />
-					<div class="ImgOverlay">
-						<div class="overlayInfo">
-							<h2>BRUNHOUSE</h2>
-							<p>Private residental</p>
+				<div class="biggerimg1 overlayHover">
+						<img src="<%= @pictures[4].image_url %>" alt="..." />
+						<div class="ImgOverlay">
+							<div class="overlayInfo">
+								<h2><%= @pictures[4].portfolio.title %></h2>
+								<p><%= @pictures[4].category.name %></p>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		
-		<div class=imgsection>
-			<div class="form-row">
-				<div class="col-md-6 ">
-					<div class="biggerimg1 overlayHover">
-						<img src="<%= image_url('img6.jpg') %>" alt="..." />
+				<div class="col-md-6  col-sm-12">
+				<div class="imgsizing">
+					<div class="form-row ">
+							<div class="col-md-6 col-sm-6">
+							<div class="colimg1 overlayHover">
+							<img src="<%= @pictures[5].image_url %>" alt="..." />
 							<div class="ImgOverlay">
 								<div class="overlayInfo">
-									<h2>BRUNHOUSE</h2>
-									<p>Private residental</p>
+									<h2><%= @pictures[5].portfolio.title %></h2>
+									<p><%= @pictures[5].category.name %></p>
 								</div>
+							</div>
+							</div>
+						</div>
+					<div class="col-md-6  col-sm-6">
+					<div class="smallerimg overlayHover">
+						<img src="<%= @pictures[6].image_url %>" alt="..." />
+						<div class="ImgOverlay">
+							<div class="overlayInfo">
+								<h2><%= @pictures[6].portfolio.title %></h2>
+								<p><%= @pictures[6].category.name %></p>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6  col-sm-12">
-					<div class="imgsizing">
-						<div class="form-row ">
-								<div class="col-md-6 col-sm-6">
-								<div class="colimg1 overlayHover">
-									<img src="<%= image_url('restaurant.jpg') %>" alt="...">
-								<div class="ImgOverlay">
-									<div class="overlayInfo">
-										<h2>BRUNHOUSE</h2>
-										<p>Private residental</p>
-									</div>
-								</div>
-								</div>
-							</div>
-						<div class="col-md-6  col-sm-6"">
-						<div class="smallerimg overlayHover">
-							<img src="<%= image_url('img5.jpg') %>" alt="...">
-							<div class="ImgOverlay">
-								<div class="overlayInfo">
-									<h2>BRUNHOUSE</h2>
-									<p>Private residental</p>
-								</div>
+					<div class="smallerimg overlayHover">
+						<img src="<%= @pictures[7].image_url %>" alt="..." />
+						<div class="ImgOverlay">
+							<div class="overlayInfo">
+								<h2><%= @pictures[7].portfolio.title %></h2>
+								<p><%= @pictures[7].category.name %></p>
 							</div>
 						</div>
-						<div class="smallerimg overlayHover">
-							<img src="<%= image_url('img4.jpg') %>" alt="...">
-							<div class="ImgOverlay">
-								<div class="overlayInfo">
-									<h2>BRUNHOUSE</h2>
-									<p>Private residental</p>
-								</div>
-							</div>
-						</div>
-							
-						</div>
+					</div>
 					</div>
 				</div>
 			</div>
-			</div>
 		</div>
 		</div>
-	</section>
+	</div>
+	</div>
+</section>

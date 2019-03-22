@@ -42,8 +42,8 @@ class ImageUploader < CarrierWave::Uploader::Base
     #resize_to_limit(600, 600)
   #end
 
-	version :thumb do
-    process resize_to_fill: [780,592]
+	version :small do
+    process resize_to_fill: [365,185]
   end
 
   # Override the filename of the uploaded files:

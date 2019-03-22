@@ -1,0 +1,78 @@
+<section>
+<div class="swiperSlider pageContent">
+  <div class="container">
+    <div class="swiperMainCol">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="swiperRow">
+            <div class="swiper-container gallery-top">
+              <div class="swiper-wrapper">
+								<% @portfolio.pictures.each do |picture| %>
+									<div class="swiper-slide">
+										<div class="swiperPortfolio">
+											<div class="swiperImg">
+												<img src="<%= picture.image_url %>" />
+											</div>
+										</div>
+									</div>
+								<% end %>
+							</div>
+						</div>
+						<div class="swiper-thumbs">
+							<div class="swiper-container gallery-thumbs">
+								<div class="swiper-wrapper">
+									<% @portfolio.pictures.each do |picture| %>
+										<div class="swiper-slide"><div class="thumbsImg"><img src="<%= picture.image_url(:small) %>" /></div></div>
+									<% end %>
+								</div>
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+							</div>
+						</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="swiperContent">
+						<h2><%= @portfolio.title %></h2>
+						<%= raw @portfolio.description %>
+            <ul>
+              <li><span>Client : </span><%= @portfolio.client_name %></li>
+              <li><span>Category : </span>Architecture</li>
+              <li><span>Updated Date : </span><%= @portfolio.updated_at.strftime("%d-%m-%Y") %></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<%= content_for :tail do %>
+	<script>
+		$(document).ready(function() {
+			var galleryThumbs = new Swiper('.gallery-thumbs', {
+				spaceBetween: 10,
+				slidesPerView: 2,
+				loop: true,
+				freeMode: true,
+				loopedSlides: 5, //looped slides should be the same
+				watchSlidesVisibility: true,
+				watchSlidesProgress: true,
+			});
+			var galleryTop = new Swiper('.gallery-top', {
+				spaceBetween: 10,
+				loop:true,
+				loopedSlides: 5, //looped slides should be the same
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				thumbs: {
+					swiper: galleryThumbs,
+				},
+			});
+
+		});
+	</script>
+<% end %>
