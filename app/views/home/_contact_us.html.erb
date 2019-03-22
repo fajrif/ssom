@@ -1,4 +1,4 @@
-<section>
+<section id="contact_us">
 	<div class="contact-us">
 		<div class="container">
 			<div class="title-heading">
@@ -17,6 +17,7 @@
 						</div>
 					</div>
 					<div class="col-md-7">
+						<%= flash_message %>
 						<div class="contact-info">
 						<%= simple_form_for @contact, as: :contact, url: contact_path, html: { method: :post, class: "quform" } do |f| %>
 							<div class="form-group">
@@ -28,7 +29,7 @@
 								<div class="form-group">
 								<textarea type="text" name="contact[message]" id="contact_message" placeholder="MESSAGE"  class="form-control" ></textarea>
 							</div>
-							<button type="button" class="btn btnStyle btnContact">
+							<button type="submit" class="btn btnStyle btnContact">
 								<span>send</span>
 							</button>
 						<% end %>
