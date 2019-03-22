@@ -37,7 +37,7 @@
 						<%= raw @portfolio.description %>
             <ul>
               <li><span>Client : </span><%= @portfolio.client_name %></li>
-              <li><span>Category : </span>Architecture</li>
+              <li><span>Category : </span><%= @portfolio.categories_text %></li>
               <li><span>Updated Date : </span><%= @portfolio.updated_at.strftime("%d-%m-%Y") %></li>
             </ul>
           </div>

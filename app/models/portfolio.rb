@@ -10,4 +10,8 @@ class Portfolio < ActiveRecord::Base
   validates_presence_of :description
 
 	has_many :pictures
+
+	def categories_text
+		self.pictures.map(&:category).map(&:name).uniq.join(", ")
+	end
 end
