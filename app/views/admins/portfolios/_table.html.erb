@@ -4,10 +4,8 @@
   <thead>
     <tr>
       <th><%= sortable "title" %></th>
-      <th>Pictures</th>
-      <th>Category</th>
-      <th>History</th>
-      <th>Description</th>
+      <th>Total Pictures</th>
+      <th>Categories</th>
       <th></th>
     </tr>
   </thead>
@@ -15,10 +13,8 @@
     <% for portfolio in @portfolios %>
       <tr>
 				<td><strong><%= link_to portfolio.title, admins_portfolio_path(portfolio) %></strong></td>
-				<td><%= portfolio.pictures.count %></td>
-				<td><%= portfolio.category.try(:name) %></td>
-				<td><%= portfolio.history %></td>
-				<td><%= portfolio.description %></td>
+				<td><%= portfolio.pictures.try(:count) %></td>
+				<td><%= portfolio.categories_text %></td>
         <td class="actions">
           <%= link_to 'Show', admins_portfolio_path(portfolio), :class => 'btn btn-mini btn-info' %>
           <%= link_to 'Destroy', admins_portfolio_path(portfolio), :confirm => 'Are you sure?', :method => :delete, :class => 'btn btn-mini btn-danger' %>

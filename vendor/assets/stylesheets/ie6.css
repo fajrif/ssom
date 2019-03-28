@@ -1,0 +1,24 @@
+#fixed-scroll {
+	
+	float: left;
+	right: 0px;
+	position: absolute;
+	top: 10px;
+	width: 200px;
+	
+}
+
+.showcase_thumbs {
+	
+	display: inline;
+	left: 180px;
+	line-height: 0 !important;
+	
+}
+
+.showcase_thumbs li {
+	
+	
+	line-height: 0 !important;
+	
+}

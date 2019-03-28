@@ -7,20 +7,16 @@
     <td><%= @picture.id %></td>
   </tr>
   <tr>
-    <td><b>Title</b></td>
-    <td><%= @picture.title %></td>
+    <td><b>Portfolio</b></td>
+    <td><%= "#{@picture.portfolio.id} - #{@picture.portfolio.title}" %></td>
   </tr>
   <tr>
-    <td><b>Portfolio ID</b></td>
-    <td><%= "#{@picture.portfolio.id} - #{@picture.portfolio.title}" %></td>
+    <td><b>Category</b></td>
+    <td><%= "#{@picture.category.id} - #{@picture.category.name}" %></td>
   </tr>
   <tr>
     <td><b>Image</b></td>
     <td><%= image_tag @picture.image_url %></td>
-  </tr>
-  <tr>
-    <td><b>Description</b></td>
-    <td><%= @picture.description %></td>
   </tr>
 </table>
 

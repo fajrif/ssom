@@ -11,20 +11,36 @@
     <td><%= @portfolio.title %></td>
   </tr>
   <tr>
-    <td><b>Category ID</b></td>
-    <td><%= "#{@portfolio.category.id} - #{@portfolio.category.name}" %></td>
+    <td><b>Client Name</b></td>
+    <td><%= @portfolio.client_name %></td>
   </tr>
   <tr>
-    <td><b>Total Pictures</b></td>
-    <td><%= @portfolio.pictures.count %></td>
+    <td><b>Categories</b></td>
+    <td><%= @portfolio.categories_text %></td>
   </tr>
   <tr>
-    <td><b>History</b></td>
-    <td><%= @portfolio.history %></td>
+    <td colspan="2"><b>Total Pictures (<%= @portfolio.pictures.try(:count) %>)</b></td>
+  </tr>
+  <tr>
+		<td colspan="2">
+			<% @portfolio.pictures.each do |pic| %>
+				<%= link_to admins_picture_path(pic) do %>
+					<%= image_tag pic.image_url(:small) %>
+				<% end %>
+			<% end %>
+		</td>
   </tr>
   <tr>
     <td><b>Description</b></td>
-    <td><%= @portfolio.description %></td>
+    <td><%= raw @portfolio.description %></td>
+  </tr>
+  <tr>
+    <td><b>Created at</b></td>
+    <td><%= @portfolio.created_at.to_s(:long) %></td>
+  </tr>
+  <tr>
+    <td><b>Updated at</b></td>
+    <td><%= @portfolio.updated_at.to_s(:long) %></td>
   </tr>
 </table>
 

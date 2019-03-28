@@ -14,4 +14,11 @@ body { padding-top: 60px; padding-bottom: 40px; }
 	padding-right: 5px;
 }
 
+.pagination ul > li > a:hover {
+	background-color: #0044cc;
+}
+.pagination ul > .active > a, .pagination ul > .active > span {
+	color: white;
+}
+
 @import "bootstrap-responsive";

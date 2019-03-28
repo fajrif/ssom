@@ -8,7 +8,9 @@ Rails.application.routes.draw do
     root :to => 'dashboard#index'
     resources :admins
     resources :banners
-    resources :portfolios
+    resources :portfolios, :path => "projects"
+    resources :categories
+    resources :pictures
 		resources :contacts, :only => [:index, :show, :destroy]
   end
 

@@ -3,18 +3,20 @@
 <table class="table table-striped table-bordered table-condensed">
   <thead>
     <tr>
-      <th><%= sortable "title" %></th>
-      <th>Portfolio</th>
+      <th><%= sortable "id" %></th>
       <th>Image</th>
+      <th>Portfolio</th>
+      <th>Category</th>
       <th></th>
     </tr>
   </thead>
   <tbody>
     <% for picture in @pictures %>
       <tr>
-				<td><strong><%= link_to picture.title, admins_picture_path(picture) %></strong></td>
+				<td><strong><%= link_to picture.id, admins_picture_path(picture) %></strong></td>
+				<td><%= image_tag picture.image_url(:small) %></td>
 				<td><strong><%= link_to picture.portfolio.title, admins_portfolio_path(picture.portfolio) %></strong></td>
-				<td><%= image_tag picture.image_url(:thumb) %></td>
+				<td><strong><%= link_to picture.category.name, admins_category_path(picture.category) %></strong></td>
         <td class="actions">
           <%= link_to 'Show', admins_picture_path(picture), :class => 'btn btn-mini btn-info' %>
           <%= link_to 'Destroy', admins_picture_path(picture), :confirm => 'Are you sure?', :method => :delete, :class => 'btn btn-mini btn-danger' %>

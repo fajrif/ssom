@@ -3,7 +3,7 @@
 <h3>Category details</h3>
 <table class="table">
   <tr>
-    <td><b>ID</b></td>
+    <td style="width: 120px;"><b>ID</b></td>
     <td><%= @category.id %></td>
   </tr>
   <tr>
@@ -11,8 +11,8 @@
     <td><%= @category.name %></td>
   </tr>
   <tr>
-    <td><b>Total Portfolios</b></td>
-    <td><%= @category.portfolios.try(:count) %></td>
+    <td><b>Total Pictures</b></td>
+    <td><%= @category.pictures.try(:count) %></td>
   </tr>
 </table>
 

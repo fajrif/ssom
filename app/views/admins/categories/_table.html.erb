@@ -4,7 +4,7 @@
   <thead>
     <tr>
       <th><%= sortable "name" %></th>
-      <th>Count</th>
+      <th>Pictures Count</th>
       <th></th>
     </tr>
   </thead>
@@ -12,7 +12,7 @@
     <% for category in @categories %>
       <tr>
 				<td><strong><%= link_to category.name, admins_category_path(category) %></strong></td>
-				<td><%= category.portfolios.try(:count) %></td>
+				<td><%= category.pictures.try(:count) %></td>
         <td class="actions">
           <%= link_to 'Show', admins_category_path(category), :class => 'btn btn-mini btn-info' %>
           <%= link_to 'Destroy', admins_category_path(category), :confirm => 'Are you sure?', :method => :delete, :class => 'btn btn-mini btn-danger' %>

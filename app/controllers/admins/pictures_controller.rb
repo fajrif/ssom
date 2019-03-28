@@ -1,7 +1,7 @@
 class Admins::PicturesController < Admins::BaseController
 
   def index
-    criteria = Picture.where("title LIKE ?", "%#{params[:search]}%")
+    criteria = Picture.where("id LIKE ?", "%#{params[:search]}%")
     criteria = criteria.order_by([params[:sort], params[:direction]]) unless params[:sort].blank? && params[:direction].blank?
 
     @pictures = criteria.page(params[:page]).per(10)
@@ -27,15 +27,15 @@ class Admins::PicturesController < Admins::BaseController
   end
 
   def show
-		@picture = Picture.friendly.find(params[:id])
+		@picture = Picture.find(params[:id])
   end
 
   def edit
-		@picture = Picture.friendly.find(params[:id])
+		@picture = Picture.find(params[:id])
   end
 
   def update
-		@picture = Picture.friendly.find(params[:id])
+		@picture = Picture.find(params[:id])
     if @picture.update_attributes(params_picture)
       redirect_to admins_picture_path(@picture), :notice  => "Successfully updated picture."
     else
@@ -44,7 +44,7 @@ class Admins::PicturesController < Admins::BaseController
   end
 
   def destroy
-		@picture = Picture.friendly.find(params[:id])
+		@picture = Picture.find(params[:id])
     @picture.destroy
     redirect_to admins_pictures_url, :notice => "Successfully destroyed picture."
   end
