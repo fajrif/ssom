@@ -24,22 +24,13 @@
 				<div class="tab-content" id="pills-tabContent">
 					<% @categories.each_with_index do |category, index| %>
 						<div class="tab-pane fade <%= 'show active' if index == 0 %>" id="<%= "#{category.name.downcase}" %>" role="tabpanel" aria-labelledby='<%= "#{category.name.downcase}-tab" %>'>
-							<% category.pictures.first(6).each do |picture| %>
-							<div class="Portfolio"><a href="<%= project_path(picture.portfolio) %>"><img class="card-img" src="<%= picture.image_url(:small) %>" alt=""></a>
-								<div class="desc">
-									<h6><%= picture.category.name %></h6>
-									<h5><%= picture.portfolio.title %></h5>
-								</div>
-							</div>
-							<% end %>
+							<%= render :partial => "picture", :collection => @pictures[index], :as => :picture %>
 						</div>
 					<% end %>
 				</div>
 			</div>
 			<div class="portBtn">
-				<button type="button" class="btn btnStyle">
-					<span>see more</span>
-				</button>
+				<%= link_to "load more", projects_path(page: @pictures.first.current_page + 1), id: "load-more-pictures", remote: true %>
 			</div>
 		</div>
 	</div>

@@ -1,0 +1,9 @@
+<% @categories.each_with_index do |category, index| %>
+	$("#<%= category.name.downcase %>").append("<%= j(render(partial: "picture", collection: @pictures[index], as: :picture)) %>");
+<% end %>
+
+<% if @pictures.first.last_page? %>
+  $("#load-more-pictures").hide();
+<% else %>
+  $("#load-more-pictures").attr("href", "<%= projects_path(page: (@pictures.first.current_page + 1)) %>");
+<% end %>
