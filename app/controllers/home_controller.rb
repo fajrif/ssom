@@ -4,7 +4,7 @@ class HomeController < ApplicationController
 		# get public home
 		@contact = Contact.new
 		@banners = Banner.all
-		@pictures = Picture.order("order_no asc").limit(8)
+		@pictures = Picture.order("order_no desc").limit(8).reverse
   end
 
   def about

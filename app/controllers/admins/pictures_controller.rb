@@ -52,6 +52,6 @@ class Admins::PicturesController < Admins::BaseController
   private
 
   def params_picture
-    params.require(:picture).permit(:title, :image, :description, :portfolio_id)
+    params.require(:picture).permit(:image, :category_id, :portfolio_id, :order_no)
   end
 end

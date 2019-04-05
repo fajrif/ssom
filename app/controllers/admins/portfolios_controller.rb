@@ -52,6 +52,6 @@ class Admins::PortfoliosController < Admins::BaseController
   private
 
   def params_portfolio
-    params.require(:portfolio).permit(:title, :history, :description, :category_id)
+    params.require(:portfolio).permit(:title, :client_name, :location, :size, :type_project, :description)
   end
 end
