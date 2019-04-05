@@ -863,6 +863,7 @@ a, a:hover, a:focus {
     font-family: 'Heebo', sans-serif;
     font-size: 16px;
     font-weight: 100;
+		line-height: 20px;
     padding-left: 90px;
     margin-top: 10px;
     margin-bottom: 0;
