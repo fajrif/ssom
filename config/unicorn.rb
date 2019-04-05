@@ -1,11 +1,11 @@
 # config/unicorn.rb
-root = "/home/deployer/dap"
+root = "/home/deployer/ssom"
 working_directory root
 pid "#{root}/tmp/pids/unicorn.pid"
 stderr_path "#{root}/log/unicorn.log"
 stdout_path "#{root}/log/unicorn.log"
 
-listen "#{root}/tmp/sockets/unicorn.dap.sock"
+listen "#{root}/tmp/sockets/unicorn.ssom.sock"
 worker_processes 2
 timeout 30
 preload_app true
