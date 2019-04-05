@@ -768,13 +768,11 @@ a, a:hover, a:focus {
 	width:100%;
 }
 .yearcontent h2{
-
   font-size: 23px;
   padding: 20px 0px 10px 115px;
 }
 .year {
 	display: flex;
-	justify-content: center;
 	padding-left: 42px;
 	margin-top: 10px;
 }
@@ -1612,7 +1610,7 @@ text-align: center;
     height: 400px;
 }
 .year {
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 .yearcontent h2 {
