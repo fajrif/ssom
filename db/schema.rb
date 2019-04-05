@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190206105606) do
+ActiveRecord::Schema.define(version: 20190405113404) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -77,15 +77,19 @@ ActiveRecord::Schema.define(version: 20190206105606) do
     t.integer  "category_id",               null: false
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
+    t.integer  "order_no"
   end
 
   create_table "portfolios", force: :cascade do |t|
-    t.string   "title",       default: "", null: false
-    t.string   "client_name", default: "", null: false
-    t.string   "description", default: "", null: false
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.string   "title",        default: "", null: false
+    t.string   "client_name",  default: "", null: false
+    t.string   "description",  default: "", null: false
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
     t.string   "slug"
+    t.string   "type_project"
+    t.string   "size"
+    t.string   "location"
   end
 
   add_index "portfolios", ["slug"], name: "index_portfolios_on_slug", unique: true

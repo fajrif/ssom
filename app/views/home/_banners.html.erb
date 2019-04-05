@@ -3,33 +3,21 @@
 			<div class="bannerInner">
 				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 					<div class="carousel-inner">
-						<div class="carousel-item active">
+						<% @banners.each_with_index do |banner, index| %>
+						<div class="carousel-item <%= 'active' if index == 0%>">
 							<div class="bannerSlider">
 								<div class="bannerimg">
-									<img src="<%= image_url('banner.jpg') %>" alt="banner">
+									<img src="<%= banner.image_url %>" alt="<%= banner.title %>">
 								</div>
 							</div>
 						</div>
-						 <div class="carousel-item">
-							<div class="bannerSlider">
-								<div class="bannerimg">
-									<img src="<%= image_url('banner2.jpg') %>" alt="banner">
-								</div>
-							</div>
-						</div>
-						 <div class="carousel-item">
-							<div class="bannerSlider">
-								<div class="bannerimg">
-									<img src="<%= image_url('banner3.jpg') %>" alt="banner">
-								</div>
-							</div>
-						</div>
+						<% end %>
 					</div>
 					<a class="slideArrow prevSlide" href="#carouselExampleIndicators" role="button" data-slide="prev">
-						<span class="arrowIcon"><img src="<%= image_url('left-arrow.png') %>" alt="..."></span>
+						<span class="arrowIcon"><img src="<%= image_url('left-arrow.png') %>"></span>
 					</a>
 					<a class="slideArrow nextSlide" href="#carouselExampleIndicators" role="button" data-slide="next">
-						<span class="arrowIcon"><img src="<%= image_url('right-arrow.png') %>" alt="..."></span>
+						<span class="arrowIcon"><img src="<%= image_url('right-arrow.png') %>"></span>
 					</a>
 				</div>
 			</div>

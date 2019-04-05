@@ -6,12 +6,15 @@ class Portfolio < ActiveRecord::Base
   # Validations
   validates_presence_of :title
   validates_uniqueness_of :title
-  validates_presence_of :client_name
   validates_presence_of :description
 
 	has_many :pictures
 
 	def categories_text
 		self.pictures.map(&:category).map(&:name).uniq.join(", ")
+	end
+
+	def size_text
+		"#{self.size} SQM" unless self.size.nil?
 	end
 end

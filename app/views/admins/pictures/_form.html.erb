@@ -5,6 +5,7 @@
 <%= simple_form_for [:admins, @picture], :html => { :class => 'form-horizontal' } do |f| %>
   <%= f.error_notification %>
   <fieldset>
+    <%= f.input :order_no %>
     <%= f.association :portfolio %>
     <%= f.association :category %>
     <%= f.input :image %>

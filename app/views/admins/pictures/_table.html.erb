@@ -5,6 +5,7 @@
     <tr>
       <th><%= sortable "id" %></th>
       <th>Image</th>
+      <th>Order No</th>
       <th>Portfolio</th>
       <th>Category</th>
       <th></th>
@@ -15,6 +16,7 @@
       <tr>
 				<td><strong><%= link_to picture.id, admins_picture_path(picture) %></strong></td>
 				<td><%= image_tag picture.image_url(:small) %></td>
+				<td><%= picture.order_no %></td>
 				<td><strong><%= link_to picture.portfolio.title, admins_portfolio_path(picture.portfolio) %></strong></td>
 				<td><strong><%= link_to picture.category.name, admins_category_path(picture.category) %></strong></td>
         <td class="actions">
