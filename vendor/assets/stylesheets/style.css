@@ -19,6 +19,9 @@ body {
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
  line-height: 1;
 }
+h1 {
+	font-size: 54px;
+}
 ul {
   list-style-type: none;
   padding: 0px;
@@ -782,14 +785,10 @@ img.imageDetail {
 
 }
 .aboutUS h1 {
-  font-size: 54px;
   padding: 34px 28px 34px 0px;
 }
 .aboutUS img {
     max-width: 80px;
-}
-.theTeam h1{
-  font-size: 54px;  
 }
 .theTeam img {
     max-width: 80px;
@@ -1129,7 +1128,7 @@ img.imageDetail {
     font-size: 19px;
 }
 .theTeam h1 {
-	padding: 50px 10px 10px 122px;
+	padding: 50px 10px 10px 10px;
 }
 .drop-item{
   margin-top:4px;
@@ -1299,7 +1298,6 @@ img.imageDetail {
     font-size: 20px;
 }
 .aboutUS h1 {
-    font-size: 45px;
     padding: 0 20px 0 0;
 }
 .aboutImg {
@@ -1695,9 +1693,11 @@ img.imageDetail {
 	padding: 0px 0px;
 	font-size: 16px;
 }
+h1 {
+	font-size: 30px;
+}
 .aboutUS h1 {
 	padding-top: 30px;
-	font-size: 30px;
 }
 .yearImg {
 	/*padding: 20px 0px 0px 0px;*/
