@@ -1,9 +1,7 @@
-<% @categories.each_with_index do |category, index| %>
-	$("#<%= category.name.downcase %>").append("<%= j(render(partial: "picture", collection: @pictures[index], as: :picture)) %>");
-<% end %>
+$("#pills-tabContent").append("<%= j(render(partial: "project", collection: @projects, as: :project)) %>");
 
-<% if @pictures.first.last_page? %>
+<% if @projects.last_page? %>
   $("#load-more-pictures").hide();
 <% else %>
-  $("#load-more-pictures").attr("href", "<%= projects_path(page: (@pictures.first.current_page + 1)) %>");
+  $("#load-more-pictures").attr("href", "<%= projects_path(page: (@projects.current_page + 1)) %>");
 <% end %>

@@ -11,25 +11,12 @@
 	<div class="portfolioSection">
 		<div class="tabcols">
 			<div class="container">
-				<div class="portfolioLinks">
-					<ul class="nav" id="pills-tab" role="tablist">
-						<% @categories.each_with_index do |category, index| %>
-							<li>
-								<a class="<%= 'active' if index == 0 %>" id='<%= "#{category.name.downcase}-tab" %>' data-toggle="pill" href="<%= "##{category.name.downcase}" %>" role="tab" aria-controls="<%= "#{category.name.downcase}" %>" aria-selected="<%= 'true' if index == 0 %>"><%= "#{category.name.upcase}" %></a>
-							</li>
-						<% end %>
-					</ul>
-				</div>
 				<div class="tab-content" id="pills-tabContent">
-					<% @categories.each_with_index do |category, index| %>
-						<div class="tab-pane fade <%= 'show active' if index == 0 %>" id="<%= "#{category.name.downcase}" %>" role="tabpanel" aria-labelledby='<%= "#{category.name.downcase}-tab" %>'>
-							<%= render :partial => "picture", :collection => @pictures[index], :as => :picture %>
-						</div>
-					<% end %>
+					<%= render :partial => "project", :collection => @projects, :as => :project %>
 				</div>
 			</div>
 			<div class="portBtn">
-				<%= link_to "load more", projects_path(page: @pictures.first.current_page + 1), id: "load-more-pictures", remote: true %>
+				<%= link_to "load more", projects_path(page: @projects.current_page + 1), id: "load-more-pictures", remote: true %>
 			</div>
 		</div>
 	</div>

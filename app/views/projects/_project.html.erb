@@ -1,0 +1,9 @@
+<div class="Portfolio">
+	<a href="<%= project_path(project) %>">
+		<img class="card-img" src="<%= project.pictures.first.image_url(:small) %>" />
+	</a>
+	<div class="desc">
+		<h6><%= project.categories_text %></h6>
+		<h5><%= project.title %></h5>
+	</div>
+</div>
