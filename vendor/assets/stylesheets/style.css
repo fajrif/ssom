@@ -105,6 +105,9 @@ img.imageDetail {
     /*box-shadow: 0px 0px 26px 0 rgba(0, 0, 0, 0.1);*/
     /*background-color: #fff;*/
 }
+.swiperContent > ul > li {
+	font-size: 13px;
+}
 .stickyHeader .navheader {
 	visibility: hidden;
 }
@@ -813,7 +816,6 @@ img.imageDetail {
 }
 .year {
 	display: flex;
-	margin-top: 10px;
 }
 .year span {
   padding: 2px 20px;
@@ -833,7 +835,7 @@ img.imageDetail {
   padding-top: 30px;
 }
 .yeartext h5 {
-	font-size: 21px;
+	font-size: 16px;
 	font-family: 'Heebo';
 	font-weight: 100;
 }
@@ -1501,12 +1503,6 @@ img.imageDetail {
 }
 .dropdownrow {
     margin: 0;
-}
-.swiperContent > h2 {
-    font-size:20px;
-}
-.swiperContent > p {
-    font-size: 13px;
 }
 .swiper-thumbs {
     max-width: 200px;
