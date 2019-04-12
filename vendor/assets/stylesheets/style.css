@@ -35,8 +35,19 @@ a, a:hover, a:focus {
   color: inherit;
   outline: none;
 }
+/*.container-fluid {*/
+	/*padding-left: 0px;*/
+	/*padding-right: 0px;*/
+/*}*/
+/*.projects {*/
+	/*padding-left: 15px !important;*/
+	/*padding-right: 15px !important;*/
+/*}*/
+.we_develop {
+	padding-top:40px;
+}
 .btn {
-	line-height: 3rem;
+	line-height: 2.5rem;
 	font-family: 'Heebo'
 }
 .btn.focus, .btn:focus {
@@ -63,24 +74,29 @@ a, a:hover, a:focus {
   color: white;
 }
 .btnStyle img {
-    max-width: 40px;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-    margin: 0 auto;
+	max-width: 40px;
+	object-fit: cover;
+	object-position: center;
+	display: block;
+	margin: 0 auto;
 }
 .headerSection {
-    overflow: hidden;
-    color: #fff;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 99;
-    -webkit-transition: all 500ms ease-in-out 0s;
-    -o-transition: all 500ms ease-in-out 0s;
-    transition: all 500ms ease-in-out 0s;
-    
+	overflow: hidden;
+	color: #fff;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 99;
+	-webkit-transition: all 500ms ease-in-out 0s;
+	-o-transition: all 500ms ease-in-out 0s;
+	transition: all 500ms ease-in-out 0s;
+}
+.projectDetails {
+	margin-top: 200px;
+}
+img.imageDetail {
+	margin-bottom: 20px;
 }
 .headerSection.stickyHeader {
     /*box-shadow: 0px 0px 26px 0 rgba(0, 0, 0, 0.1);*/
@@ -90,22 +106,25 @@ a, a:hover, a:focus {
 	visibility: hidden;
 }
 .stickyHeader .mainLogo > a {
-    height: 100px;
-    padding: 15px;
+	height: 100px;
+	padding: 15px;
 }
 .stickyHeader .topNav ul li a {
-    font-size: 35px;
+	font-size: 35px;
 }
 .mainLogo{
-    margin-left: -15px;
+	margin-left: -15px;
 }
 .mainLogo > a {
-    position: relative;
-    width: 228px;
-    height: 180px;
-    padding: 30px 15px 15px;
-    background-color: #000;
-    display: block;
+	position: relative;
+	width: 228px;
+	height: 180px;
+	padding: 30px 15px 15px;
+	background-color: #000;
+	display: block;
+}
+.theTeam h1 {
+ padding: 10px 10px 50px 220px;
 }
 .topNav {
   text-align: center;
@@ -131,7 +150,6 @@ a, a:hover, a:focus {
 .topNav ul li:hover a {
   background: #FE2036;
 }
-
 .logo > a > img {
     width: 160px;
 }
@@ -158,24 +176,24 @@ a, a:hover, a:focus {
   font-weight: bold;
 }
 .triggar {
-    height: 70px;
-    width: 90px;
-    margin: 10px 0 0;
-    position: relative;
-    cursor: pointer;
-    background-color: #000;
+	height: 70px;
+	width: 90px;
+	margin: 10px 0 0;
+	position: relative;
+	cursor: pointer;
+	background-color: #000;
 }
 .triggar .triggarLines {
-    width: 30px;
-    height:2px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
-    background-color: black;
-    background-color: #fff;
-    bottom: 0;
-    margin: 0 auto;
+	width: 30px;
+	height:2px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	background-color: black;
+	background-color: #fff;
+	bottom: 0;
+	margin: 0 auto;
 }
 .triggar .triggarLines:nth-child(1) {
     transform: translate(0%, -6px);
@@ -319,13 +337,12 @@ a, a:hover, a:focus {
 }
 .white-box {
   background-color: white;
-  text-align: right;
-	margin-right: 95px;
+  text-align: center;
 }
 .white-box h1 {
   font-size: 70px;
   color: black;
-  padding: 10px 0px 12px 0px;
+  padding: 10px 0px 10px 130px;
   display: inline-block;
   margin-bottom: 0px;
 }
@@ -338,16 +355,14 @@ a, a:hover, a:focus {
 .second-green-box {
   background-color: #7AA575;
   width: 100%;
-  padding: 50px 0px 20px 50px;
+  padding: 50px 0px 50px 50px;
 }
 .rovalino, .bran {
   width: 350px;
-
-  padding-left: 30px;
 }
 .rovalino img, .bran img {
-    width: 325px;
-    height: 300px;
+    /*width: 325px;*/
+    height: 200px;
     object-fit: cover;
     object-position: center;
     -webkit-filter: grayscale(100%);
@@ -365,14 +380,21 @@ a, a:hover, a:focus {
    filter: none;
 }
 .rovalino h6, .bran h6  {
+	position: absolute;
+	bottom: 60px;
   text-align: left;
   margin-top: 20px;
-	font-size: 25px;
+	font-size: 18px;
+	font-family: 'Heebo';
+	font-weight: 200;
 }
 .rovalino h3, .bran h3 {
+	position: absolute;
+	bottom: 0px;
   text-align: left;
-	font-size: 55px;
+	font-size: 36px;
 	line-height: 30px;
+	margin-bottom: 0px;
 }
 .bran img:hover {
     filter: grayscale(0);
@@ -396,17 +418,18 @@ a, a:hover, a:focus {
   border-radius: 10px;
 }
 .imgEffectSection {
-    padding: 100px 0px;
+    padding: 50px 0px;
 }
 .imgColumn ul {
   display: flex;
   display: -ms-flexbox;
-  justify-content: space-between;
+  justify-content: center;
 }
 .imgColumn li {
   overflow: hidden;
   position: relative;
   display: inline-block;
+	padding: 0px 100px;
 }
 .imgColumn li span {
   -webkit-transition: all 500ms ease-in-out;
@@ -446,9 +469,8 @@ a, a:hover, a:focus {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.contact-us {
-    background: #fe2036;
-    padding: 60px 0px 30px;
+#contact-us {
+	background: #fe2036;
 }
 .title-heading > h2 {
     color: black;
@@ -459,36 +481,45 @@ a, a:hover, a:focus {
 .title-heading.titleWhite > h2 {
     color: #fff;
 }
+.contact-us {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
 .contact-us .title-heading > h2 {
     text-align: left;
     margin-bottom: 50px;
 }
- .contact-info {
-   text-align: left;
-   margin:0 auto;
-   padding-left: 30px;
- }
- .contact-info h4 {
-     font-size: 35px;
-     color: black;
- }
- .contact-info h6 {
-     color: #000;
-     font-size: 20px;
-     font-weight: 300;
-     line-height: 30px;
- }
- .contact-info .form-control {
-     width: 100%;
-     background-color: transparent;
-     border: none;
-     border-bottom: 1px solid black;
-     border-radius: 0px;
-     padding: 5px 0;
-     font-size: 20px;
-     color: #000;
-     resize: none;
- }
+.contact-info {
+ text-align: left;
+ margin:0 auto;
+ padding-left: 30px;
+}
+.contact-info h4 {
+	font-family: 'Heebo';
+	font-size: 30px;
+	color: black;
+}
+.contact-info h6 {
+	font-family: 'Heebo';
+	color: #000;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 30px;
+}
+.contact-info .form-control {
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid black;
+	border-radius: 0px;
+	padding: 5px 0;
+	font-family: 'Heebo';
+	font-size: 16px;
+	font-weight: 100;
+	text-transform: uppercase;
+	color: #000;
+	resize: none;
+}
 .contact-info .form-group input:focus, .contact-info .form-group textarea:focus {
   background: #fe2036;
  box-shadow:none;
@@ -576,7 +607,7 @@ a, a:hover, a:focus {
     margin: 0 auto;
 }
 .portfolioBanner {
-    background-image: url(img1.jpg);
+    background-image: url(img1.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -590,6 +621,8 @@ a, a:hover, a:focus {
     color: white;
     font-size: 60px;
     line-height: 55px;
+		padding-left: 120px;
+    text-shadow: 2px 2px 2px #bbbec1;
 }
 .bannerinnerText img {
 	width:60px;
@@ -683,6 +716,11 @@ a, a:hover, a:focus {
 	width: 90%;
 }
 
+.container {
+	padding-left:100px;
+	padding-right:100px;
+}
+
 .desc h6:nth-child(1) {
 	color:white;
 	background-color:black;
@@ -724,7 +762,7 @@ a, a:hover, a:focus {
 .footerLogo span {
     text-transform: uppercase;
     color:white;
-    font-size: 20px;
+    font-size: 13px;
 }
 .footerimgRight {
     text-align: right;
@@ -736,7 +774,7 @@ a, a:hover, a:focus {
 .aboutUS {
 	display: flex;
 	align-items: center;
-  padding: 170px 0px 0px 0px;
+  padding-top: 170px;
 }
 .theTeam {
   display: flex;
@@ -745,7 +783,7 @@ a, a:hover, a:focus {
 }
 .aboutUS h1 {
   font-size: 54px;
-  padding: 34px 28px 34px 64px;
+  padding: 34px 28px 34px 0px;
 }
 .aboutUS img {
     max-width: 80px;
@@ -757,12 +795,15 @@ a, a:hover, a:focus {
     max-width: 80px;
 }
 .heading h2 {
-	font-size: 35px;
-  padding: 0px 110px;
+	font-family: 'Heebo';
+	font-size: 24px;
+	padding-right: 80px;
+	font-weight: 100;
 }
 .aboutImg {
   margin: 0 auto;
-  padding: 35px 110px 0px 110px;
+	padding-top: 35px;
+  padding-right: 95px;
 }
 .aboutImg img{
 	width:100%;
@@ -773,7 +814,6 @@ a, a:hover, a:focus {
 }
 .year {
 	display: flex;
-	padding-left: 42px;
 	margin-top: 10px;
 }
 .year span {
@@ -786,7 +826,7 @@ a, a:hover, a:focus {
   padding: 27px 60px;
 }
 .yearImg img {
-  width:100%;
+  width: 90%;
   object-fit: cover;
   object-position: center;
 }
@@ -794,8 +834,9 @@ a, a:hover, a:focus {
   padding-top: 30px;
 }
 .yeartext h5 {
-  font-size: 30px;
-  word-spacing: -4px;
+	font-size: 21px;
+	font-family: 'Heebo';
+	font-weight: 100;
 }
 .yeartext h6 {
   font-family: 'Heebo';
@@ -821,7 +862,7 @@ a, a:hover, a:focus {
 	object-fit: cover;
 }
 .dropddownsection {
-  margin-top: 80px;
+  /*margin-top: 80px;*/
 }
 .card-header a {
   text-decoration: none;
@@ -858,23 +899,23 @@ a, a:hover, a:focus {
   content:"\f067";
 }
 .card-body h6 {
-    font-family: 'Heebo', sans-serif;
-    font-size: 16px;
-    font-weight: 100;
-		line-height: 20px;
-    padding-left: 90px;
-    margin-top: 10px;
-    margin-bottom: 0;
+	font-family: 'Heebo', sans-serif;
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 20px;
+	padding-left: 90px;
+	margin-top: 10px;
+	margin-bottom: 0;
 }
 .dropdown-width .card-header {
-    padding: 0;
-    background-color: transparent;
+	padding: 0;
+	background-color: transparent;
 }
 .dropdown-width .card + .card {
-    margin-top: 35px;
+	margin-top: 35px;
 }
 .dropddownsection {
-    margin: 100px 0;
+	margin-bottom: 100px;
 }
 .dropdownrow {
 	margin: 0 -15px;
@@ -929,7 +970,6 @@ a, a:hover, a:focus {
     background-size: 25px 25px;
 }
 .swiperImg > img {
-    height: 350px;
     object-fit: cover;
     object-position: center;
 }
@@ -1020,26 +1060,40 @@ a, a:hover, a:focus {
   height: 150px;
 }
 .second-section span {
-    font-size: 80px;
-    line-height: 65px;
+	font-size: 80px;
+	line-height: 65px;
 }
 .ImagesRight {
-    margin-left: 120px;
+	margin-left: 120px;
 }
 .ImagesLeft {
-    margin-right: 120px;
+	margin-right: 120px;
 }
 .img1 {
-    margin-bottom: 80px;
+	margin-bottom: 80px;
 }
 .imgEffectSection {
-    padding: 70px 0px;
+	padding: 70px 0px;
 }
 .white-box h1 {
-    font-size: 60px;
+	font-size: 60px;
+}
+.imgColumn li {
+ padding: 0px 20px;
+}
+.container-fluid > .form-row img,
+.imgsection > .form-row img {
+	height: auto !important;
+}
+.container-fluid > .form-row .overlayHover,
+.imgsection > .form-row .overlayHover {
+	padding: 30px;
+}
+.contactAdd {
+	margin-bottom: 40px;
 }
 .second-green-box {
-    padding: 30px 0px;
+    padding: 60px 0px;
 }
 .lower-banner {
     padding: 80px 0;
@@ -1075,13 +1129,11 @@ a, a:hover, a:focus {
     font-size: 19px;
 }
 .theTeam h1 {
-   padding-top: 31px;
-  padding-left: 40px;
+	padding: 50px 10px 10px 122px;
 }
 .drop-item{
   margin-top:4px;
 }
-  
 }
 
 
@@ -1089,6 +1141,7 @@ a, a:hover, a:focus {
 	.container.tagline {
 	 margin-left: auto;
 	 padding-right: 15px;
+	 padding-left: 50px;
 	}
 
 
@@ -1108,20 +1161,20 @@ a, a:hover, a:focus {
     width: 100px;
 }
 
-  .topNav ul li {
-  	padding: 5px 0;
-  	transition: all 500ms ease 300ms;
-    -webkit-transform: translate(150px, 0);
-    -ms-transform: translate(150px, 0);
-    transform: translate(150px, 0);
-  	opacity: 0;
-  }
-  .swipe .topNav ul li {
-    display: block;
-    opacity: 1;
-    -webkit-transform: translate(0, 0px);
-    -ms-transform: translate(0, 0px);
-    transform: translate(0, 0px);
+.topNav ul li {
+	padding: 5px 0;
+	transition: all 500ms ease 300ms;
+	-webkit-transform: translate(150px, 0);
+	-ms-transform: translate(150px, 0);
+	transform: translate(150px, 0);
+	opacity: 0;
+}
+.swipe .topNav ul li {
+	display: block;
+	opacity: 1;
+	-webkit-transform: translate(0, 0px);
+	-ms-transform: translate(0, 0px);
+	transform: translate(0, 0px);
 }
 .topNav ul li:nth-child(2) {
   transition-delay: 500ms;
@@ -1136,12 +1189,12 @@ a, a:hover, a:focus {
       padding: 20px 0px 10px 4px;
 }
 
-  .topNav ul li a {
-      font-size: 30px;
-      padding: 0 10px;
-      letter-spacing: 2px;
-      margin: 0;
-  }
+.topNav ul li a {
+		font-size: 30px;
+		padding: 0 10px;
+		letter-spacing: 2px;
+		margin: 0;
+}
 .navheader {
   width: 300px;
   top: 0;
@@ -1163,18 +1216,18 @@ a, a:hover, a:focus {
     padding: 20px 15px;
 }
 .swipe .navheader {
-    -webkit-transform: translate(0,0);
-    -moz-transform: translate(0,0);
-    -ms-transform: translate(0,0);
-    transform: translate(0,0);
-    box-shadow: 0px 4px 26px rgba(167, 167, 167, 0.39);
-    padding-top: 50px;
+	-webkit-transform: translate(0,0);
+	-moz-transform: translate(0,0);
+	-ms-transform: translate(0,0);
+	transform: translate(0,0);
+	box-shadow: 0px 4px 26px rgba(167, 167, 167, 0.39);
+	padding-top: 50px;
 }
 .close-tgl {
-    padding: 20px;
-    position: fixed;
-    right: 0;
-    top: 0;
+	padding: 20px;
+	position: fixed;
+	right: 0;
+	top: 0;
 }
 .close-tgl > img {
   width: 20px;
@@ -1267,18 +1320,13 @@ a, a:hover, a:focus {
     word-spacing: 0;
 }
 .yeartext h6 {
-
   font-size: 13px;
 }
 .dropddownsection {
     margin: 60px 0;
 }
 .dropcontent h2 {
-
     font-size: 20px;
-}
-.swiperImg > img {
-    height: 240px;
 }
 .title-heading > h2 {
     font-size: 40px;
@@ -1293,9 +1341,8 @@ a, a:hover, a:focus {
 
 }
 @media (max-width:767px){
- 
-  .portfolioLinks > ul > li > a {
-    font-size: 16px;
+.portfolioLinks > ul > li > a {
+	font-size: 16px;
 }
 .portfolioLinks > ul > li + li {
     margin-left: 30px;
@@ -1332,7 +1379,6 @@ a, a:hover, a:focus {
     bottom: 35px;
 }
 
-
 .customText h2 {
     font-size: 20px;
     line-height: 20px;
@@ -1349,10 +1395,10 @@ a, a:hover, a:focus {
     margin-right: 5px;
 }
 .img2, .img4 {
-    margin-left: 5px;
+	margin-left: 5px;
 }
 .imgEffectSection {
-    padding: 30px 0px;
+	padding: 0px 0px;
 }
 .green-box{
   display: none;
@@ -1365,7 +1411,7 @@ a, a:hover, a:focus {
     font-size: 35px;
 }
 .contact-us {
-    padding: 30px 0px;
+    padding: 60px 30px;
 }
 .contact-us .title-heading > h2 {
     margin-bottom: 15px;
@@ -1385,33 +1431,29 @@ a, a:hover, a:focus {
     padding: 20px 0;
 }
 .sliderSection .slick-slide {
-    padding: 0 10px;
-}
-.rovalino img, .bran img {
-    width: 295px;
-    height: 250px;
-}
-.rovalino, .bran {
-    padding-left: 15px;
-    width: 100%;
-    display: block;
-    text-align: center;
+	padding: 0 10px;
 }
 .white-box h1 {
-    font-size: 40px;
-}
-.rovalino h6, .bran h6 {
-    text-align: center;
-    margin-bottom: 0;
-}
-.rovalino h3, .bran h3 {
-    text-align: center;
+	font-size: 40px;
+	padding: 10px 0px;
 }
 .second-green-box {
     display: block !important;
 }
+.rovalino, .bran {
+	text-align: center;
+}
+.rovalino h6, .bran h6 {
+	position: relative;
+	bottom: 0;
+	text-align: center;
+}
+.rovalino h3, .bran h3 {
+  text-align: center;
+	position: relative;
+}
 .bran {
-    margin-top: 30px;
+   margin-top: 30px;
 }
 .triggar {
     height: 50px;
@@ -1439,8 +1481,8 @@ a, a:hover, a:focus {
     padding:0px;
 }
 .yearImg {
-    width: 100%;
-     padding: 40px 34px 0px 34px;
+	width: 100%;
+	 /*padding: 40px 34px 0px 34px;*/
 }
 .card-body h6 {
     font-size: 14px;
@@ -1477,6 +1519,7 @@ a, a:hover, a:focus {
 }
 .swiperContent {
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .biggerimg1 img {
@@ -1491,10 +1534,13 @@ a, a:hover, a:focus {
 
 }
 @media (max-width:575px) {
-  .Portfolio img {
-     width:100%;
-  }
-
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.Portfolio img {
+	 width:100%;
+}
 .portfolioBanner {
     padding: 50px 0 40px 20px;
 }
@@ -1503,7 +1549,7 @@ a, a:hover, a:focus {
     line-height: 30px;
 }
 .portfolioSection {
-    padding: 20px 0;
+    padding: 40px 0;
 }
 .portfolioLinks > ul > li > a {
     font-size: 14px;
@@ -1527,19 +1573,8 @@ a, a:hover, a:focus {
 .bannerinnerText img {
     margin-left: 20px;
 }
-.rovalino img, .bran img {
-    /*height: 200px;*/
-}
-.rovalino h6, .bran h6 {
-    margin-top: 10px;
-    margin-bottom: 0;
-}
-.rovalino h3, .bran h3 {
-    /*font-size: 25px;*/
-    margin-bottom: 0;
-}
 .lower-banner {
-    padding: 30px 0;
+    padding: 90px 0;
 }
 .title-heading > h2 {
     font-size: 25px;
@@ -1562,11 +1597,14 @@ a, a:hover, a:focus {
 .navheader {
     width: 100%;
 }
+.projectDetails {
+	margin-top: 100px;
+}
 
 .Portfolio {
 	width: 100%;
-display: block;
-text-align: center;
+	display: block;
+	text-align: center;
 }
 .footerimg1 {
 	text-align: center;
@@ -1587,18 +1625,24 @@ text-align: center;
     padding: 0px 50px;
 }
 .card-body h6 {
-    font-size: 12px;
+	font-size: 12px;
+}
+.we_develop {
+	padding-top:0px;
+}
+.aboutUS {
+	padding-top: 70px;
 }
 .dropcontent h2 {
-    font-size: 16px;
+	/*font-size: 16px;*/
 }
-.swiperImg > img {
-    height: 160px;
+.swiperSlider {
+	margin: 150px 0 80px;
 }
 .year span, .yearcol2 span {
-    padding: 0 15px 0 0;
-    font-size: 18px;
-    letter-spacing: 0;
+	padding: 0 15px 0 0;
+	font-size: 18px;
+	letter-spacing: 0;
 }
 .yeartext h5 {
     font-size: 14px;
@@ -1623,54 +1667,54 @@ text-align: center;
 
 }
 @media (max-width:485px) {
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+}
 .Portfolio {
 	width: 100%;
   display: block;
   text-align: center;
 }
 .logo > a > img {
-    width: 80px;
+	width: 80px;
 }
 .stickyHeader .mainLogo > a, .mainLogo > a {
-    height: auto;
-    padding: 15px;
-    width: 120px;
+	height: auto;
+	padding: 15px;
+	width: 120px;
 }
 .triggar {
-    height: 40px;
-    width: 45px;
+	height: 40px;
+	width: 45px;
 }
 .bannerSection {
-    padding: 10px 0;
+	padding: 10px 0;
 }
 .heading h2 {
-    padding: 0px 0px;
-    font-size: 16px;
+	padding: 0px 0px;
+	font-size: 16px;
 }
 .aboutUS h1 {
-    padding-top: 30px;
-    font-size: 30px;
+	padding-top: 30px;
+	font-size: 30px;
 }
 .yearImg {
-    padding: 20px 0px 0px 0px;
+	/*padding: 20px 0px 0px 0px;*/
 }
 .dropdown-width {
-    padding: 0px 15px;
+	padding: 0px 15px;
 }
 .dropddownsection {
-    margin: 20px 0;
-}
-.rovalino, .bran {
-  padding: 10px;
+	margin: 20px 0;
 }
 .portfolioBanner {
-    padding: 74px 0 40px 20px;
+	padding: 74px 0 40px 20px;
 }
 .Portfolio  {
-margin: 5px 0px;
+	margin: 5px 0px;
 }
 .desc {
-    left: 10px;
+	left: 10px;
 }
 }
-/*CHANGES*/
