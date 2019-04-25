@@ -385,6 +385,21 @@ img.imageDetail {
    -ms-filter: none;
    filter: none;
 }
+.other-team {
+	margin-top: -10px;
+}
+.other-team h6 {
+  text-align: left;
+  margin-top: 20px;
+	font-size: 18px;
+	font-family: 'Heebo';
+	font-weight: 200;
+}
+.other-team h3 {
+  text-align: left;
+	font-size: 36px;
+	line-height: 30px;
+}
 .rovalino h6, .bran h6  {
 	position: absolute;
 	bottom: 60px;
