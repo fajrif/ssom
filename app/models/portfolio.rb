@@ -8,6 +8,8 @@ class Portfolio < ActiveRecord::Base
   validates_uniqueness_of :title
   validates_presence_of :description
 
+	default_scope { order(order_no: :desc) }
+
 	has_many :pictures
 
 	def categories_text

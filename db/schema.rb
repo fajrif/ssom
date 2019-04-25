@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190405113404) do
+ActiveRecord::Schema.define(version: 20190425093851) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -90,6 +90,7 @@ ActiveRecord::Schema.define(version: 20190405113404) do
     t.string   "type_project"
     t.string   "size"
     t.string   "location"
+    t.integer  "order_no"
   end
 
   add_index "portfolios", ["slug"], name: "index_portfolios_on_slug", unique: true
