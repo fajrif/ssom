@@ -1,7 +1,7 @@
 class ProjectsController < ApplicationController
 
   def index
-		@projects = Portfolio.page(params[:page]).per(6)
+		@projects = Portfolio.all
 
     respond_to do |format|
       format.html # index.html.erb

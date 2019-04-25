@@ -1,24 +1,41 @@
 <section style="padding-top:105px;">
-	<div class="portfolioBanner pageContent">
+	<div class="pageContent">
 		<div class="container-fluid">
-			<div class="bannerinnerText">
-				<h2>SSOM STUDIO PROJECTS</h2>
-			</div>
 		</div>
 	</div>
 </section>
 <section>
 	<div class="portfolioSection">
-		<div class="tabcols">
-			<div class="container">
-				<div class="tab-content" id="pills-tabContent">
-					<%= render :partial => "project", :collection => @projects, :as => :project %>
+		<div class="container">
+			<% @projects.each_with_index do |project, index| %>
+				<div class="row" style="margin-bottom:50px;">
+					<% unless (index + 1).even? %>
+					<div class="col-md-5"></div>
+					<% end %>
+					<div class="col-md-7">
+						<div class="row">
+							<div class="col-md-8">
+								<h6><%= (index + 1).to_s.rjust(2, "0") %></h6>
+							</div>
+							<div class="col-md-4">
+								<h6 style="display:block;"><%= project.location %></h6>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<a href="<%= project_path(project) %>">
+									<img class="card-img" src="<%= project.pictures.first.image_url %>" />
+								</a>
+								<h2><%= project.title %></h2>
+								<h4><%= project.categories_text %></h4>
+							</div>
+						</div>
+					</div>
+					<% if (index + 1).even? %>
+					<div class="col-md-5"></div>
+					<% end %>
 				</div>
-			</div>
-			<div class="portBtn">
-				<%= link_to "load more", projects_path(page: @projects.current_page + 1), id: "load-more-pictures", remote: true %>
-			</div>
+			<% end %>
 		</div>
 	</div>
 </section>
-

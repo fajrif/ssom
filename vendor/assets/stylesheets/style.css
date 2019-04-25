@@ -509,19 +509,19 @@ img.imageDetail {
 	font-family: 'Heebo';
 	color: #000;
 	font-size: 18px;
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 30px;
 }
 .contact-info .form-control {
 	width: 100%;
 	background-color: transparent;
 	border: none;
-	border-bottom: 1px solid black;
+	border-bottom: 1.3px solid black;
 	border-radius: 0px;
 	padding: 5px 0;
 	font-family: 'Heebo';
 	font-size: 16px;
-	font-weight: 100;
+	font-weight: 400;
 	text-transform: uppercase;
 	color: #000;
 	resize: none;
@@ -727,35 +727,23 @@ img.imageDetail {
 	padding-right:100px;
 }
 
-.desc h6:nth-child(1) {
-	color:white;
-	background-color:black;
-	font-family: 'Heebo', sans-serif;
-	font-size: 11px;
-	padding:10px 30px 10px 10px;
-	display:inline-block;
-  text-align:left;
-  margin-right: 55px;
- 
-
-}
 .desc {
-	padding-right:120px;
 	position: absolute;
-	bottom: 10px;
-	left: 10px;
-	opacity: 0;
-	visibility: hidden;
+	bottom: 60px;
+	left: -100px;
+	color: #000;
 	-moz-transition: all 200ms ease-in-out 0s;
 	-webkit-transition: all 200ms ease-in-out 0s;
 	transition: all 200ms ease-in-out 0s;
 }
-.desc h5:nth-child(2) {
-	color:white;
-	background-color:black;
+.portfolioSection h6 {
+	color: white;
+	background-color: black;
+	font-family: 'Heebo', sans-serif;
 	font-size: 18px;
-	padding:10px 10px;
-	display:block;
+	padding: 10px;
+	display: inline-block;
+	text-align: center;
 }
 .footerSection {
     background-color: #000;
@@ -1029,7 +1017,7 @@ img.imageDetail {
     color:black;
 }
 .footerimgLeft img {
-    max-width: 120px;
+    max-width: 320px;
 }
 .footerimgRight i {
   color:#fff;
