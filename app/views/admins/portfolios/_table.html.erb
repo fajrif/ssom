@@ -4,7 +4,7 @@
   <thead>
     <tr>
       <th><%= sortable "title" %></th>
-      <th>Total Pictures</th>
+      <th>Order no</th>
       <th>Categories</th>
       <th></th>
     </tr>
@@ -13,7 +13,7 @@
     <% for portfolio in @portfolios %>
       <tr>
 				<td><strong><%= link_to portfolio.title, admins_portfolio_path(portfolio) %></strong></td>
-				<td><%= portfolio.pictures.try(:count) %></td>
+				<td><%= portfolio.order_no %></td>
 				<td><%= portfolio.categories_text %></td>
         <td class="actions">
           <%= link_to 'Show', admins_portfolio_path(portfolio), :class => 'btn btn-mini btn-info' %>
