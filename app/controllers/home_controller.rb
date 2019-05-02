@@ -11,4 +11,7 @@ class HomeController < ApplicationController
 		# get public about
   end
 
+  def theteam
+		# get public theteam
+  end
 end

@@ -1,3 +1,4 @@
+<% unless is_mobile_request? %>
 <section>
   <div class="pageContent">
     <div class="container">
@@ -66,106 +67,14 @@
               </div>
          </div>
        </div>
-          <div class="col-md-6">
-             <div class="yearImg">
-							 <img src="<%= image_url('yearimg.png') %>" alt="yearimg">
-              </div>
-          </div>
-          </div>
+		<div class="col-md-6">
+			 <div class="yearImg">
+				 <img src="<%= image_url('yearimg.png') %>" alt="yearimg">
+				</div>
+		</div>
+		</div>
   </section>
-<section>
-    <div class="dropddownsection">
-    <div class="container-fluid ">
-        <div class="row">
-            <div class="col-md-12">
-              <div class="theTeam">
-                 <h1>THE TEAM</h1>
-             </div>
-            </div>
-        </div>
-      <div class="dropdownrow">
-      <div class="row no-gutters">
-      <div class="col-md-5 ">
-        <div class="houseimg">
-					<img src="<%= image_url('team_bran.png') %>" id="the-team-pic">
-        </div>
-      </div>
-      <div class="col-md-7 ">
-          <div id="accordion">
-            <div class="dropdown-width">
-               <div class="card border-0">
-                 <div class="card-header border-0 pb-0">
-                    <a class=" collapsed card-link" data-toggle="collapse" href="#collapseOne">
-                        <div class="drop-item">
-                            <div class="dropimg">
-															<img src="<%= image_url('about_team_1.png') %>" alt="drop1" style="width:80%">
-                            </div>
-                            <div class="dropcontent">
-                              <h2>Bran Arifin (principal)</h2>
-                            </div>
-                        </div>
-                      </a>
-                      <div id="collapseOne" class="collapse show" data-parent="#accordion">
-                          <div class="card-body p-0">
-														<h6>
-															Received his bachelor of architecture from Southern California Institute of Architecture (Sci-Arc).
-															Bran has received outstanding awards for his thesis He has participated in several competition projects
-															and commercial project while working for Patrick Tighe Architecture in Los Angeles
-															before creating his own firm in Jakarta, Indonesia.
-                             </h6>
-                          </div>
-                    </div>
-									</div>
-								</div>
-									<div class="card border-0">
-									 <div class="card-header border-0 pb-0">
-										<a class=" collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-											<div class="drop-item">
-												<div class="dropimg">
-													<img src="<%= image_url('about_team_2.png') %>" alt="drop1" style="width:80%">
-												</div>
-												<div class="dropcontent">
-													<h2>Rovalino Gultom (Principal)</h2>
-												</div>
-											</div>
-										</a>
-										<div id="collapseTwo" class="collapse " data-parent="#accordion">
-											<div class="card-body p-0">
-												<h6>
-													Rovalino Gultom received a bachelor of Architecture at Pelita Harapan University.
-													As student he learned among mentors such as Adi Purnomo & Winy Maas (MVRDV) for an
-													interesting different perspective of Jakarta’s urban planning alongside master students
-													of TU Delft & Berlage Institute.
-													Continues his study of applied architecture on f&b business within the early creative
-													team of PTT Family. He was then accepted in Aboday, there he also learn from mentor such as
-													Ary Indra for high rise architecture & the professionalism within the business itself.
-													He also believes, to know Architecture one must zoom out from the point of view of an architect,
-													he gains many inspiration of architecture from areas such as music, films & many other life events.
-												 </h6>
-											</div>
-									</div>
-								 </div>
-								</div>
-
-					</div>
-        </div>
-			</div>
-    </div>
-  </div>
-</div>
-</section>
-
-<%= content_for :tail do %>
-	<script>
-		$(document).ready(function() {
-			$('#collapseOne').on('show.bs.collapse', function () {
-				$("#the-team-pic").attr('src','<%= image_url("team_bran.png") %>');
-			});
-
-			$('#collapseTwo').on('show.bs.collapse', function () {
-				$("#the-team-pic").attr('src','<%= image_url("team_ovan.png") %>');
-			});
-
-		});
-	</script>
+	<%= render "the_team" %>
+<% else %>
+	<%= render "about_mobile" %>
 <% end %>

@@ -1,8 +1,15 @@
-<%= render "banners" %>
-<%= render "tagline" %>
-<%= render "projects" %>
-<%= render "wiggles" %>
-<%= render "team" %>
-<%= render "architect" %>
-<%= render "contact_us" %>
-<%= render "instagram" %>
+<% if is_mobile_request? %>
+	<%= render "tagline_mobile" %>
+<% else %>
+	<%= render "banners" %>
+	<%= render "tagline" %>
+	<%= render "projects" %>
+	<%= render "wiggles" %>
+	<%= render "team" %>
+	<%= render "architect" %>
+	<section id="contact-us">
+		<%= render "contact_us" %>
+	</section>
+	<%= render "instagram" %>
+<% end %>
+

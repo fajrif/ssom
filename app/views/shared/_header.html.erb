@@ -20,9 +20,19 @@
 									<li class="<%= 'active' if is_aboutpage? %>">
 										<a href="/about">about</a>
 									</li>
+									<% if is_mobile_request? %>
+									<li class="<%= 'active' if is_teampage? %>">
+										<a href="/theteam">the team</a>
+									</li>
+									<% end %>
 									<li class="<%= 'active' if is_projectpage? %>">
 										<a href="/projects">projects</a>
 									</li>
+									<% if is_mobile_request? %>
+									<li class="<%= 'active' if is_contactpage? %>">
+										<a href="/contact">contact us</a>
+									</li>
+									<% end %>
 								</ul>
 							</nav>
 						</div>

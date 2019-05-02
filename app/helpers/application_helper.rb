@@ -36,8 +36,16 @@ module ApplicationHelper
 		request.path == about_path
 	end
 
+	def is_teampage?
+		request.path == theteam_path
+	end
+
 	def is_projectpage?
 		request.path.include?("project")
+	end
+
+	def is_contactpage?
+		request.path.include?("contact")
 	end
 
 	def truncate_paragraph(desc, length=0)

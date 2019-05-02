@@ -10,6 +10,11 @@ background-color: #000 !important;
 
 			<div class="col-md-12" style="color:#fff !important;">
 				<div class="swiperContent" style="margin-bottom:20px;">
+					<% if is_mobile_request? %>
+					<%= link_to "< back to projects", projects_path %>
+					<br/>
+					<br/>
+					<% end %>
 					<h2><%= @portfolio.title %></h2>
 					<ul>
 						<li><span>Category : </span><%= @portfolio.categories_text %></li>

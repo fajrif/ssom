@@ -84,6 +84,7 @@ a, a:hover, a:focus {
 	margin: 0 auto;
 }
 .headerSection {
+	background-color: transparent;
 	overflow: hidden;
 	color: #fff;
 	position: fixed;
@@ -1711,7 +1712,7 @@ h1 {
 	padding: 74px 0 40px 20px;
 }
 .Portfolio  {
-	margin: 5px 0px;
+	margin: 10px 0px;
 }
 .desc {
 	left: 10px;

@@ -14,10 +14,11 @@ Rails.application.routes.draw do
 		resources :contacts, :only => [:index, :show, :destroy]
   end
 
-  resource :contact, :only => [:create]
+  resource :contact, :only => [:create, :show]
 	resources :projects, :only => [:index, :show]
 
 	match 'about', to: 'home#about', via: :get
+	match 'theteam', to: 'home#theteam', via: :get
   root :to => "home#index"
 
 end

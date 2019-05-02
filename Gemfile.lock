@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/fajrif/mobylette
+  revision: 872563834b711f83c693a1b3944ef52234f49671
+  specs:
+    mobylette (3.5)
+      actionpack (>= 3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -302,6 +309,7 @@ DEPENDENCIES
   kaminari
   letter_opener
   mini_magick
+  mobylette!
   nokogiri
   pry-rails
   rabl
