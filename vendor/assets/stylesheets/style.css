@@ -14,6 +14,7 @@
 /* fonts link close */
 body {
   font-family: 'Bebas-Regular', sans-serif;
+  overflow-x: hidden;
 	font-weight: 100;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -87,7 +88,7 @@ a, a:hover, a:focus {
 	background-color: transparent;
 	overflow: hidden;
 	color: #fff;
-	position: fixed;
+	position: absolute;
 	left: 0;
 	right: 0;
 	top: 0;
