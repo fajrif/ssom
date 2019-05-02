@@ -1221,13 +1221,24 @@ img.imageDetail {
 .topNav {
     padding: 20px 15px;
 }
+.swipe > header .col-auto {
+	display: none;
+}
+.swipe > header .col {
+	padding-left: 0px;
+	padding-right: 0px;
+}
 .swipe .navheader {
-	-webkit-transform: translate(0,0);
-	-moz-transform: translate(0,0);
-	-ms-transform: translate(0,0);
-	transform: translate(0,0);
-	box-shadow: 0px 4px 26px rgba(167, 167, 167, 0.39);
-	padding-top: 50px;
+  -webkit-transform: translate(0,0);
+  -moz-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  transform: translate(0,0);
+  box-shadow: 0px 4px 26px rgba(167, 167, 167, 0.39);
+  padding-top: 50px;
+  z-index: 999;
+  position: relative;
+  overflow: visible;
+  height: 100vh;
 }
 .close-tgl {
 	padding: 20px;
