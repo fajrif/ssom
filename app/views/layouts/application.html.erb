@@ -19,6 +19,7 @@
 	<%= render "shared/header" %>
 	<%= yield %>
 	<%= render "shared/footer" unless is_mobile_request? %>
+	<%= render "shared/footer_mobile" if is_mobile_request? %>
 	<%= javascript_include_tag :application %>
 	<%= yield :tail %>
 </body>

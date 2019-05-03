@@ -12,10 +12,10 @@ unless Rails.env.production?
   configatron.smtp_port = 587
 
 	configatron.company_name = "SSOM Studio"
-	configatron.admin_email = "admin@daphotography.com"
+	configatron.admin_email = "create@ssomstudio.com"
 
 	configatron.support_name = "SSOM Studio"
-	configatron.support_email = "support@daphotography.com"
+	configatron.support_email = "build@ssomstudio.com"
 
 	configatron.no_reply_email = "playayodev@gmail.com"
   configatron.no_reply_password = "qwords777"
@@ -26,22 +26,21 @@ else
   # this is for production
 	configatron.site_name = "SSOM Studio"
 	configatron.site_name_mobile = "SSOM Studio"
-  configatron.site_url = "localhost:3000"
+	configatron.site_url = "ssomstudio.com"
 
   configatron.smtp_name = "smtp.gmail.com"
   configatron.smtp_port = 587
 
 	configatron.company_name = "SSOM Studio"
-	configatron.admin_email = "admin@daphotography.com"
+	configatron.admin_email = "create@ssomstudio.com"
 
 	configatron.support_name = "SSOM Studio"
-	configatron.support_email = "support@daphotography.com"
+	configatron.support_email = "build@ssomstudio.com"
 
 	configatron.no_reply_email = "playayodev@gmail.com"
   configatron.no_reply_password = "qwords777"
 
   configatron.site_env_note = "Production Server"
-
 end
 
 configatron.instagram_link = "https://www.instagram.com/ssomstudio/"

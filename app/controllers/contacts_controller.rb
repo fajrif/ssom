@@ -7,7 +7,7 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(params_contact)
     if @contact.save
-			# AdminMailer.contact_notification(@contact.id)
+			AdminMailer.contact_notification(@contact.id).deliver
       redirect_to root_path(:anchor => "contact_us"), :notice => "Thank you for your message. We will connect with you soon!"
     else
       redirect_to root_path(:anchor => "contact_us"), :alert => "You have to complete all fields"
