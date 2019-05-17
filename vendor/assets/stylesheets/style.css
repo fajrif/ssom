@@ -890,7 +890,7 @@ img.imageDetail {
   display: block;
   width: 100%;
   border-bottom: 2px solid gray;
-  margin-left: 15px;
+  margin-left: 5px;
   position: relative;
 }
 .card-header > a:before {
@@ -1437,7 +1437,7 @@ img.imageDetail {
     padding-left: 0;
 }
 .contact-info h4 {
-    font-size: 25px;
+    font-size: 18px;
 }
 .contact-info h6 {
     font-size: 16px;
@@ -1639,6 +1639,7 @@ img.imageDetail {
 }
 .card-body h6 {
 	font-size: 12px;
+	padding-left: 0px !important;
 }
 .we_develop {
 	padding-top:0px;
