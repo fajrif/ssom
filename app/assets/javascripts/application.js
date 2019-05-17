@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require popper.min.js
 //= require bootstrap.min.js
-//= require slick.min.js
 //= require swiper.min.js
-//= require custom.js
+//= require jquery.mCustomScrollbar.concat.min.js
+//= require slick.min.js
+//= require script.js

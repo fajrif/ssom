@@ -4,8 +4,8 @@
 	* the top of the compiled file, but it's generally better to create a new file per style scope.
 	*= require_self
 	*= require bootstrap.min.css
+	*= require jquery.mCustomScrollbar.css
 	*= require slick.css
 	*= require slick-theme.css
-	*= require swiper.min.css
 	*= require style.css
 */

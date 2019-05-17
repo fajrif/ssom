@@ -1,50 +1,323 @@
-	<header>
-		<div class="headerSection">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-auto">
-						<div class="logo mainLogo">
-							<a href="/">
-								<img src="<%= image_url('logo-white.png') %>" alt="logo" />
-							</a>
-						</div>
-					</div>
-					<div class="col">
-						<div class="navheader">
-							<span class="close-tgl d-lg-none"><img src="<%= image_url('close.svg') %>" alt="..."></span>
-							<nav class="topNav">
-								<ul>
-									<li  class="<%= 'active' if is_homepage? %>">
-										<a href="/">home</a>
-									</li>
-									<li class="<%= 'active' if is_aboutpage? %>">
-										<a href="/about">about</a>
-									</li>
-									<% if is_mobile_request? %>
-									<li class="<%= 'active' if is_teampage? %>">
-										<a href="/theteam">the team</a>
-									</li>
-									<% end %>
-									<li class="<%= 'active' if is_projectpage? %>">
-										<a href="/projects">projects</a>
-									</li>
-									<% if is_mobile_request? %>
-									<li class="<%= 'active' if is_contactpage? %>">
-										<a href="/contact">contact us</a>
-									</li>
-									<% end %>
-								</ul>
-							</nav>
-						</div>
-					</div>
-					<div class="col-auto d-lg-none">
-						<div class="triggar">
-							<span class="triggarLines"></span>
-							<!-- <span class="triggarLines"></span> -->
-							<span class="triggarLines"></span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+<header class="navsec">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark align-items-center">
+      <a class="navbar-brand glitch" href="/" data-text="Strobocops">
+				<span class="glitch__color glitch__color--red"><img src="assets/logo.svg" alt="Logo"/></span>
+				<span class="glitch__color glitch__color--blue"><img src="assets/logo-green.svg" alt="Logo"/></span>
+				<span class="glitch__color glitch__color--green"><img src="assets/logo-blue.svg" alt="Logo"/></span>
+				<span class="glitch__main"><img src="assets/logo.svg" alt="Logo"/></span>
+			</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto align-items-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="/explore">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Following</a>
+          </li>
+          <form class="d-flex align-items-center my-2 my-lg-0">
+            <div class="headersearch">
+              <div class="cstmsearch">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <span><img src="assets/search.svg" alt="..."/></span>
+              </div>
+              <div class="searchdropdown" id="searchdropdownsec">
+                <div class="titledropdown">
+                  <h4>Top Results</h4>
+                </div>
+                <div class="searchlist">
+                  <div class="listheader">
+                    <div class="row align-items-center mt-2">
+                      <div class="col-xl-6 col-lg-6">
+                        <div class="searchlisttitle">
+                          <h4>Games</h4>
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 text-right">
+                        <div class="seeallmenu d-flex justify-content-end">
+                          <a href="#">see all</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listcontent mt-2 pb-2 borderbtm">
+                    <div class="style1 d-flex align-items-center">
+                      <div class="listimg">
+                        <img src="assets/fortnite.png" alt="">
+                      </div>
+                      <div class="listcontentinner">
+                        <h3>Fortnite</h3>
+                        <div class="listimgsec">
+                          <img src="assets/eye.png" alt="" /> 335k viewers
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listheader mt-3">
+                    <div class="row align-items-center mt-2">
+                      <div class="col-xl-6 col-lg-6">
+                        <div class="searchlisttitle">
+                          <h4>Live Now</h4>
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 text-right">
+                        <div class="seeallmenu d-flex justify-content-end">
+                          <a href="#">see all</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listcontent mt-2 pb-2">
+                    <div class="style2 d-flex align-items-center">
+                      <div class="listimg">
+                        <img src="assets/searchbigimg.png" alt="">
+                      </div>
+                      <div class="listcontentinner">
+                        <h3>Clip Title</h3>
+                        <h4>Username a</h4>
+                        <div class="listimgsec">
+                          <img src="assets/remote.png" alt="" /> Fortnite
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listcontent mt-2 pb-2 borderbtm">
+                    <div class="style2 d-flex align-items-center">
+                      <div class="listimg">
+                        <img src="assets/searchbigimg.png" alt="">
+                      </div>
+                      <div class="listcontentinner">
+                        <h3>Clip Title</h3>
+                        <h4>Username a</h4>
+                        <div class="listimgsec">
+                          <img src="assets/remote.png" alt="" /> Fortnite
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listheader mt-3">
+                    <div class="row align-items-center mt-2">
+                      <div class="col-xl-6 col-lg-6">
+                        <div class="searchlisttitle">
+                          <h4>Clips</h4>
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 text-right">
+                        <div class="seeallmenu d-flex justify-content-end">
+                          <a href="#">see all</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listcontent mt-2 pb-2">
+                    <div class="style2 style3 d-flex align-items-center">
+                      <div class="listimg">
+                        <img src="assets/searchbigimg.png" alt="">
+                      </div>
+                      <div class="listcontentinner">
+                        <h3>Clip Title</h3>
+                        <h4>Username a</h4>
+                        <div class="viewsec">
+                          <ul>
+                            <li>137k views</li>
+                            <li>1 hours ago</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listcontent mt-2 pb-2 borderbtm">
+                    <div class="style2 style3 d-flex align-items-center">
+                      <div class="listimg">
+                        <img src="assets/searchbigimg.png" alt="">
+                      </div>
+                      <div class="listcontentinner">
+                        <h3>Clip Title</h3>
+                        <h4>Username a</h4>
+                        <div class="viewsec">
+                          <ul>
+                            <li>137k views</li>
+                            <li>1 hours ago</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listheader">
+                    <div class="row align-items-center mt-2">
+                      <div class="col-xl-6 col-lg-6">
+                        <div class="searchlisttitle">
+                          <h4>Streamers</h4>
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 text-right">
+                        <div class="seeallmenu d-flex justify-content-end">
+                          <a href="#">see all</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listcontent mt-2 pb-2">
+                    <div class="style1 style4 d-flex align-items-center">
+                      <div class="listimg">
+                        <img src="assets/streamerimg.png" alt="">
+                      </div>
+                      <div class="listcontentinner">
+                        <h3>Lorem <img src="assets/circlecheck.svg" alt="..."/></h3>
+                        <div class="listimgsec">
+                          2.3M Followers
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listheader">
+                    <div class="row align-items-center">
+                      <div class="col-xl-6 col-lg-6">
+                        <div class="searchlisttitle">
+                          <h4>Streamers</h4>
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 text-right">
+                        <div class="seeallmenu d-flex justify-content-end">
+                          <a href="#">see all</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listcontent mt-2">
+                    <div class="style1 style4 d-flex align-items-center">
+                      <div class="listimg">
+                        <img src="assets/streamerimg.png" alt="">
+                      </div>
+                      <div class="listcontentinner">
+                        <h3>Lorem <img src="assets/circlecheck.svg" alt="..."/></h3>
+                        <div class="listimgsec">
+                          2.3M Followers
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </ul>
+        <ul class="navbar-nav ml-auto acountsmenu">
+          <li class="loginmenu">
+            <a href="#" data-toggle="modal" data-target="#loginsignupmodal">Log in</a>
+          </li>
+          <li class="loginmenu">
+            <a href="#" class="bgblue" data-toggle="modal" data-target="#loginsignupmodal">Sign up</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto afterlogin align-items-center  d-none">
+          <li class="golivemenu">
+            <a href="#" class="btn btn-outline-primary blueclr"><img src="assets/videoicon.png" alt="...">Go Live</a>
+          </li>
+          <li class="notificationmenu">
+            <a href="#" class="notificationavailable">
+              <img src="assets/notification.svg" alt="..." />
+              <span>3</span>
+            </a>
+            <div class="notificationdropdown">
+              <div class="notificationheader">
+                <div class="notificationtitle">
+                  <h3>Notification</h3>
+                </div>
+                <div class="notificationicon">
+                  <img src="assets/settings.png" alt="">
+                </div>
+              </div>
+              <div class="notificationcontent">
+                <div class="notificationlist pt-2 pb-2">
+                  <div class="notificationimg">
+                    <img src="assets/notificationimg.png" class="brleft" alt="">
+                  </div>
+                  <div class="notificationcontentsec">
+                    <h5>Streamer A sent you a message</h5>
+                    <h6>3 months ago</h6>
+                  </div>
+                </div>
+                <div class="notificationlist pt-2 pb-2">
+                  <div class="notificationimg">
+                    <img src="assets/notificationimg.png" class="brleft" alt="">
+                  </div>
+                  <div class="notificationcontentsec">
+                    <h5>Streamer A sent you a message</h5>
+                    <h6>3 months ago</h6>
+                  </div>
+                </div>
+                <div class="goxlogo text-center">
+                  <img src="assets/notlogo.svg" alt="">
+                </div>
+              </div>
+              <div class="seeallbtn text-right">
+                <a href="#">see all</a>
+              </div>
+            </div>
+          </li>
+          <li class="usermenu">
+            <a href="#">
+              <span class="brleft usercontent">
+                <img class="brleft" src="assets/userimg.png" alt="..." />
+              </span>
+              <p>
+                <span class="username">
+                  <font>Live Stream</font>
+                  <small><img src="assets/circlecheck.svg" alt="..." /></small>
+                </span>
+                <span class="nottext">Hi, follow my live stream</span>
+              </p>
+            </a>
+            <div class="userdropdown">
+              <ul class="pb-3">
+                <li>
+                  <a href="#">
+                    <img src="assets/profile.png" alt="...">Profile
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/dashboard.png" alt="...">Dashboard
+                  </a>
+                </li>
+              </ul>
+              <ul class="pt-3 pb-3">
+                <li>
+                  <a href="#">
+                    <img src="assets/friends.png" alt="...">Friends
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/payments.png" alt="...">Payments
+                  </a>
+                </li>
+              </ul>
+              <ul class="pt-3">
+                <li>
+                  <a href="#">
+                    <img class="chatimg" src="assets/chat.png" alt="...">Chat
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/settings.png" alt="...">Settings
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/logout.png" alt="...">Log Out
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>

@@ -11,7 +11,15 @@ class HomeController < ApplicationController
 		# get public about
   end
 
-  def theteam
-		# get public theteam
+  def explore
+		# get public explore
+  end
+
+  def clips
+		# get public explore
+  end
+
+  def games
+		# get public explore
   end
 end

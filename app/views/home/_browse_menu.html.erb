@@ -1,0 +1,41 @@
+<div class="form-row">
+	<div class="col">
+		<div class="titleStyle mbcenter pt-3">
+			<h4>BROWSE BY CATEGORY :</h4>
+		</div>
+	</div>
+</div>
+<div class="categoryTopOptions">
+	<div class="form-row align-items-center">
+		<div class="col-md">
+			<div class="categoryLinks">
+				<ul>
+					<li><a href="/games" class="<%= 'active' if request.path == games_path %>"><span><img src="assets/icon-game.png" alt="..." width="20"></span> <span>GAMES</span></a></li>
+					<li><a href="/explore" class="<%= 'active' if request.path == explore_path %>"><span><img src="assets/icon-streamers.png" alt="..." width="20"></span> <span>STREAMERS</span></a></li>
+					<li><a href="/clips" class="<%= 'active' if request.path == clips_path %>"><span><img src="assets/icon-clips.png" alt="..." width="20"></span> <span>CLIPS</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-auto">
+			<div class="row align-items-center">
+				<div class="col">
+					<div class="gridListOption">
+						<ul>
+							<li><a href="javascript:void(0)" class="active gridOption"><img src="assets/icon-grid.png" alt="..." width="30"></a></li>
+							<li><a href="javascript:void(0)" class="listOption"><img src="assets/icon-list.png" alt="..." width="20"></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col">
+					<div class="sortBy">
+						<a href="javascript:void(0)"><span>SORY BY</span> <span><img src="assets/icon-sortby.png" alt="..." width="16"></span></a>
+						<ul class="sortByDd">
+							<li><a href="javascript:void(0)">Option 1</a></li>
+							<li><a href="javascript:void(0)">Option 2</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

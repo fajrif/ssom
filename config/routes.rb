@@ -19,6 +19,9 @@ Rails.application.routes.draw do
 
 	match 'about', to: 'home#about', via: :get
 	match 'theteam', to: 'home#theteam', via: :get
+	match 'explore', to: 'home#explore', via: :get
+	match 'clips', to: 'home#clips', via: :get
+	match 'games', to: 'home#games', via: :get
   root :to => "home#index"
 
 end
