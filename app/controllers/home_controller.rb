@@ -2,9 +2,9 @@ class HomeController < ApplicationController
 
   def index
 		# get public home
-		@contact = Contact.new
-		@banners = Banner.all
-		@pictures = Picture.order("order_no desc").limit(8).reverse
+		# @contact = Contact.new
+		# @banners = Banner.all
+		# @pictures = Picture.order("order_no desc").limit(8).reverse
   end
 
   def about
