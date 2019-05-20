@@ -23,6 +23,10 @@ class HomeController < ApplicationController
 		# get public explore
   end
 
+  def game
+		# get public explore
+  end
+
   def find_interest
 		# get public explore
   end
