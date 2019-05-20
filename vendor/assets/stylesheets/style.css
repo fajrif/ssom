@@ -511,7 +511,8 @@ a:hover {
 .cardImgCol:hover + .cardContent > .viewersCol,
 .cardImgCol:hover + .cardContent > .cardusername,
 .cardImgCol:hover + .cardContent > .cardlist,
-.cardTitle:hover {
+.cardusername:hover,
+a.forgotpassword:hover {
   color: #70e77c;
 }
 .cardImgCol:hover + .cardContent > .viewersCol:before {
