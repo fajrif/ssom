@@ -512,8 +512,10 @@ a:hover {
 .cardImgCol:hover + .cardContent > .cardusername,
 .cardImgCol:hover + .cardContent > .cardlist,
 .cardusername:hover,
+.table.tableStyle span.cardTitle:hover,
 a.forgotpassword:hover {
   color: #70e77c;
+	cursor: pointer;
 }
 .cardImgCol:hover + .cardContent > .viewersCol:before {
 	filter: none;
@@ -2152,17 +2154,21 @@ span.listarrow {
   -o-transition: all 300ms ease-in-out 0s;
   transition: all 300ms ease-in-out 0s;
 }
-.listView .table > tbody > tr:hover {
-  color: #6fe77d;
-}
+/*.listView .table > tbody > tr:hover {*/
+  /*color: #6fe77d;*/
+/*}*/
 .filterLink {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-.listView .table > tbody > tr:hover .filterLink {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
+.filterLink:hover {
+  filter: none;
+	color: #6fe77d;
 }
+/*.listView .table > tbody > tr:hover .filterLink {*/
+  /*-webkit-filter: grayscale(0%);*/
+  /*filter: grayscale(0%);*/
+/*}*/
 /*  streamer page end  */
 
 /*  Clip page Start  */
