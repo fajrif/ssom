@@ -517,6 +517,9 @@ a.forgotpassword:hover {
   color: #70e77c;
 	cursor: pointer;
 }
+a.forgotpassword {
+	font-size: 10px;
+}
 .cardImgCol:hover + .cardContent > .viewersCol:before {
 	filter: none;
 }
@@ -1532,6 +1535,9 @@ li.usermenu {
 }
 .cardStyle .cardpr {
   position: relative;
+}
+.cardcheckbox {
+	cursor: pointer;
 }
 
 /**************** Custom Checkbox Css Ends *****************/
