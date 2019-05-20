@@ -12,17 +12,17 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto align-items-center">
-          <li class="nav-item active">
+					<li class="nav-item <%= 'active' if request.path == games_path || request.path == explore_path || request.path == clips_path %>">
             <a class="nav-link" href="/explore">Explore</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Following</a>
+					<li class="nav-item <%= 'active' if request.path == following_path %>">
+            <a class="nav-link" href="/following">Following</a>
           </li>
           <form class="d-flex align-items-center my-2 my-lg-0">
             <div class="headersearch">
               <div class="cstmsearch">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <span><img src="assets/search.svg" alt="..."/></span>
+                <span><img src="assets/search.svg" /></span>
               </div>
               <div class="searchdropdown" id="searchdropdownsec">
                 <div class="titledropdown">
@@ -46,12 +46,12 @@
                   <div class="listcontent mt-2 pb-2 borderbtm">
                     <div class="style1 d-flex align-items-center">
                       <div class="listimg">
-                        <img src="assets/fortnite.png" alt="">
+                        <img src="assets/fortnite.png" >
                       </div>
                       <div class="listcontentinner">
                         <h3>Fortnite</h3>
                         <div class="listimgsec">
-                          <img src="assets/eye.png" alt="" /> 335k viewers
+                          <img src="assets/eye.png"  /> 335k viewers
                         </div>
                       </div>
                     </div>
@@ -73,13 +73,13 @@
                   <div class="listcontent mt-2 pb-2">
                     <div class="style2 d-flex align-items-center">
                       <div class="listimg">
-                        <img src="assets/searchbigimg.png" alt="">
+                        <img src="assets/searchbigimg.png" >
                       </div>
                       <div class="listcontentinner">
                         <h3>Clip Title</h3>
                         <h4>Username a</h4>
                         <div class="listimgsec">
-                          <img src="assets/remote.png" alt="" /> Fortnite
+                          <img src="assets/remote.png"  /> Fortnite
                         </div>
                       </div>
                     </div>
@@ -87,13 +87,13 @@
                   <div class="listcontent mt-2 pb-2 borderbtm">
                     <div class="style2 d-flex align-items-center">
                       <div class="listimg">
-                        <img src="assets/searchbigimg.png" alt="">
+                        <img src="assets/searchbigimg.png" >
                       </div>
                       <div class="listcontentinner">
                         <h3>Clip Title</h3>
                         <h4>Username a</h4>
                         <div class="listimgsec">
-                          <img src="assets/remote.png" alt="" /> Fortnite
+                          <img src="assets/remote.png"  /> Fortnite
                         </div>
                       </div>
                     </div>
@@ -115,7 +115,7 @@
                   <div class="listcontent mt-2 pb-2">
                     <div class="style2 style3 d-flex align-items-center">
                       <div class="listimg">
-                        <img src="assets/searchbigimg.png" alt="">
+                        <img src="assets/searchbigimg.png" >
                       </div>
                       <div class="listcontentinner">
                         <h3>Clip Title</h3>
@@ -132,7 +132,7 @@
                   <div class="listcontent mt-2 pb-2 borderbtm">
                     <div class="style2 style3 d-flex align-items-center">
                       <div class="listimg">
-                        <img src="assets/searchbigimg.png" alt="">
+                        <img src="assets/searchbigimg.png" >
                       </div>
                       <div class="listcontentinner">
                         <h3>Clip Title</h3>
@@ -163,10 +163,10 @@
                   <div class="listcontent mt-2 pb-2">
                     <div class="style1 style4 d-flex align-items-center">
                       <div class="listimg">
-                        <img src="assets/streamerimg.png" alt="">
+                        <img src="assets/streamerimg.png" >
                       </div>
                       <div class="listcontentinner">
-                        <h3>Lorem <img src="assets/circlecheck.svg" alt="..."/></h3>
+                        <h3>Lorem <img src="assets/circlecheck.svg" /></h3>
                         <div class="listimgsec">
                           2.3M Followers
                         </div>
@@ -190,10 +190,10 @@
                   <div class="listcontent mt-2">
                     <div class="style1 style4 d-flex align-items-center">
                       <div class="listimg">
-                        <img src="assets/streamerimg.png" alt="">
+                        <img src="assets/streamerimg.png" >
                       </div>
                       <div class="listcontentinner">
-                        <h3>Lorem <img src="assets/circlecheck.svg" alt="..."/></h3>
+                        <h3>Lorem <img src="assets/circlecheck.svg" /></h3>
                         <div class="listimgsec">
                           2.3M Followers
                         </div>
@@ -215,11 +215,11 @@
         </ul>
         <ul class="navbar-nav ml-auto afterlogin align-items-center  d-none">
           <li class="golivemenu">
-            <a href="#" class="btn btn-outline-primary blueclr"><img src="assets/videoicon.png" alt="...">Go Live</a>
+            <a href="#" class="btn btn-outline-primary blueclr"><img src="assets/videoicon.png" >Go Live</a>
           </li>
           <li class="notificationmenu">
             <a href="#" class="notificationavailable">
-              <img src="assets/notification.svg" alt="..." />
+              <img src="assets/notification.svg"  />
               <span>3</span>
             </a>
             <div class="notificationdropdown">
@@ -228,13 +228,13 @@
                   <h3>Notification</h3>
                 </div>
                 <div class="notificationicon">
-                  <img src="assets/settings.png" alt="">
+                  <img src="assets/settings.png" >
                 </div>
               </div>
               <div class="notificationcontent">
                 <div class="notificationlist pt-2 pb-2">
                   <div class="notificationimg">
-                    <img src="assets/notificationimg.png" class="brleft" alt="">
+                    <img src="assets/notificationimg.png" class="brleft" >
                   </div>
                   <div class="notificationcontentsec">
                     <h5>Streamer A sent you a message</h5>
@@ -243,7 +243,7 @@
                 </div>
                 <div class="notificationlist pt-2 pb-2">
                   <div class="notificationimg">
-                    <img src="assets/notificationimg.png" class="brleft" alt="">
+                    <img src="assets/notificationimg.png" class="brleft" >
                   </div>
                   <div class="notificationcontentsec">
                     <h5>Streamer A sent you a message</h5>
@@ -251,7 +251,7 @@
                   </div>
                 </div>
                 <div class="goxlogo text-center">
-                  <img src="assets/notlogo.svg" alt="">
+                  <img src="assets/notlogo.svg" >
                 </div>
               </div>
               <div class="seeallbtn text-right">
@@ -262,12 +262,12 @@
           <li class="usermenu">
             <a href="#">
               <span class="brleft usercontent">
-                <img class="brleft" src="assets/userimg.png" alt="..." />
+                <img class="brleft" src="assets/userimg.png"  />
               </span>
               <p>
                 <span class="username">
                   <font>Live Stream</font>
-                  <small><img src="assets/circlecheck.svg" alt="..." /></small>
+                  <small><img src="assets/circlecheck.svg"  /></small>
                 </span>
                 <span class="nottext">Hi, follow my live stream</span>
               </p>
@@ -276,41 +276,41 @@
               <ul class="pb-3">
                 <li>
                   <a href="#">
-                    <img src="assets/profile.png" alt="...">Profile
+                    <img src="assets/profile.png" >Profile
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="assets/dashboard.png" alt="...">Dashboard
+                    <img src="assets/dashboard.png" >Dashboard
                   </a>
                 </li>
               </ul>
               <ul class="pt-3 pb-3">
                 <li>
                   <a href="#">
-                    <img src="assets/friends.png" alt="...">Friends
+                    <img src="assets/friends.png" >Friends
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="assets/payments.png" alt="...">Payments
+                    <img src="assets/payments.png" >Payments
                   </a>
                 </li>
               </ul>
               <ul class="pt-3">
                 <li>
                   <a href="#">
-                    <img class="chatimg" src="assets/chat.png" alt="...">Chat
+                    <img class="chatimg" src="assets/chat.png" >Chat
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="assets/settings.png" alt="...">Settings
+                    <img src="assets/settings.png" >Settings
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="assets/logout.png" alt="...">Log Out
+                    <img src="assets/logout.png" >Log Out
                   </a>
                 </li>
               </ul>

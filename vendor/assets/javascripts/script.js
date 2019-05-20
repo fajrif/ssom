@@ -82,17 +82,17 @@ $(window).scroll(function(){
 });
 
 
-// $(function () {
-//   $('#timePicker').datetimepicker({
-//     format: 'LT',
-//   });
-// });
-// $(function () {
-//   $('#datePicker').datetimepicker({
-//     format: 'L',
-//   });
-// });
-
+$(function () {
+  $('#timePicker').datetimepicker({
+    format: 'LT',
+  });
+});
+$(function () {
+  $('#datePicker').datetimepicker({
+    format: 'L',
+  });
+});
+//
 $('.homeSlider').slick({
   dots: true,
   centerMode: true,
@@ -129,17 +129,29 @@ $('.streamslider').slick({
   slidesToShow: 8,
   responsive: [
     {
+      breakpoint: 991,
+      settings: {
+        slidesToShow:6
+      }
+    },
+    {
       breakpoint: 768,
       settings: {
-        slidesToShow: 2
+        slidesToShow: 4
       }
     },
     {
       breakpoint: 575,
       settings: {
-        slidesToShow: 1
+        slidesToShow: 2
       }
-    }
+    },
+    {
+      breakpoint: 375,
+      settings: {
+        slidesToShow:1
+      }
+    },
   ]
 });
 
@@ -248,3 +260,54 @@ $(document).ready(function() {
     $("#video").attr('src',$videoSrc);
   })
 });
+
+// Params
+var sliderSelector = '.swiper-container',
+    options = {
+      init: false,
+      loop: true,
+      speed:800,
+      slidesPerView: 4, // or 'auto'
+      // spaceBetween: 10,
+      centeredSlides : true,
+      effect: 'coverflow', // 'cube', 'fade', 'coverflow',
+      coverflowEffect: {
+        rotate: 0, // Slide rotate in degrees
+        stretch: 0, // Stretch space between slides (in px)
+        depth: 100, // Depth offset in px (slides translate in Z axis)
+        modifier: 1, // Effect multipler
+        slideShadows : false, // Enables slides shadows
+      },
+      grabCursor: true,
+      parallax: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        1280: {
+          slidesPerView: 3,
+        },
+        991: {
+          slidesPerView: 3,
+        },
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 0
+        }
+      },
+      // Events
+      on: {
+        imagesReady: function(){
+          this.el.classList.remove('loading');
+        }
+      }
+    };
+var mySwiper = new Swiper(sliderSelector, options);
+
+// Initialize slider
+mySwiper.init();
