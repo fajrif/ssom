@@ -394,10 +394,18 @@ a:hover {
 .rightTags>ul>li>span>span, .rightTags>ul>li img {
   display: inline-block;
   vertical-align: middle;
+	filter: grayscale(100%);
 }
 .rightTags>ul>li>span {
   padding: 5px 15px;
   display: block;
+}
+.rightTags.onlyClip {
+	top:0 !important;
+	right:0 !important;
+}
+.rightTags.onlyClip > ul > li {
+	padding: 0px;
 }
 .liveVideoTag {
   background-color: #da3731;
@@ -509,8 +517,8 @@ a:hover {
   font-size: 8pt;
 }
 .cardStyle .rightTags {
-  right: 2px;
-  top: 2px;
+  /*right: 2px;*/
+  /*top: 2px;*/
 }
 .cardStyle .cardUserName {
   min-height: 13px;
@@ -543,8 +551,8 @@ a:hover {
   margin-top: -2px;
 }
 .cardcontentimg img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   object-fit: cover;
   border: 1px solid transparent;
 }
@@ -599,7 +607,7 @@ a:hover {
   margin-bottom: 10px;
 }
 .cardStyle1>.cardImgCol>a>img {
-  height: 220px;
+  height: 189px;
   object-fit: cover;
   width: 100%;
 }
@@ -641,12 +649,12 @@ a:hover {
   line-height: 12pt;
 }
 .cardStyle2>.cardImgCol>a>img {
-  height: 220px;
+  height: 190px;
   object-fit: cover;
   width: 100%;
 }
 .cardStyle2 .cardcontentimg img {
-  width: 38px;
+  width: 40px;
   height: 40px;
 }
 .cardStyle2 .cardContent {
@@ -683,6 +691,13 @@ a:hover {
 .cardStyle3 .cardTitle {
   font-size: 12pt;
   font-weight: 700;
+}
+.cardContent.imgcontentcol .cardTitle,
+.cardContent.imgcontentcol .cardusername,
+.cardStyle3 .cardTitle,
+.cardStyle3 .cardusername,
+.cardStyle3 .cardlist {
+	padding-left: 8px;
 }
 .cardStyle3 span.cardusername {
   font-size: 10pt;
@@ -733,6 +748,9 @@ hr.bodrGreen {
 .glitch {
   position: relative;
   transform-origin: center top;
+}
+.glitch img {
+	height: 30px;
 }
 .glitch__color {
   height: 100%;
@@ -821,10 +839,11 @@ header.navsec {
   -webkit-transition: all 300ms ease-in-out 0s;
   -o-transition: all 300ms ease-in-out 0s;
   transition: all 300ms ease-in-out 0s;
+	background: linear-gradient(#000, #000 10%, rgba(255, 255, 255, 0));
 }
 .navsec.sticky {
   padding: 15px 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 1);
   -webkit-transition: all 300ms ease-in-out 0s;
   -o-transition: all 300ms ease-in-out 0s;
   transition: all 300ms ease-in-out 0s;
@@ -835,7 +854,7 @@ header.navsec {
   padding: 0;
   font-family: 'Lackonic-Regular';
   margin-right: 30px;
-  font-size: 10pt;
+  font-size: 16px;
   letter-spacing: 0.5px;
   position: relative;
 }
@@ -846,11 +865,15 @@ header.navsec {
     margin-right: 0;
     font-family: 'Rubik', sans-serif;
     color: #fff;
-    font-size: 9pt;
-    padding: 7px 20px;
+    font-size: 14px;
+    padding: 5px 20px;
     border: 1px solid #1B46FF;
     margin-left: 3px;
     border-radius: 7px 0 0 0;
+}
+.navsec .navbar .navbar-nav.acountsmenu li a:hover {
+	background-color: #1B46FF;
+	color: #fff;
 }
 .navsec a.navbar-brand {
   margin-right: 35px;
@@ -900,7 +923,7 @@ header.navsec {
   border-radius: 0;
   min-width: 350px;
   margin-right: 0 !important;
-  height: 24px;
+  height: 28px;
   padding-left: 30px;
   font-size: 8pt;
   color: #70e77c !important;
@@ -934,7 +957,7 @@ header.navsec {
     width: 15px;
 }
 .cstmsearch .form-control::placeholder {
-  font-size: 8pt;
+  font-size: 9pt;
   color: #70e77c !important;
   font-family: 'Rubik', sans-serif;
 }
@@ -3761,7 +3784,7 @@ ul.tabs li {
   height: 340px;
 }
 .cardStyle1>.cardImgCol>a>img {
-  height: 220px;
+  height: 189px;
 }
 .mainSliderSection .sliderCol .swiper-button-white {
   top: 25.2%;
@@ -3770,7 +3793,7 @@ ul.tabs li {
   height: 170px;
 }
 .cardStyle2>.cardImgCol>a>img {
-  height: 200px;
+  height: 190px;
 }
 }
 @media (max-width:1280px) {
@@ -3796,10 +3819,10 @@ ul.tabs li {
   height: 250px;
 }
 .cardStyle1>.cardImgCol>a>img {
-  height: 150px;
+  height: 189px;
 }
 .cardStyle2>.cardImgCol>a>img {
-  height: 150px;
+  height: 190px;
 }
 }
 
@@ -3906,7 +3929,7 @@ li.notificationmenu {
     column-count: 2;
 }
 .cardStyle2>.cardImgCol>a>img {
-    height: 200px;
+    height: 190px;
 }
 .follow-following li a {
     font-size: 14pt;
@@ -4012,7 +4035,7 @@ li.notificationmenu {
     padding-top: 60px;
   }
   .cardStyle2>.cardImgCol>a>img {
-    height: 200px;
+    height: 190px;
   }
   .footerCol {
     padding: 30px 0;
