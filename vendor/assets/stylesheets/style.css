@@ -902,6 +902,9 @@ header.navsec {
     -moz-transition: all 300ms ease-in-out 0s;
     transition: all 300ms ease-in-out 0s;
 }
+
+/*.cstmsearch < #searchInput:focus,*/
+
 .cstmsearch:hover {
   -webkit-background-image: linear-gradient(to right, #d93833, #d46015, #c78100, #b29e00, #98b832, #6fc05d, #43c485, #00c6aa, #00b5ce, #009ffb, #007fff, #1b45fd);
   -moz-background-image: linear-gradient(to right, #d93833, #d46015, #c78100, #b29e00, #98b832, #6fc05d, #43c485, #00c6aa, #00b5ce, #009ffb, #007fff, #1b45fd);
@@ -1400,8 +1403,8 @@ li.usermenu {
   vertical-align: middle;
 }
 .exclusiveslider .cardImgCol>a>img {
-  /*height: 190px;*/
-  /*object-fit: cover;*/
+  height: 274px;
+  object-fit: cover;
   width: 100%;
 }
 /**************** ExclusiveSlider Css Ends *****************/
@@ -3781,7 +3784,7 @@ ul.tabs li {
 
 @media (max-width:1400px) {
 .exclusiveslider .cardImgCol>a>img {
-  height: 340px;
+  height: 274px;
 }
 .cardStyle1>.cardImgCol>a>img {
   height: 189px;
@@ -3816,7 +3819,7 @@ ul.tabs li {
   top: 53px;
 }
 .exclusiveslider .cardImgCol>a>img {
-  height: 250px;
+  height: 274px;
 }
 .cardStyle1>.cardImgCol>a>img {
   height: 189px;
@@ -3922,7 +3925,7 @@ li.notificationmenu {
     font-size: 16pt;
 }
 .exclusiveslider .cardImgCol>a>img {
-    height: 250px;
+    height: 274px;
 }
 .masonryCards > ul {
     -webkit-column-count: 2;
@@ -4188,7 +4191,7 @@ li.notificationmenu {
     white-space: nowrap;
 }
 .exclusiveslider .cardImgCol>a>img {
-    height: 150px;
+    height: 2740px;
 }
 .exclusiveslider.votingSlider .cardImgCol > a > img {
     height: 250px;
