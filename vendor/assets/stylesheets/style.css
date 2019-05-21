@@ -394,6 +394,12 @@ a:hover {
 .slickStyle .slick-dotted.slick-slider {
   margin-bottom: 50px;
 }
+.liveVideoTag > img {
+	margin-left: 3px;
+}
+.rightTags>ul>li>span>span {
+	font-family: 'Lackonic-Regular';
+}
 .rightTags>ul>li>span>span, .rightTags>ul>li img {
   display: inline-block;
   vertical-align: middle;
@@ -3790,9 +3796,9 @@ ul.tabs li {
     margin-right: 5px;
     filter: brightness(0) invert(1);
 }
-.card_bio > ul > li.active > span > a > img {
-    filter: inherit;
-}
+/*.card_bio > ul > li.active > span > a > img {*/
+    /*filter: inherit;*/
+/*}*/
 /***********************************************
 //  bio1 page  close  //
 *********************************************************/

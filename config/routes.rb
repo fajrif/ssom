@@ -25,6 +25,10 @@ Rails.application.routes.draw do
 	match 'game', to: 'home#game', via: :get
 	match 'find-interest', to: 'home#find_interest', via: :get
 	match 'following', to: 'home#following', via: :get
+	match 'other-user', to: 'home#user', via: :get
+	match 'profile', to: 'home#profile', via: :get
+	match 'profile-clips', to: 'home#profile_clips', via: :get
+	match 'profile-friends', to: 'home#profile_friends', via: :get
   root :to => "home#index"
 
 end

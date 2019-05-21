@@ -34,4 +34,20 @@ class HomeController < ApplicationController
   def following
 		# get public explore
   end
+
+  def user
+		# get public explore
+  end
+
+  def profile
+		# get public explore
+  end
+
+  def profile_clips
+		# get public explore
+  end
+
+  def profile_friends
+		# get public explore
+  end
 end

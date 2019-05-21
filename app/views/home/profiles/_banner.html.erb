@@ -1,0 +1,87 @@
+<section>
+  <div class="profileBanner bannerTop">
+    <div class="displayImg">
+      <img src="assets/bulk-image.jpg" alt="bulk-image" />
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="blackStripebox">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col">
+          <div class="form-row align-items-end">
+            <div class="col-sm-auto">
+              <div class="profileBlock">
+                <div class="profliePho">
+								<% if request.path.include? 'profile' %>
+                  <img src="assets/clipimg.jpg" alt="userimg" />
+								<% else %>
+                  <img src="assets/userimg.png" alt="userimg" />
+								<% end %>
+                </div>
+								<% if request.path.include? 'profile' %>
+                <div class="uploadBox">
+                  <span class="uploadIcon">
+                    <label for="edit">
+                      <img src="assets/upload-icon.png" alt="upload-icon" />
+                    </label>
+                    <input type="file" class="" id="edit">
+                  </span>
+                </div>
+								<% end %>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="profileName">
+                <div class="cardContent">
+                  <span class="cardTitle text-truncate">
+                    <span class="cardUserName text-truncate"><a href="javascript:void(0)" tabindex="0"><span><%= request.path.include?('profile') ? 'Anna Esseker' : 'Harwindrar' %></span></a> <span class="userCheckIcon"><img width="25" src="assets/circlecheck.svg" alt="..."></span> </span>
+                  </span>
+                  <div class="card_bio">
+                    <ul>
+											<% if request.path == other_user_path %>
+                      <li class="active">
+                        <span class="cardusername"><a href="javascript:void(0)"><img src="assets/usergreen.png" alt="..." width="16">Follow</a></span>
+                      </li>
+                      <li>
+                        <span class="cardusername"><a href="javascript:void(0)"><img src="assets/chat.png" alt="..." width="25">Chat</a></span>
+                      </li>
+											<% end %>
+                      <li>
+                        <span class="cardusername"><a href="javascript:void(0)">1,987 Followers</a></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-auto">
+          <div class="rightSideCol">
+            <ul class="listPoints">
+							<li class="<%= 'active' if request.path == profile_path %>">
+								<a href="<%= profile_path %>">bio</a>
+              </li>
+							<li class="<%= 'active' if request.path == profile_clips_path %>">
+								<a href="<%= profile_clips_path %>">clips</a>
+              </li>
+							<li class="<%= 'active' if request.path == profile_friends_path %>">
+								<a href="<%= profile_friends_path %>">friends</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <span class="menu-icon">
+                    <img src="assets/optiondots.svg" alt="optiondots.svg" />
+                  </span>
+                </a>
+              </li>
+            </ul>
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
