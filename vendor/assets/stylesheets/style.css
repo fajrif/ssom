@@ -779,7 +779,7 @@ hr.bodrGreen {
   transform-origin: center top;
 }
 .glitch img {
-	height: 30px;
+	min-height: 30px;
 }
 .glitch__color {
   height: 100%;
@@ -1023,7 +1023,12 @@ a.notificationavailable {
     -moz-transition: all 300ms ease-in-out 0s;
     transition: all 300ms ease-in-out 0s;
 }
+.notificationIMg > img.notificationclr {
+		width: 80%;
+    display: -webkit-box;
+}
 .notificationIMg > img.notificationblue {
+	width:80%;
     position: absolute;
     top: 0;
     left: 0;
