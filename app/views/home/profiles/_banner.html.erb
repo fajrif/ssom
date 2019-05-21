@@ -40,14 +40,10 @@
                     <span class="cardUserName text-truncate"><a href="javascript:void(0)" tabindex="0"><span><%= request.path.include?('profile') ? 'Anna Esseker' : 'Harwindrar' %></span></a> <span class="userCheckIcon"><img width="25" src="assets/circlecheck.svg" alt="..."></span> </span>
                   </span>
                   <div class="card_bio">
-                    <ul>
+										<ul class="streamerCardlist pt-2">
 											<% if request.path == other_user_path %>
-                      <li class="active">
-                        <span class="cardusername"><a href="javascript:void(0)"><img src="assets/usergreen.png" alt="..." width="16">Follow</a></span>
-                      </li>
-                      <li>
-                        <span class="cardusername"><a href="javascript:void(0)"><img src="assets/chat.png" alt="..." width="25">Chat</a></span>
-                      </li>
+												<li> <a href="javascript:void(0)"> <span><img src="assets/usergreen.png" alt="..." width="12"></span> <span>Follow</span></a></li>
+												<li> <a href="javascript:void(0)"> <span><img src="assets/chat.png" alt="..." width="20"></span> <span>Chat</span></a></li>
 											<% end %>
                       <li>
                         <span class="cardusername"><a href="javascript:void(0)">1,987 Followers</a></span>

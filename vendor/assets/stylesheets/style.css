@@ -2728,7 +2728,7 @@ padding-right: 40px;
 .profileName span.cardusername {
 font-family: 'Lackonic-Regular';
 font-size: 12pt;
-color: #818181;
+/*color: #818181;*/
 letter-spacing: 1px;
 }
 .rightSideCol {
