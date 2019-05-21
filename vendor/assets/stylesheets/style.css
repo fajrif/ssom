@@ -1792,7 +1792,6 @@ span.listarrow {
     display: inline-block;
     width: 100%;
 		padding: 10px 80px 10px 0px;
-    font-size: 14px;
 }
 .cardStyle4 {
   padding:20px;
@@ -4240,7 +4239,7 @@ li.notificationmenu {
     white-space: nowrap;
 }
 .exclusiveslider .cardImgCol>a>img {
-    height: 2740px;
+    /*height: 2740px;*/
 }
 .exclusiveslider.votingSlider .cardImgCol > a > img {
     height: 250px;
