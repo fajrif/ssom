@@ -208,7 +208,7 @@
             </div>
           </form>
         </ul>
-        <ul class="navbar-nav ml-auto acountsmenu <%= 'd-none' if request.path == registered_path %>">
+        <ul class="navbar-nav ml-auto acountsmenu <%= 'd-none' if request.path == registered_path || request.path.include?('profile') %>">
           <li class="loginmenu">
             <a href="#" data-toggle="modal" data-target="#loginsignupmodal">Log in</a>
           </li>
@@ -216,14 +216,19 @@
             <a href="#" class="bgblue" data-toggle="modal" data-target="#loginsignupmodal">Sign up</a>
           </li>
         </ul>
-				<ul class="navbar-nav ml-auto afterlogin align-items-center <%= 'd-none' unless request.path == registered_path %>">
+				<ul class="navbar-nav ml-auto afterlogin align-items-center <%= 'd-none' unless request.path == registered_path || request.path.include?('profile') %>">
           <li class="golivemenu">
-            <a href="#" class="btn btn-outline-primary blueclr"><img src="assets/videoicon.png" >Go Live</a>
+            <a href="#" class="btn btn-outline-primary blueclr"><img src="assets/videoicon_blue.png" alt="...">Go Live</a>
           </li>
           <li class="notificationmenu">
-            <a href="#" class="notificationavailable">
-              <img src="assets/notification.svg"  />
-              <span>3</span>
+						<a href="#" class="notificationavailable">
+
+							<span class="notificationIMg">
+								<img class="notificationblue" src="assets/notification-blue.png" alt="...">
+								<img class="notificationclr" src="assets/notification-clr.png" alt="...">
+							</span>
+              <span class="notifiactionSub">3</span>
+
             </a>
             <div class="notificationdropdown">
               <div class="notificationheader">
@@ -231,13 +236,13 @@
                   <h3>Notification</h3>
                 </div>
                 <div class="notificationicon">
-                  <img src="assets/settings.png" >
+                  <img src="assets/settings.png" alt="">
                 </div>
               </div>
               <div class="notificationcontent">
                 <div class="notificationlist pt-2 pb-2">
                   <div class="notificationimg">
-                    <img src="assets/notificationimg.png" class="brleft" >
+                    <img src="assets/notificationimg.png" class="brleft" alt="">
                   </div>
                   <div class="notificationcontentsec">
                     <h5>Streamer A sent you a message</h5>
@@ -246,7 +251,7 @@
                 </div>
                 <div class="notificationlist pt-2 pb-2">
                   <div class="notificationimg">
-                    <img src="assets/notificationimg.png" class="brleft" >
+                    <img src="assets/notificationimg.png" class="brleft" alt="">
                   </div>
                   <div class="notificationcontentsec">
                     <h5>Streamer A sent you a message</h5>
@@ -254,7 +259,7 @@
                   </div>
                 </div>
                 <div class="goxlogo text-center">
-                  <img src="assets/notlogo.svg" >
+                  <img src="assets/notlogo.svg" alt="">
                 </div>
               </div>
               <div class="seeallbtn text-right">
@@ -265,12 +270,12 @@
           <li class="usermenu">
             <a href="#">
               <span class="brleft usercontent">
-                <img class="brleft" src="assets/clipimg.jpg"  />
+                <img class="brleft" src="assets/clipimg.jpg" alt="..." />
               </span>
               <p>
                 <span class="username">
-                  <font>Anna</font>
-                  <small><img src="assets/circlecheck.svg"  /></small>
+                  <font style="margin-right:5px;">Anna</font>
+                  <small><img src="assets/circlecheck.svg" alt="..." /></small>
                 </span>
                 <span class="nottext">Hi, follow my live stream</span>
               </p>
@@ -278,42 +283,42 @@
             <div class="userdropdown">
               <ul class="pb-3">
                 <li>
-									<a href="<%= profile_path %>">
-                    <img src="assets/profile.png" >Profile
+                  <a href="#">
+                    <img src="assets/profile.png" alt="...">Profile
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="assets/dashboard.png" >Dashboard
+                    <img src="assets/dashboard.png" alt="...">Dashboard
                   </a>
                 </li>
               </ul>
               <ul class="pt-3 pb-3">
                 <li>
                   <a href="#">
-                    <img src="assets/friends.png" >Friends
+                    <img src="assets/friends.png" alt="...">Friends
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="assets/payments.png" >Payments
+                    <img src="assets/payments.png" alt="...">Payments
                   </a>
                 </li>
               </ul>
               <ul class="pt-3">
                 <li>
                   <a href="#">
-                    <img class="chatimg" src="assets/chat.png" >Chat
+                    <img class="chatimg" src="assets/chat.png" alt="...">Chat
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="assets/settings.png" >Settings
+                    <img src="assets/settings.png" alt="...">Settings
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img src="assets/logout.png" >Log Out
+                    <img src="assets/logout.png" alt="...">Log Out
                   </a>
                 </li>
               </ul>

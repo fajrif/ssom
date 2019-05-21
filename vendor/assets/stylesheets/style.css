@@ -17,6 +17,7 @@ body {
   background-position: center top;
   -webkit-background-size: 100% auto;
   background-size: 100% auto;
+  font-size: 13px;
   font-weight: 400;
   background-repeat: no-repeat;
   color: #bebebe;
@@ -106,8 +107,11 @@ a:hover {
   -moz-background-image: linear-gradient(to right, #d93833, #d46015, #c78100, #b29e00, #98b832, #6fc05d, #43c485, #00c6aa, #00b5ce, #009ffb, #007fff, #1b45fd);
   background-image: linear-gradient(to right, #d93833, #d46015, #c78100, #b29e00, #98b832, #6fc05d, #43c485, #00c6aa, #00b5ce, #009ffb, #007fff, #1b45fd);
 }
+.btn-outline-primary img {
+	filter: brightness(100%);
+}
 .btn-outline-primary:hover img {
-  filter: brightness(0%);
+	filter: brightness(0) invert(1);
   -webkit-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
@@ -537,7 +541,7 @@ a.forgotpassword {
   font-size: 12px;
 }
 .cardStyle .rightTags {
-	right: 1px;
+	/*right: 1px;*/
 	top: 4px;
 }
 .cardStyle .cardUserName {
@@ -768,7 +772,7 @@ hr.bodrGreen {
     left: 0;
     height: 2px;
     background: #70e77c;
-    bottom: -30px;
+    bottom: -24px;
 }
 .glitch {
   position: relative;
@@ -867,7 +871,7 @@ header.navsec {
 	background: linear-gradient(#000, #000 10%, rgba(255, 255, 255, 0));
 }
 .navsec.sticky {
-  padding: 15px 0;
+  padding: 10px 0;
   background-color: rgba(0, 0, 0, 1);
   -webkit-transition: all 300ms ease-in-out 0s;
   -o-transition: all 300ms ease-in-out 0s;
@@ -1064,14 +1068,14 @@ a.notificationavailable {
 }
 .navsec .navbar .navbar-nav li.usermenu a .usercontent {
   display: block;
-  border: 1px solid #70e77c;
+  border: 1px solid #1a44fb;
   position: relative;
   -webkit-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 .navsec .navbar .navbar-nav li.usermenu:hover a .usercontent {
-  border: 1px solid #1a44fb;
+  border: 1px solid #70e77c;
   -webkit-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
@@ -1110,14 +1114,13 @@ a.notificationavailable {
   text-transform: capitalize;
 }
 .navsec .navbar .navbar-nav li.usermenu a .username {
-    font-size: 21px;
+    font-size: 16px;
     display: flex;
     align-items: center;
 }
 .navsec .navbar .navbar-nav li.usermenu a .username font {
   white-space: nowrap;
   overflow: hidden;
-  width: 65px;
   text-overflow: ellipsis;
   text-transform: capitalize;
   position: relative;
@@ -1128,7 +1131,6 @@ a.notificationavailable {
 }
 .navsec .navbar .navbar-nav li.usermenu a .nottext {
     font-size: 13px;
-    margin-top: 5px;
 }
 /**************** Search Dropdown Css Starts *****************/
 .headersearch {
@@ -1389,6 +1391,9 @@ li.usermenu {
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
+.btn {
+	font-size:13px;
+}
 .navsec .navbar .navbar-nav .userdropdown li a img {
   filter: brightness(0) invert(1);
 }
@@ -1400,7 +1405,7 @@ li.usermenu {
 }
 .navsec .navbar .navbar-nav .userdropdown li a {
   text-transform: capitalize;
-  font-size: 16px;
+  font-size: 13px;
   color: #e9e9e9;
 }
 .navsec .navbar .navbar-nav .userdropdown li:hover a {
@@ -1803,6 +1808,13 @@ span.listarrow {
 .liveVideoTag {
 	color: #fff;
 }
+.liveVideoTag, .viewtag {
+	text-align: right;
+}
+.liveVideoTag > img {
+	margin-right: 5px;
+}
+
 .masonryCards {
 	margin-top: 5rem !important;
 }
