@@ -50,4 +50,8 @@ class HomeController < ApplicationController
   def profile_friends
 		# get public explore
   end
+
+  def registered
+		# get public explore
+  end
 end

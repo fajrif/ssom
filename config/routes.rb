@@ -29,6 +29,7 @@ Rails.application.routes.draw do
 	match 'profile', to: 'home#profile', via: :get
 	match 'profile-clips', to: 'home#profile_clips', via: :get
 	match 'profile-friends', to: 'home#profile_friends', via: :get
+	match 'registered', to: 'home#registered', via: :get
   root :to => "home#index"
 
 end

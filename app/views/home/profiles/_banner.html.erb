@@ -46,7 +46,7 @@
 												<li> <a href="javascript:void(0)"> <span><img src="assets/chat.png" alt="..." width="20"></span> <span>Chat</span></a></li>
 											<% end %>
                       <li>
-                        <span class="cardusername"><a href="javascript:void(0)">1,987 Followers</a></span>
+                        <span>1,987 Followers</span>
                       </li>
                     </ul>
                   </div>
@@ -58,14 +58,22 @@
         <div class="col-md-auto">
           <div class="rightSideCol">
             <ul class="listPoints">
-							<li class="<%= 'active' if request.path == profile_path %>">
+							<li class="<%= 'active' if request.path == profile_path || request.path == other_user_path %>">
 								<a href="<%= profile_path %>">bio</a>
               </li>
 							<li class="<%= 'active' if request.path == profile_clips_path %>">
-								<a href="<%= profile_clips_path %>">clips</a>
+								<% if request.path.include?('profile') %>
+									<a href="<%= profile_clips_path %>">clips</a>
+								<% else %>
+									<a href="#">clips</a>
+								<% end %>
               </li>
 							<li class="<%= 'active' if request.path == profile_friends_path %>">
-								<a href="<%= profile_friends_path %>">friends</a>
+								<% if request.path.include?('profile') %>
+									<a href="<%= profile_friends_path %>">friends</a>
+								<% else %>
+									<a href="#">friends</a>
+								<% end %>
               </li>
               <li>
                 <a href="javascript:void(0)">

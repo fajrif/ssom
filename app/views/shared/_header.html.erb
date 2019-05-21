@@ -208,7 +208,7 @@
             </div>
           </form>
         </ul>
-        <ul class="navbar-nav ml-auto acountsmenu">
+        <ul class="navbar-nav ml-auto acountsmenu <%= 'd-none' if request.path == registered_path %>">
           <li class="loginmenu">
             <a href="#" data-toggle="modal" data-target="#loginsignupmodal">Log in</a>
           </li>
@@ -216,7 +216,7 @@
             <a href="#" class="bgblue" data-toggle="modal" data-target="#loginsignupmodal">Sign up</a>
           </li>
         </ul>
-        <ul class="navbar-nav ml-auto afterlogin align-items-center  d-none">
+				<ul class="navbar-nav ml-auto afterlogin align-items-center <%= 'd-none' unless request.path == registered_path %>">
           <li class="golivemenu">
             <a href="#" class="btn btn-outline-primary blueclr"><img src="assets/videoicon.png" >Go Live</a>
           </li>
@@ -265,11 +265,11 @@
           <li class="usermenu">
             <a href="#">
               <span class="brleft usercontent">
-                <img class="brleft" src="assets/userimg.png"  />
+                <img class="brleft" src="assets/clipimg.jpg"  />
               </span>
               <p>
                 <span class="username">
-                  <font>Live Stream</font>
+                  <font>Anna</font>
                   <small><img src="assets/circlecheck.svg"  /></small>
                 </span>
                 <span class="nottext">Hi, follow my live stream</span>
@@ -278,7 +278,7 @@
             <div class="userdropdown">
               <ul class="pb-3">
                 <li>
-                  <a href="#">
+									<a href="<%= profile_path %>">
                     <img src="assets/profile.png" >Profile
                   </a>
                 </li>

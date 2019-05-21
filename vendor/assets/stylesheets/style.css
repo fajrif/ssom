@@ -8,7 +8,7 @@
   font-style: normal;
 }
 html {
-  font-size: 10pt;
+  font-size: 13px;
 }
 body {
   font-family: 'Rubik', sans-serif;
@@ -294,8 +294,8 @@ a:hover {
   right: 0;
   top: 0;
   padding: 18px;
-  font-size: 12pt;
-  line-height: 12pt;
+  font-size: 16px;
+  line-height: 16px;
   padding-left: 58px;
 }
 .slideUserInfo a:hover {
@@ -318,7 +318,7 @@ a:hover {
 }
 .gameName {
   display: block;
-  font-size: 8pt;
+  font-size: 10px;
   width: 100%;
 }
 .slideUserInfoImg {
@@ -382,10 +382,10 @@ a:hover {
 .slickStyle .slick-dots li button::before {
   opacity: 1;
   color: #818181;
-  font-size: 12pt;
+  font-size: 16px;
 }
 .slickStyle .slick-dots li.slick-active button::before {
-  font-size: 20pt;
+  font-size: 26px;
   color: #70e77c;
 }
 .slickStyle .slick-dots {
@@ -394,10 +394,7 @@ a:hover {
 .slickStyle .slick-dotted.slick-slider {
   margin-bottom: 50px;
 }
-.liveVideoTag > img {
-	margin-left: 3px;
-}
-.rightTags>ul>li>span>span {
+.liveVideoTag {
 	font-family: 'Lackonic-Regular';
 }
 .rightTags>ul>li>span>span, .rightTags>ul>li img {
@@ -424,7 +421,7 @@ a:hover {
 .viewtag {
   background-color: #232321;
   border-radius: 0 0 0 10px;
-  font-size: 8pt;
+  font-size: 10px;
 }
 .viewtag > img {
 	padding-right: 3px;
@@ -434,18 +431,18 @@ a:hover {
   padding: 2px 0;
 }
 .lgtext {
-  font-size: 16pt;
+  font-size: 21px;
   font-family: 'Lackonic-Regular';
 }
 .mediumtext {
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
   color: #fff;
-  font-size: 12pt;
+  font-size: 16px;
 }
 .innerpage {
   color: #fff;
-  font-size: 11pt;
+  font-size: 14px;
 }
 .clrgreen {
   color: #70e77c;
@@ -464,7 +461,7 @@ a:hover {
   right: 0;
   top: 0;
   color: #bfbfbf;
-  font-size: 12pt;
+  font-size: 16px;
 }
 .mainSliderSection .rightTags {
   transform: scale(0.6);
@@ -490,10 +487,10 @@ a:hover {
 
 /*  Title Style  */
 .titleStyle h4 {
-  font-size: 22pt;
+  font-size: 29px;
 }
 .titleStyle h5 {
-  font-size: 14pt;
+  font-size: 18px;
   font-weight: 400;
 }
 /* cardstyle css start */
@@ -509,14 +506,14 @@ a:hover {
   -o-transition: all 300ms ease-in-out 0s;
   transition: all 300ms ease-in-out 0s;
 }
-.cardImgCol:hover,
-.cardImgCol:hover + .cardContent > .cardcontentimg img {
+.cardStyle:hover > .cardImgCol,
+.cardStyle:hover > .cardContent > .cardcontentimg img {
   border-color: #70e77c;
 }
-.cardImgCol:hover + .cardContent > .cardTitle,
-.cardImgCol:hover + .cardContent > .viewersCol,
-.cardImgCol:hover + .cardContent > .cardusername,
-.cardImgCol:hover + .cardContent > .cardlist,
+.cardStyle:hover > .cardContent > .cardTitle,
+.cardStyle:hover > .cardContent > .viewersCol,
+.cardStyle:hover > .cardContent > .cardusername,
+.cardStyle:hover > .cardContent > .cardlist,
 .cardusername:hover,
 .table.tableStyle span.cardTitle:hover,
 a.forgotpassword:hover {
@@ -537,7 +534,7 @@ a.forgotpassword {
 }
 .cardStyle .rightTags>ul>li>span {
   padding: 2px 10px;
-  font-size: 9pt;
+  font-size: 12px;
 }
 .cardStyle .rightTags {
 	right: 1px;
@@ -551,14 +548,14 @@ a.forgotpassword {
 }
 .cardusername {
   display: block;
-  font-size: 8pt;
+  font-size: 13px;
 }
 .cardlist>li+li {
   padding-left: 15px;
 }
 .cardlist>li {
   display: inline-block;
-  font-size: 8pt;
+  font-size: 10px;
   position: relative;
 }
 .cardlist>li+li:before {
@@ -618,7 +615,7 @@ a.forgotpassword {
   background: #232322;
   padding: 2px 15px;
   border-radius: 7px 0 0 0;
-  font-size: 8pt;
+  font-size: 10px;
 }
 .cardStyle {
   margin: 15px 0;
@@ -638,7 +635,7 @@ a.forgotpassword {
   position: relative;
   display: block;
   padding-left: 20px;
-  font-size: 10pt;
+  font-size: 13px;
 }
 .viewersCol::before, .viewersCol::after {
   content: "";
@@ -662,14 +659,15 @@ a.forgotpassword {
   background-image: url(eye-themeColor.png);
 }
 .cardStyle1 .cardTitle {
-  font-size: 11pt;
+  font-size: 14px;
   font-weight: 700;
 }
 /* cardstyle1 css close */
 /* cardstyle2 css start */
 .cardStyle2 .cardTitle {
-  font-size: 12pt;
-  line-height: 12pt;
+  font-size: 16px;
+  line-height: 16px;
+	font-weight: 700;
 }
 .cardStyle2>.cardImgCol>a>img {
   height: 190px;
@@ -712,7 +710,7 @@ a.forgotpassword {
 
 /* cardstyle3 css start */
 .cardStyle3 .cardTitle {
-  font-size: 12pt;
+  font-size: 16px;
   font-weight: 700;
 }
 .cardContent.imgcontentcol .cardTitle,
@@ -723,7 +721,7 @@ a.forgotpassword {
 	padding-left: 8px;
 }
 .cardStyle3 span.cardusername {
-  font-size: 10pt;
+  font-size: 13px;
 }
 .cardStyle3 .cardImgCol {
   margin-bottom: 10px;
@@ -911,7 +909,7 @@ header.navsec {
   border-radius: 0;
   border: 0 !important;
   color: #70e77c;
-  font-size: 9pt;
+  font-size: 12px;
   font-family: 'Rubik', sans-serif;
   background-color: #232322;
 }
@@ -955,7 +953,7 @@ header.navsec {
   margin-right: 0 !important;
   height: 28px;
   padding-left: 30px;
-  font-size: 8pt;
+  font-size: 10px;
   color: #70e77c !important;
   font-family: 'Rubik', sans-serif;
   border-radius: 7px 0px 0px 0px;
@@ -987,7 +985,7 @@ header.navsec {
     width: 15px;
 }
 .cstmsearch .form-control::placeholder {
-  font-size: 9pt;
+  font-size: 12px;
   color: #70e77c !important;
   font-family: 'Rubik', sans-serif;
 }
@@ -1002,7 +1000,7 @@ a.notificationavailable {
     position: absolute;
     width: 10px;
     height: 10px;
-    font-size: 8pt;
+    font-size: 10px;
     top: 3px;
     right: -4px;
     display: flex;
@@ -1050,7 +1048,7 @@ a.notificationavailable {
     display: flex;
     align-items: center;
     height: 20px;
-    font-size: 12pt;
+    font-size: 16px;
     margin-right: 15px;
     -webkit-transition: all 300ms ease-in-out 0s;
     -moz-transition: all 300ms ease-in-out 0s;
@@ -1112,7 +1110,7 @@ a.notificationavailable {
   text-transform: capitalize;
 }
 .navsec .navbar .navbar-nav li.usermenu a .username {
-    font-size: 16pt;
+    font-size: 21px;
     display: flex;
     align-items: center;
 }
@@ -1129,7 +1127,7 @@ a.notificationavailable {
   display: inline-block;
 }
 .navsec .navbar .navbar-nav li.usermenu a .nottext {
-    font-size: 10pt;
+    font-size: 13px;
     margin-top: 5px;
 }
 /**************** Search Dropdown Css Starts *****************/
@@ -1149,11 +1147,11 @@ a.notificationavailable {
 }
 .titledropdown h4 {
   color: #70e77c;
-  font-size: 11pt;
+  font-size: 14px;
   margin: 0;
 }
 .searchlisttitle h4 {
-  font-size: 8pt;
+  font-size: 10px;
   color: #fff;
   text-transform: uppercase;
   margin: 0;
@@ -1161,7 +1159,7 @@ a.notificationavailable {
 .seeallmenu a {
   color: #70e77c;
   font-family: 'Lackonic-Regular';
-  font-size: 9pt;
+  font-size: 12px;
 }
 .listcontent .style1 .listimg img {
   width: 24px;
@@ -1181,16 +1179,16 @@ a.notificationavailable {
 }
 .listimgsec {
   color: #fff;
-  font-size: 8pt;
+  font-size: 10px;
 }
 .listimgsecb {
-  font-size: 9pt;
+  font-size: 12px;
 }
 .listcontentinner {
   margin-left: 8px;
 }
 .listcontentinner h3 {
-  font-size: 10pt;
+  font-size: 13px;
   color: #fff;
   font-family: 'Rubik', sans-serif;
   margin: 0;
@@ -1198,7 +1196,7 @@ a.notificationavailable {
 }
 .listcontentinner h4 {
   color: #fff;
-  font-size: 8pt;
+  font-size: 10px;
   font-family: 'Rubik', sans-serif;
   margin-top: 3px;
   margin-bottom: 5px;
@@ -1206,7 +1204,7 @@ a.notificationavailable {
 }
 .viewsec li {
   color: #fff;
-  font-size: 7pt;
+  font-size: 9px;
   display: inline-block;
   position: relative;
   padding-right: 10px;
@@ -1235,7 +1233,7 @@ a.notificationavailable {
   line-height: initial;
 }
 .style4 .listimgsec {
-  font-size:8pt;
+  font-size:10px;
 }
 .style4 .listcontentinner h3 img {
   margin-left: 10px;
@@ -1292,7 +1290,7 @@ li.notificationmenu {
   width: 15px;
 }
 .notificationtitle h3 {
-  font-size: 11pt;
+  font-size: 14px;
   color: #70e77c;
   margin: 0;
 }
@@ -1328,14 +1326,14 @@ li.notificationmenu {
   padding: 30px 0;
 }
 .notificationcontentsec h5 {
-  font-size: 7pt;
+  font-size: 9px;
   color: #e9e9e9;
   font-family: 'Rubik', sans-serif;
   margin: 0;
   margin-bottom: 3px;
 }
 .notificationcontentsec h6 {
-  font-size: 6pt;
+  font-size: 8px;
   color: #e9e9e9;
   font-family: 'Rubik', sans-serif;
   margin-bottom: 0;
@@ -1344,7 +1342,7 @@ li.notificationmenu {
   margin-left: 10px;
 }
 .navsec .navbar .navbar-nav .seeallbtn a {
-  font-size: 10pt;
+  font-size: 13px;
   text-transform: inherit;
 }
 /**************** Notification Dropdown Css Ends *****************/
@@ -1402,7 +1400,7 @@ li.usermenu {
 }
 .navsec .navbar .navbar-nav .userdropdown li a {
   text-transform: capitalize;
-  font-size: 12pt;
+  font-size: 16px;
   color: #e9e9e9;
 }
 .navsec .navbar .navbar-nav .userdropdown li:hover a {
@@ -1473,10 +1471,10 @@ li.usermenu {
     height: 54px;
 }
 .videocontent span.cardTitle.text-truncate {
-    font-size: 14pt;
+    font-size: 18px;
 }
 .videocontent span.cardusername {
-    font-size: 12pt;
+    font-size: 16px;
 }
 .cardright li {
     display: inline-block;
@@ -1574,7 +1572,7 @@ footer {
 .footerLinks>ul>li {
   display: inline-block;
   font-family: 'Lackonic-Regular';
-  font-size: 12pt;
+  font-size: 16px;
   padding: 4px 10px;
   letter-spacing: 2px;
 }
@@ -1582,7 +1580,7 @@ footer {
   -webkit-transition: all 300ms ease-in-out 0s;
   -o-transition: all 300ms ease-in-out 0s;
   transition: all 300ms ease-in-out 0s;
-  font-size: 11pt;
+  font-size: 14px;
 }
 .footerLinks>ul>li>a:hover {
   color: #fff;
@@ -1618,11 +1616,11 @@ footer {
   margin: 5px 0;
 }
 .modalamount {
-  font-size: 24pt;
+  font-size: 32px;
   font-family: 'Lackonic-Regular';
 }
 .formtitle h2 {
-  font-size: 15pt;
+  font-size: 20px;
   text-transform: uppercase;
 }
 .modalstyle .formStyle .form-control {
@@ -1650,7 +1648,7 @@ button.closemodal:focus {
   padding: 20px 27px 40px;
 }
 .modalform .nav-tabs a {
-  font-size: 11pt;
+  font-size: 14px;
   color: #70e77c;
   font-family: 'Lackonic-Regular';
 }
@@ -1717,7 +1715,7 @@ label.form-label {
   font-family: 'Lackonic-Regular';
 }
 .modallist i {
-  font-size: 7pt;
+  font-size: 9px;
 }
 .modallist li {
   padding-bottom: 10px;
@@ -1788,8 +1786,8 @@ span.listarrow {
 .masonryCards > ul > li {
     display: inline-block;
     width: 100%;
-    padding: 10px 0;
-    font-size: 12pt;
+		padding: 10px 80px 10px 0px;
+    font-size: 14px;
 }
 .cardStyle4 {
   padding:20px;
@@ -1802,11 +1800,17 @@ span.listarrow {
 .cardStyle4.blueborder {
     border-color: #1a44fb;
 }
+.liveVideoTag {
+	color: #fff;
+}
+.masonryCards {
+	margin-top: 5rem !important;
+}
 .titleStyle1 {
   margin-bottom: 15px;
 }
 .titleStyle1 > h4 {
-    font-size: 18pt;
+    font-size: 18px;
     margin: 0;
     display: inline-block;
     position: relative;
@@ -1880,9 +1884,6 @@ span.listarrow {
 .cardStyle4 .simpleLink {
   color: #3884dc;
   text-decoration: underline;
-}
-.card4imgCol > img {
-    width: 150px;
 }
 .stickyChat .chatsidebar {
   position: -webkit-sticky;
@@ -2001,7 +2002,7 @@ span.listarrow {
 }
 .slidercardtitle .cardTitle span.cardUserName {
   font-family: 'Lackonic-Regular';
-  font-size: 16pt;
+  font-size: 21px;
   margin-top: 6px;
 }
 .slidercardtitle .cardUserName>span.userCheckIcon {
@@ -2009,7 +2010,7 @@ span.listarrow {
 }
 .slidercardtitle span.cardusername  {
   font-family: 'Lackonic-Regular';
-  font-size: 12pt;
+  font-size: 16px;
   color: #818181;
   letter-spacing: 1px;
 }
@@ -2026,7 +2027,7 @@ span.listarrow {
   padding: 10px 0 20px;
 }
 .categoryLinks > ul > li {
-	font-size: 14pt;
+	font-size: 18px;
 	font-family: 'Lackonic-Regular';
 	display: inline-block;
 	vertical-align: middle;
@@ -2081,13 +2082,15 @@ span.listarrow {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
-
+.categoryTopOptions .col-md-auto {
+	margin-right: 15px;
+}
 .sortBy {
   position: relative;
 }
 .sortBy > a {
   white-space: nowrap;
-  font-size: 13pt;
+  font-size: 16px;
 }
 .sortBy > a > span {
 	display: inline-block;
@@ -2114,7 +2117,7 @@ span.listarrow {
 
 
 .cardStyle5 .cardTitle {
-	font-size: 12pt;
+	font-size: 16px;
 	font-weight: 700;
 }
 .cardContent {
@@ -2149,7 +2152,7 @@ span.listarrow {
 .table.tableStyle > thead > tr > th {
   border-top: none;
   border-bottom: 2px solid #6fe77d;
-  font-size: 13pt;
+  font-size: 17px;
   font-weight: 700;
   white-space: nowrap;
 }
@@ -2158,7 +2161,7 @@ span.listarrow {
   display: none;
 }
 .listView .cardTitle {
-	font-size: 13pt;
+	font-size: 17px;
 	font-weight: 700;
 }
 .listView .table > tbody > tr {
@@ -2238,12 +2241,12 @@ span.playicontable {
 }
 .profilecontent h3 {
   font-family: 'Rubik', sans-serif;
-  font-size: 17pt;
+  font-size: 19px;
   font-weight: 700;
   color: #e9e9e9;
 }
 .profilecontent p {
-  font-size: 12pt;
+  font-size: 16px;
   color: #e9e9e9;
 }
 .profilecontent {
@@ -2256,16 +2259,16 @@ span.playicontable {
 
 /*  Streaming Tools page Start  */
 .streamingsubtitle p  {
-  font-size: 12pt;
+  font-size: 16px;
 }
 .streamingsubtitle p a {
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
   color:#70e77c;
-  font-size: 12pt;
+  font-size: 16px;
 }
 .streamingsubtitle h5 {
-  font-size: 12pt;
+  font-size: 16px;
   font-weight: 500;
 }
 .streamingcontent a {
@@ -2380,12 +2383,12 @@ a.btn.btn-outline-primary.blueclr:hover {
     top: 9px;
 }
 span.datesec {
-    font-size: 11pt;
+    font-size: 14px;
     font-weight: 400;
     margin-left: 16px;
 }
 .videocontentright span.viewersCol {
-    font-size: 12pt;
+    font-size: 16px;
 }
 .videocontentright .viewersCol::before {
     filter: brightness(0) invert(1);
@@ -2411,7 +2414,7 @@ span.datesec {
 }
 .dbSidebar > h4 {
 	color: #70e77c;
-	font-size: 12pt;
+	font-size: 16px;
 	padding-left: 10px;
   padding-right: 10px;
 }
@@ -2479,7 +2482,7 @@ span.datesec {
 	line-height: 1;
 }
 .formStyle .formLabel.lgLbl {
-	font-size: 12pt;
+	font-size: 16px;
 	margin-bottom: 12px;
   font-weight: 500;
 }
@@ -2552,11 +2555,11 @@ span.datesec {
 	padding: 15px 10px 20px;
 }
 .dBoardSection .streamingcontent p {
-	font-size: 10pt;
+	font-size: 13px;
 }
 .recommendbtn a.btn {
 	padding: 4px 5px 3px;
-	font-size: 9.5pt;
+	font-size: 12.6px;
 	display: block;
 }
 /*******************************************
@@ -2625,7 +2628,7 @@ ul.leftBorderList > li:nth-child(3n)::before {
 	z-index: 1;
 }
 .xsTitle {
-  font-size: 12pt;
+  font-size: 16px;
 }
 
 /***************************************
@@ -2663,14 +2666,14 @@ height: 150px;
 }
 .blackStripebox {
 background: #000000;
-padding: 15px 0px 18px;
+padding: 15px 0px 25px;
 color: #f5f5f5;
 }
 .profileBlock {
 position: relative;
 overflow: hidden;
-width: 116px;
-height: 122px;
+width: 150px;
+height: 150px;
 margin-top: -80px;
 -webkit-box-shadow: 0 0px 5px 4px rgba(111,231,125,0.4);
 box-shadow: 0 0px 5px 4px rgba(111,231,125,0.4);
@@ -2688,7 +2691,7 @@ background: red;
 bottom: 0px;
 right: 0px;
 left: 0px;
-background: rgba(0,0,0,.6);
+background: rgba(0,0,0,.8);
 height: 40px;
 display: -ms-flexbox;
 display: flex;
@@ -2700,7 +2703,7 @@ margin: 0px;
 cursor: pointer;
 }
 .uploadIcon label img {
-width: 18px;
+width: 30px;
 }
 .uploadIcon [type="file"] {
 position: absolute;
@@ -2717,17 +2720,17 @@ height: 100%;
 }
 .profileName .cardTitle span.cardUserName {
 font-family: 'Lackonic-Regular';
-font-size: 16pt;
+font-size: 21px;
 }
 .profileName {
-padding: 0 0 6px 10px;
+padding: 0 0 6px 20px;
 }
 .profileName .cardUserName {
 padding-right: 40px;
 }
 .profileName span.cardusername {
 font-family: 'Lackonic-Regular';
-font-size: 12pt;
+font-size: 16px;
 /*color: #818181;*/
 letter-spacing: 1px;
 }
@@ -2741,7 +2744,7 @@ display: inline-block;
 padding-left: 30px;
 }
 .listPoints li a {
-font-size: 12pt;
+font-size: 16px;
 text-transform: uppercase;
 font-family: 'Lackonic-Regular';
 letter-spacing: 2px;
@@ -2752,7 +2755,7 @@ padding: 0px 5px;
 .listPoints li.active a:after {
 position: absolute;
 content: "";
-bottom: -35px;
+bottom: -50px;
 height: 3px;
 left: 0px;
 right: 0px;
@@ -2784,7 +2787,7 @@ background-color: #232321 ;
   padding-left: 15px;
 }
 .follow-following li a {
-  font-size: 16pt;
+  font-size: 16px;
   text-transform: uppercase;
   position: relative;
   color: #fff;
@@ -2819,7 +2822,7 @@ background-color: #232321 ;
 }
 .tabRow ul li a {
   display: block;
-  font-size: 14pt;
+  font-size: 18px;
   text-transform: uppercase;
   font-family: 'Lackonic-Regular';
   letter-spacing: 2px;
@@ -2846,7 +2849,7 @@ background-color: #232321 ;
   margin-bottom: 10px;
 }
 .headingStyle h4 {
-  font-size: 14pt;
+  font-size: 18px;
   font-family: 'Lackonic-Regular';
   letter-spacing: 1px;
 }
@@ -2857,7 +2860,7 @@ background-color: #232321 ;
   padding: 30px;
 }
 .balanceTitle {
-  font-size: 12pt;
+  font-size: 16px;
   margin-bottom: 7px;
 }
 .balanceDetails span {
@@ -2869,14 +2872,14 @@ background-color: #232321 ;
 }
 .balCount {
   padding-left: 10px;
-  font-size: 14pt;
+  font-size: 18px;
 }
 .historyBtn {
   margin-bottom: 24px;
 }
 .history-items h5 {
   font-weight: 700;
-  font-size: 12pt;
+  font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -2887,7 +2890,7 @@ background-color: #232321 ;
   padding: 5px 22px 4px;
   text-align: center;
   color: #a0a0a0;
-  font-size: 9pt;
+  font-size: 12px;
 }
 .borderTd tr td {
   border: none;
@@ -2913,13 +2916,13 @@ background-color: #232321 ;
   height: 5px;
 }
 .borderTd > thead > tr > th {
-  font-size: 12pt;
+  font-size: 16px;
   border-top: none;
   border-bottom: 2px solid #6fe77d;
   font-weight: normal;
 }
 .borderTd > thead > tr > td {
-  font-size: 10pt;
+  font-size: 13px;
 }
 .topbarbox .btnBlock {
   display: inline-block;
@@ -3003,7 +3006,7 @@ ul {
 	padding         : 0;
 }
 .filesubheading {
-  font-size: 9pt;
+  font-size: 12px;
   color: #bebebe;
   display: block;
 }
@@ -3017,7 +3020,7 @@ ul {
   display: inline-block;
 }
 .dragdroptext {
-  font-size: 10pt;
+  font-size: 13px;
   font-weight: 700;
   color: #70e77c;
 }
@@ -3111,7 +3114,7 @@ output#messages {
 .uploadformtable .table.tableStyle > thead > tr > th {
   font-weight: 400;
   font-family: 'Lackonic-Regular';
-  font-size: 12pt;
+  font-size: 16px;
 }
 .btn.btn-sm {
   padding: 5px 20px 3px;
@@ -3127,17 +3130,17 @@ button.btn-outline-danger.clrwhite {
   color: #fff;
 }
 .uploadtitle h4 {
-  font-size: 13pt;
+  font-size: 17px;
   text-transform: uppercase;
 }
 .uploadtable .table.tableStyle > thead > tr > th {
-  font-size: 11pt;
+  font-size: 14px;
   font-weight: 500;
   border-bottom: 0px solid #6fe77d;
   white-space: nowrap;
 }
 .uploadtable .table.tableStyle tr td {
-  font-size:10pt;
+  font-size:13px;
   border: 0;
   white-space: nowrap;
   color: #e9e9e9;
@@ -3150,7 +3153,7 @@ button.btn-outline-danger.clrwhite {
 .uploadbtn button {
   background: transparent;
   border: 0;
-  font-size: 10pt;
+  font-size: 13px;
   text-transform: uppercase;
   color: #70e77c;
   border-bottom: 2px solid #70e77c;
@@ -3182,7 +3185,7 @@ button.btn-outline-danger.clrwhite {
   margin: 0 2px;
   align-items: center;
   justify-content: center;
-  font-size: 10pt;
+  font-size: 13px;
   white-space: nowrap;
   font-family: 'Lackonic-Regular';
 }
@@ -3293,7 +3296,7 @@ li.paginationnext {
 //  profile-streamer-notification page start  //
 *********************************************************/
 .notificationLbl {
-  font-size: 12pt;
+  font-size: 16px;
 }
 .notificationLbl.minWdLbl {
 	min-width: 150px;
@@ -3317,7 +3320,7 @@ li.paginationnext {
 	padding: 10px 15px 10px 20px;
 	margin: 0;
   font-family: 'Rubik', sans-serif;
-  font-size: 12pt;
+  font-size: 16px;
 }
 .accordionStyle .card-header > h4::before {
 	content: "";
@@ -3347,7 +3350,7 @@ li.paginationnext {
 	display: block;
 }
 .switchTitle {
-  font-size: 12pt;
+  font-size: 16px;
 }
 .switchTitle + .switchText {
   padding-top: 5px;
@@ -3369,13 +3372,13 @@ li.paginationnext {
 //  profile streamer security privacy page start  //
 *********************************************************/
 .cstmlabel {
-  font-size: 11pt;
+  font-size: 14px;
 }
 .cstmlabel, .cstmlabel12 {
   text-transform: uppercase;
 }
 .cstmlabel12 {
-  font-size: 12pt;
+  font-size: 16px;
 }
 .dbContentCol .notifiactionList + .notifiactionList {
   padding-top: 50px;
@@ -3410,7 +3413,7 @@ label.profilechange {
   margin-left: 40px;
 }
 .profilechangebtn .btn-primary , .bannerchangebtn .btn-outline-primary {
-  font-size: 11pt;
+  font-size: 14px;
 }
 .profilechangebtn .btn-primary {
   color: #000;
@@ -3505,14 +3508,14 @@ label.bannerchange {
 }
 .guidemenu ul li a {
   text-transform: uppercase;
-  font-size: 14pt;
+  font-size: 18px;
   font-family: 'Lackonic-Regular';
 }
 .titleStyle h3 {
-    font-size: 14pt;
+    font-size: 18px;
 }
 p.medtext {
-    font-size: 11pt;
+    font-size: 14px;
 }
 .contactsubmit button {
   width: 100%;
@@ -3596,7 +3599,7 @@ p.medtext {
   max-width: 78%;
 }
 .cstmlabel3 {
-  font-size: 12pt;
+  font-size: 16px;
 }
 .labelStyle {
   padding: 9px 0px 8px 0px;
@@ -3617,16 +3620,16 @@ p.medtext {
   padding-top: 10px;
 }
 .cstmlabel4 {
-  font-size: 11pt;
+  font-size: 14px;
 }
 .uploadColumn label {
   margin-bottom: 0px;
 }
 .uploadTitle {
-  font-size: 12pt;
+  font-size: 16px;
 }
 .uploadColumn {
-  padding-bottom: 25pt;
+  padding-bottom: 33px;
 }
 .uploadColumn .choosentext {
   padding: 0px 1px 0px 15px;
@@ -3923,7 +3926,7 @@ ul.tabs li {
 }
   .tabPannel_heading span {
       color: #70e77c;
-      font-size: 14pt;
+      font-size: 18px;
   }
   .leftTabImg {
       margin-right: 10px;
@@ -3956,7 +3959,7 @@ li.notificationmenu {
   margin-top: 20px !important;
 }
 .titleStyle h4 {
-    font-size: 16pt;
+    font-size: 21px;
 }
 .exclusiveslider .cardImgCol>a>img {
     height: 274px;
@@ -3969,7 +3972,7 @@ li.notificationmenu {
     height: 190px;
 }
 .follow-following li a {
-    font-size: 14pt;
+    font-size: 18px;
 }
 .sliderCol .swiper-container.swiper-container-coverflow {
     padding: 50px 0 20px;
@@ -4117,10 +4120,10 @@ li.notificationmenu {
       margin-bottom: 20px;
   }
   .titleStyle h5 {
-      font-size: 12pt;
+      font-size: 16px;
   }
   .titleStyle h4 {
-      font-size: 14pt;
+      font-size: 18px;
   }
   .sliderCol .swiper-button-next, .sliderCol .swiper-button-prev {
     margin-top: -10px;
@@ -4132,7 +4135,7 @@ li.notificationmenu {
     width: 22px;
   }
   .modalamount {
-    font-size: 18pt;
+    font-size: 110px;
   }
   .middleCheck {
     padding: 7px 0 7px 0px;
@@ -4203,23 +4206,23 @@ li.notificationmenu {
     padding-top: 20px;
   }
 .categoryLinks > ul > li {
-    font-size: 10pt;
+    font-size: 13px;
 }
 .sortBy > a {
-    font-size: 11pt;
+    font-size: 14px;
 }
   /* payment close */
   .balanceTitle {
-      font-size: 10pt;
+      font-size: 13px;
   }
   .balCount {
-    font-size: 12pt;
+    font-size: 16px;
 }
 .history-items h5 {
-    font-size: 10pt;
+    font-size: 13px;
 }
 .headingStyle h4 {
-    font-size: 12pt;
+    font-size: 16px;
 }
 .borderTd > thead > tr > th {
     white-space: nowrap;
@@ -4231,7 +4234,7 @@ li.notificationmenu {
     height: 250px;
 }
 .masonryCards > ul > li {
-    font-size: 10pt;
+    font-size: 13px;
 }
 }
 @media (max-width:480px) {
