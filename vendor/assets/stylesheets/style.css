@@ -772,7 +772,7 @@ hr.bodrGreen {
     left: 0;
     height: 2px;
     background: #70e77c;
-    bottom: -24px;
+    bottom: -23px;
 }
 .glitch {
   position: relative;
@@ -1114,7 +1114,7 @@ a.notificationavailable {
   text-transform: capitalize;
 }
 .navsec .navbar .navbar-nav li.usermenu a .username {
-    font-size: 16px;
+    font-size: 14px;
     display: flex;
     align-items: center;
 }
