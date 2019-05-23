@@ -771,7 +771,7 @@ hr.bodrGreen {
     left: 0;
     height: 2px;
     background: #70e77c;
-    bottom: -23px;
+    bottom: -25px;
 }
 .glitch {
   position: relative;
@@ -953,7 +953,7 @@ header.navsec {
   border-radius: 0;
   min-width: 350px;
   margin-right: 0 !important;
-  height: 28px;
+  height: 30px;
   padding-left: 30px;
   font-size: 12px;
   color: #70e77c !important;
@@ -1157,6 +1157,7 @@ a.notificationavailable {
   color: #70e77c;
   font-size: 14px;
   margin: 0;
+	text-transform: uppercase;
 }
 .searchlisttitle h4 {
 	font-size: 12px;
@@ -1164,6 +1165,7 @@ a.notificationavailable {
 	text-transform: uppercase;
 	margin: 0;
 	font-family: 'Rubik';
+	letter-spacing: inherit;
 }
 .seeallmenu a {
   color: #70e77c;

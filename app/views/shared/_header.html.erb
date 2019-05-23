@@ -196,10 +196,10 @@
         </ul>
         <ul class="navbar-nav ml-auto acountsmenu <%= 'd-none' if request.path == registered_path || request.path.include?('profile') %>">
           <li class="loginmenu">
-            <a href="#" class="btn btn-outline-primary" data-toggle="modal" data-target="#loginsignupmodal">Log in</a>
+            <a href="#" class="btn btn-outline-primary minWdBtn" data-toggle="modal" data-target="#loginsignupmodal">Log in</a>
           </li>
           <li class="loginmenu">
-            <a href="#" class="btn btn-primary bgblue" data-toggle="modal" data-target="#loginsignupmodal">Sign up</a>
+            <a href="#" class="btn btn-primary minWdBtn bgblue" data-toggle="modal" data-target="#loginsignupmodal">Sign up</a>
           </li>
         </ul>
 				<ul class="navbar-nav ml-auto afterlogin align-items-center <%= 'd-none' unless request.path == registered_path || request.path.include?('profile') %>">
