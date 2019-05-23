@@ -11,16 +11,17 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav main-menu mr-auto align-items-center">
-					<li class="nav-item <%= 'active' if request.path == games_path || request.path == explore_path || request.path == clips_path %>">
+        <ul class="navbar-nav main-menu mr-auto align-items-center" style="width:100%;">
+	  <li class="nav-item <%= 'active' if request.path == games_path || request.path == explore_path || request.path == clips_path %>">
             <a class="nav-link" href="/explore">Explore</a>
           </li>
 					<li class="nav-item <%= 'active' if request.path == following_path %>">
             <a class="nav-link" href="/following">Following</a>
           </li>
-          <form class="d-flex align-items-center my-2 my-lg-0">
+	<li style="width:40%">
+          <form>
             <div class="headersearch">
-							<div class="cstmsearch">
+	      <div class="cstmsearch">
                 <input class="form-control mr-sm-2" id="searchInput" type="search" placeholder="Search" aria-label="Search">
                 <span class="searchImg">
                   <img class="searchGreen" src="assets/searchicongreen.png" alt="...">
@@ -193,6 +194,7 @@
               </div>
             </div>
           </form>
+         </li>
         </ul>
         <ul class="navbar-nav ml-auto acountsmenu <%= 'd-none' if request.path == registered_path || request.path.include?('profile') %>">
           <li class="loginmenu">

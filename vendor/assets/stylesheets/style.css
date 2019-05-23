@@ -608,9 +608,10 @@ a.forgotpassword {
   cursor: pointer;
   z-index: 9;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 .cardStyle .playicon img {
-  width: 34px;
+  width: 50%;
   background-color: #000;
   border-radius: 50px;
 }
@@ -676,7 +677,6 @@ a.forgotpassword {
 	font-weight: 700;
 }
 .cardStyle2>.cardImgCol>a>img {
-  height: 190px;
   object-fit: cover;
   width: 100%;
 }
@@ -735,7 +735,6 @@ a.forgotpassword {
   bottom: 0px;
 }
 .cardStyle3>.cardImgCol>a>img {
-  height: 180px;
   object-fit: cover;
   width: 100%;
 }
