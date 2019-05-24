@@ -762,8 +762,8 @@ hr.bodrGreen {
     color: #70e77c;
 }
 
-.navsec .navbar .navbar-nav.main-menu li a:hover:before,
-.navsec .navbar .navbar-nav li.active a:before {
+.navsec .navbar .navbar-nav.main-menu li.nav-item a:hover:before,
+.navsec .navbar .navbar-nav li.nav-item.active a:before {
     content: "";
     position: absolute;
     right: 0;
@@ -950,7 +950,6 @@ header.navsec {
   background-color: #232322;
   border: 0;
   border-radius: 0;
-  min-width: 350px;
   margin-right: 0 !important;
   height: 30px;
   padding-left: 30px;
@@ -1167,9 +1166,12 @@ a.notificationavailable {
 	letter-spacing: inherit;
 }
 .seeallmenu a {
-  color: #70e77c;
-  font-family: 'Lackonic-Regular';
-  font-size: 12px;
+  color: #70e77c !important;
+  font-size: 12px !important;
+  text-transform: uppercase !important;
+  margin: 0 !important;
+  font-family: 'Rubik' !important;
+  letter-spacing: inherit !important;
 }
 .listcontent .streamer .listimg img {
 	width: 40px;
