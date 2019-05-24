@@ -17,4 +17,5 @@
 //= require swiper.min.js
 //= require jquery.mCustomScrollbar.concat.min.js
 //= require slick.min.js
+//= require owl.carousel.js
 //= require script.js

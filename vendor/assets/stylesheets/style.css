@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700');
-
 @font-face {
   font-family: 'Lackonic-Regular';
   src: url('Lackonic-Regular.eot?#iefix') format('embedded-opentype'), url('Lackonic-Regular.otf') format('opentype'),
@@ -178,23 +176,6 @@ a:hover {
   background-color: transparent;
   pointer-events: none;
 }
-/* .swiper-button-prev.swiper-button-white, .swiper-container-rtl .swiper-button-next.swiper-button-white {
-    background-image: url(arrowleft.svg);
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-    left: 0;
-} */
-
-/* .swiper-button-next.swiper-button-white, .swiper-container-rtl .swiper-button-prev.swiper-button-white {
-  background-image: url(arrowright.svg);
-  -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-    right: 0;
-} */
 .mainSliderSection .sliderCol .swiper-button-white {
   background-image: none;
   -webkit-transform: translateX(0);
@@ -1792,8 +1773,6 @@ span.listarrow {
   background-color: #232321;
 }
 
-
-
 .pollingSection {
   padding: 30px 0;
 }
@@ -2172,10 +2151,6 @@ span.listarrow {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-/*.cardStyle:hover .streamerCardlist > li > a{*/
-  /*-webkit-filter: grayscale(0%);*/
-  /*filter: grayscale(0%);*/
-/*}*/
 .streamerListImg > img {
   width: 60px;
   min-width: 60px;
@@ -2207,9 +2182,6 @@ span.listarrow {
   -o-transition: all 300ms ease-in-out 0s;
   transition: all 300ms ease-in-out 0s;
 }
-/*.listView .table > tbody > tr:hover {*/
-  /*color: #6fe77d;*/
-/*}*/
 .filterLink {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -2218,10 +2190,6 @@ span.listarrow {
   filter: none;
 	color: #6fe77d;
 }
-/*.listView .table > tbody > tr:hover .filterLink {*/
-  /*-webkit-filter: grayscale(0%);*/
-  /*filter: grayscale(0%);*/
-/*}*/
 /*  streamer page end  */
 
 /*  Clip page Start  */
@@ -3836,21 +3804,21 @@ ul.tabs li {
     margin-right: 5px;
     filter: brightness(0) invert(1);
 }
-/*.card_bio > ul > li.active > span > a > img {*/
-    /*filter: inherit;*/
-/*}*/
 /***********************************************
 //  bio1 page  close  //
 *********************************************************/
 
+
+/***********************************************
+//  ALL MEDIA  //
+*********************************************************/
 @media (min-width:1200px) {
   .container {
     max-width: 100%;
     padding: 0 55px;
   }
 }
-@media (min-width: 576px)
-{
+@media (min-width: 576px) {
   .modal-sm {
       max-width: 345px;
   }

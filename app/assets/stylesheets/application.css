@@ -7,5 +7,8 @@
 	*= require jquery.mCustomScrollbar.css
 	*= require slick.css
 	*= require slick-theme.css
+	*= require swiper.min.css
+	*= require owl.carousel.css
+	*= require owl.theme.default.css
 	*= require style.css
 */
