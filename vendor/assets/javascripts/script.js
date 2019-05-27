@@ -82,16 +82,16 @@ $(window).scroll(function(){
 });
 
 
-// $(function () {
-//   $('#timePicker').datetimepicker({
-//     format: 'LT',
-//   });
-// });
-// $(function () {
-//   $('#datePicker').datetimepicker({
-//     format: 'L',
-//   });
-// });
+$(function () {
+  $('#timePicker').datetimepicker({
+ 	 format: 'LT',
+  });
+});
+$(function () {
+  $('#datePicker').datetimepicker({
+ 	 format: 'L',
+  });
+});
 
 $('.homeSlider').slick({
   dots: true,
@@ -309,29 +309,33 @@ $(document).ready(function() {
 // // Initialize slider
 // mySwiper.init();
 
-$('.owl-carousel').owlCarousel({
-	items: 4,
-	loop:true,
-	nav:true,
-	dots:true,
-	merge:true,
-	loop:true,
-	margin:10,
-	stagePadding: 50,
-	video:true,
-	lazyLoad:true,
-	center:true,
-	autoWidth:true,
-	autoHeight:true
-	// responsive:{
-  //       0:{
-  //           items:1
-  //       },
-  //       600:{
-  //           items:3
-  //       },
-  //       1000:{
-  //           items:5
-  //       }
-  //   }
+$(document).ready(function() {
+	var carousel = $('.owl-carousel').owlCarousel({
+		items: 4,
+		loop:true,
+		nav:true,
+		dots:true,
+		merge:true,
+		loop:true,
+		margin:10,
+		stagePadding: 50,
+		video:true,
+		lazyLoad:true,
+		center:true,
+		autoWidth:true,
+		autoHeight:true
+		// responsive:{
+		//       0:{
+		//           items:1
+		//       },
+		//       600:{
+		//           items:3
+		//       },
+		//       1000:{
+		//           items:5
+		//       }
+		//   }
+	});
+
+	window.owlTube = $(carousel).owlTube();
 });

@@ -39,6 +39,10 @@ class HomeController < ApplicationController
 		# get public explore
   end
 
+  def profile_settings
+		# get public explore
+  end
+
   def profile
 		# get public explore
   end

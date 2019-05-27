@@ -1571,7 +1571,16 @@ footer {
 }
 .footerCol {
   padding: 40px 0;
-  margin-top: 50px;
+  /*margin-top: 50px;*/
+}
+.profile_settings {
+	background-color: #000;
+}
+.profile_settings > .container {
+	padding-right: 0px;
+}
+.profile_settings > .container > .dBoardSection > .row.no-gutters > .col-lg {
+	background-color: #222220;
 }
 .footerLinks {
   text-align: center;
@@ -2428,7 +2437,7 @@ span.datesec {
   width: 32px;
 }
 .dbSidebar {
-  padding: 20px 0;
+  padding: 50px 0;
 }
 .dbSidebar > ul > li {
 	padding: 8px 0;
@@ -2454,11 +2463,21 @@ span.datesec {
 .dbSidebar > ul > li > a > span {
   display: inline-block;
   vertical-align: middle;
+	font-size: 14px;
 }
 
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+	background-color: initial;
+	border-bottom: 3px solid #70e77c;
+	padding-bottom: 12px;
+}
+
+.nav-link {
+	padding: 0px;
+}
 
 .dbContentCol {
-	padding: 40px 0 50px 40px;
+	padding: 50px;
 }
 .formBtnsCol > ul > li {
 	display: inline-block;
@@ -2488,7 +2507,7 @@ span.datesec {
 	line-height: 1;
 }
 .formStyle .formLabel.lgLbl {
-	font-size: 16px;
+	font-size: 14px;
 	margin-bottom: 12px;
   font-weight: 500;
 }
@@ -2830,7 +2849,7 @@ background-color: #232321 ;
   font-size: 18px;
   text-transform: uppercase;
   font-family: 'Lackonic-Regular';
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
 }
 .textUnderLine li a {
   position: relative;
@@ -2856,7 +2875,7 @@ background-color: #232321 ;
 .headingStyle h4 {
   font-size: 18px;
   font-family: 'Lackonic-Regular';
-  letter-spacing: 1px;
+  letter-spacing: 2.5px;
 }
 .mainBlackBox {
   background-color: #1f1f1d;
@@ -2865,7 +2884,7 @@ background-color: #232321 ;
   padding: 30px;
 }
 .balanceTitle {
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 7px;
 }
 .balanceDetails span {
@@ -2877,14 +2896,14 @@ background-color: #232321 ;
 }
 .balCount {
   padding-left: 10px;
-  font-size: 18px;
+  font-size: 14px;
 }
 .historyBtn {
   margin-bottom: 24px;
 }
 .history-items h5 {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -2921,7 +2940,7 @@ background-color: #232321 ;
   height: 5px;
 }
 .borderTd > thead > tr > th {
-  font-size: 16px;
+  font-size: 14px;
   border-top: none;
   border-bottom: 2px solid #6fe77d;
   font-weight: normal;
@@ -3301,7 +3320,7 @@ li.paginationnext {
 //  profile-streamer-notification page start  //
 *********************************************************/
 .notificationLbl {
-  font-size: 16px;
+  font-size: 14px;
 }
 .notificationLbl.minWdLbl {
 	min-width: 150px;
@@ -3325,7 +3344,7 @@ li.paginationnext {
 	padding: 10px 15px 10px 20px;
 	margin: 0;
   font-family: 'Rubik', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 .accordionStyle .card-header > h4::before {
 	content: "";
@@ -3355,7 +3374,7 @@ li.paginationnext {
 	display: block;
 }
 .switchTitle {
-  font-size: 16px;
+  font-size: 14px;
 }
 .switchTitle + .switchText {
   padding-top: 5px;
@@ -3604,7 +3623,7 @@ p.medtext {
   max-width: 78%;
 }
 .cstmlabel3 {
-  font-size: 16px;
+  font-size: 14px;
 }
 .labelStyle {
   padding: 9px 0px 8px 0px;
@@ -3625,13 +3644,13 @@ p.medtext {
   padding-top: 10px;
 }
 .cstmlabel4 {
-  font-size: 14px;
+  font-size: 12px;
 }
 .uploadColumn label {
   margin-bottom: 0px;
 }
 .uploadTitle {
-  font-size: 16px;
+  font-size: 14px;
 }
 .uploadColumn {
   padding-bottom: 33px;
@@ -4221,7 +4240,7 @@ li.notificationmenu {
       font-size: 12px;
   }
   .balCount {
-    font-size: 16px;
+    font-size: 14px;
 }
 .history-items h5 {
     font-size: 12px;

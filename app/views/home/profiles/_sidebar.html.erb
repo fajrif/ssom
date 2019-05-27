@@ -1,0 +1,15 @@
+<div class="col-lg-auto">
+	<div class="dbSidebarCol">
+		<div class="dbSidebar">
+			<ul>
+				<li class="<%= 'active' if request.path == profile_settings_path %>"><a href="<%= profile_settings_path %>"><span class="dbLinkIcon"><img src="assets/sidebar-icon-user.png" alt="..." width="14"></span> <span>Profile</span></a></li>
+				<li class="<%= 'active' if request.path == profile_security_path %>"><a href="<%= profile_security_path %>"><span class="dbLinkIcon"><img src="assets/sidebar-icon-security.png" alt="..." width="16"></span> <span>Security &amp; Privacy</span></a></li>
+				<li class="<%= 'active' if request.path == profile_notifications_path %>"><a href="<%= profile_notifications_path %>"><span class="dbLinkIcon"><img src="assets/sidebar-icon-notification.png" alt="..." width="10"></span> <span>Notifications</span></a></li>
+				<li class="<%= 'active' if request.path == profile_verification_path %>"><a href="<%= profile_verification_path %>"><span class="dbLinkIcon"><img src="assets/sidebar-icon-verification.png" alt="..." width="16"></span> <span>Verification Request</span></a></li>
+				<li class="<%= 'active' if request.path == profile_payment_path %>"><a href="<%= profile_payment_path %>"><span class="dbLinkIcon"><img src="assets/sidebar-icon-payment.png" alt="..." width="16"></span> <span>Payment</span></a></li>
+				<li class="<%= 'active' if request.path == profile_guide_path %>"><a href="<%= profile_guide_path %>"><span class="dbLinkIcon"><img src="assets/sidebar-icon-guide-page.png" alt="..." width="13"></span> <span>Guide Page</span></a></li>
+				<li class="<%= 'active' if request.path == profile_voting_path %>"><a href="<%= profile_voting_path %>"><span class="dbLinkIcon"><img src="assets/sidebar-icon-voting.png" alt="..." width="19"></span> <span>Voting</span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>

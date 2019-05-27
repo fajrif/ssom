@@ -26,6 +26,15 @@ Rails.application.routes.draw do
 	match 'find-interest', to: 'home#find_interest', via: :get
 	match 'following', to: 'home#following', via: :get
 	match 'other-user', to: 'home#user', via: :get
+
+	match 'profile-settings', to: 'home#profile_settings', via: :get
+  match 'profile-security', to: 'home#profile_security', via: :get
+  match 'profile-notifications', to: 'home#profile_notifications', via: :get
+  match 'profile-verification', to: 'home#profile_verification', via: :get
+  match 'profile-payment', to: 'home#profile_payment', via: :get
+  match 'profile-guide', to: 'home#profile_guide', via: :get
+  match 'profile-voting', to: 'home#profile_voting', via: :get
+
 	match 'profile', to: 'home#profile', via: :get
 	match 'profile-clips', to: 'home#profile_clips', via: :get
 	match 'profile-friends', to: 'home#profile_friends', via: :get

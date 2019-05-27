@@ -1,0 +1,112 @@
+<%= render "home/profiles/banner" %>
+
+<section class="profile_settings">
+  <div class="container">
+    <div class="dBoardSection">
+      <div class="row no-gutters">
+				<%= render "home/profiles/sidebar" %>
+        <div class="col-lg">
+          <div class="dbContentCol">
+            <div class="tabRow textUnderLine pb-4">
+              <ul>
+                <li class="current">
+                  <a href="javascript:;">PAYMENT INFO</a>
+                </li>
+                <li>
+                  <a href="javascript:;">PAYMENT HELP</a>
+                </li>
+              </ul>
+            </div>
+            <div class="columnBox columnSpace">
+              <div class="headingStyle">
+                <h4>BALANCE DETAIL</h4>
+              </div>
+              <div class="mainBlackBox">
+                <div class="balanceTitle">YOUR BALANCE</div>
+                <div class="topbarbox">
+                  <div class="form-row">
+                    <div class="col-sm">
+                      <div class="balanceDetails">
+                        <span class="balIcon">
+                          <img src="assets/balance.png" alt="balance" />
+                        </span>
+                        <span class="balCount">IDR 1,000,000,000.-</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-auto">
+                      <span class="btnBlock">
+                        <a href="javascript:void(0)" data-toggle="modal" data-target="#topup" class="btn btn-outline-primary minWdBtn">Top Up</a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="columnBox columnSpace">
+              <div class="headingStyle">
+                <h4>PAYMENT HISTORY</h4>
+              </div>
+              <div class="mainBlackBox">
+                <div class="historyBtn">
+                  <div class="form-row">
+                    <div class="col-auto col-md-3">
+                      <div class="history-items">
+                        <h5>start</h5>
+                        <span class="historyDateStatus">January 1, 2019</span>
+                      </div>
+                    </div>
+                    <div class="col-auto col-md-3">
+                      <div class="history-items">
+                        <h5>end</h5>
+                        <span class="historyDateStatus">January 1, 2019</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="paymentTable">
+                  <div class="table-responsive-md">
+                    <table class="table borderTd">
+                      <thead>
+                        <tr>
+                          <th>Date</th>
+                          <th>Product Description</th>
+                          <th>Price</th>
+                          <th>Payment Method</th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="tableSpacer"></tr>
+                        <tr>
+                          <td>Date</td>
+                          <td>Product Description</td>
+                          <td>Price</td>
+                          <td>Payment Method</td>
+                          <td>Status</td>
+                        </tr>
+                        <tr>
+                          <td>Date</td>
+                          <td>Product Description</td>
+                          <td>Price</td>
+                          <td>Payment Method</td>
+                          <td>Status</td>
+                        </tr>
+                        <tr>
+                          <td>Date</td>
+                          <td>Product Description</td>
+                          <td>Price</td>
+                          <td>Payment Method</td>
+                          <td>Status</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
