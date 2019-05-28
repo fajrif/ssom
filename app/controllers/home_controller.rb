@@ -43,6 +43,30 @@ class HomeController < ApplicationController
 		# get public explore
   end
 
+  def profile_security
+		# get public explore
+  end
+
+  def profile_notifications
+		# get public explore
+  end
+
+  def profile_verification
+		# get public explore
+  end
+
+  def profile_payment
+		# get public explore
+  end
+
+  def profile_guide
+		# get public explore
+  end
+
+  def profile_voting
+		# get public explore
+  end
+
   def profile
 		# get public explore
   end
@@ -57,5 +81,13 @@ class HomeController < ApplicationController
 
   def registered
 		# get public explore
+  end
+
+  def streaming_tools
+		# get public streaming tools
+  end
+
+  def event
+		# get public streaming tools
   end
 end

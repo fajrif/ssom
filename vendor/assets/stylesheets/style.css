@@ -25,6 +25,9 @@ h1, h2, h3, h4 {
   font-family: 'Lackonic-Regular';
 	letter-spacing: 2.5px;
 }
+h6 {
+	font-size: 14px;
+}
 img {
   max-width: 100%;
 }
@@ -430,10 +433,12 @@ a:hover {
 }
 .innerpage {
   color: #fff;
-  font-size: 14px;
 }
 .clrgreen {
   color: #76f581;
+}
+.clrred {
+  color: #db3634;
 }
 .swiper-slide .mainSlideCol {
   transform: scale(1.3);
@@ -2262,12 +2267,12 @@ span.playicontable {
 }
 .profilecontent h3 {
   font-family: 'Rubik', sans-serif;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 700;
   color: #e9e9e9;
 }
 .profilecontent p {
-  font-size: 16px;
+  font-size: 14px;
   color: #e9e9e9;
 }
 .profilecontent {
@@ -2280,16 +2285,16 @@ span.playicontable {
 
 /*  Streaming Tools page Start  */
 .streamingsubtitle p  {
-  font-size: 16px;
+  font-size: 14px;
 }
 .streamingsubtitle p a {
   font-family: 'Rubik', sans-serif;
   font-weight: 700;
   color:#76f581;
-  font-size: 16px;
+  font-size: 14px;
 }
 .streamingsubtitle h5 {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
 }
 .streamingcontent a {
@@ -2312,6 +2317,7 @@ span.playicontable {
 .streaminggrid {
   border-style: solid;
   padding: 20px 15px;
+	margin-right: 20px;
   border-width: 1px;
   border-radius: 15px 0 0 0;
   height: 100%;
@@ -2513,12 +2519,18 @@ span.datesec {
 }
 .formStyle .formLabel {
 	margin: 0 0 8px;
-	line-height: 1;
+	/*line-height: 1;*/
 }
 .formStyle .formLabel.lgLbl {
 	font-size: 14px;
 	margin-bottom: 12px;
   font-weight: 500;
+}
+.noleftmargin {
+	margin-left: 0 !important;
+}
+.spanning span {
+	margin: 0 30px;
 }
 .custom-control-label::before {
 	width: 18px;
@@ -3474,9 +3486,6 @@ label.bannerchange {
 .labelfontmed {
   font-weight: 500;
   margin: 0;
-}
-.clrred {
-  color: #db3634;
 }
 .profilesettingform label img, .profilesettingform label span {
   display: inline-block;
