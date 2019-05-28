@@ -5,11 +5,11 @@ $("#searchdropdownsec").mCustomScrollbar({
 });
 
 $('.cstmsearch input').keyup(function () {
-    if ($.trim($('.cstmsearch input').val()).length) {
-        $(this).parent().next().slideDown();
-    } else {
-        $(this).parent().next().slideUp();
-    }
+	if ($.trim($('.cstmsearch input').val()).length) {
+			$(this).parent().next().slideDown();
+	} else {
+			$(this).parent().next().slideUp();
+	}
 });
 
 $('.notificationmenu a').click(function () {
@@ -49,48 +49,36 @@ $('#step4-btn').click(function () {
 });
 
 $(document).on("click", function(event){
-    var $trigger = $(".cardright li a");
-    if($trigger !== event.target && !$trigger.has(event.target).length){
-        $(".usercountdropdown").slideUp();
-    }
+	var $trigger = $(".cardright li a");
+	if($trigger !== event.target && !$trigger.has(event.target).length){
+			$(".usercountdropdown").slideUp();
+	}
 });
 $(document).on("click", function(event){
-    var $trigger = $(".headersearch");
-    if($trigger !== event.target && !$trigger.has(event.target).length){
-        $(".searchdropdown").slideUp();
-    }
+	var $trigger = $(".headersearch");
+	if($trigger !== event.target && !$trigger.has(event.target).length){
+			$(".searchdropdown").slideUp();
+	}
 });
 $(document).on("click", function(event){
-    var $trigger = $(".notificationmenu");
-    if($trigger !== event.target && !$trigger.has(event.target).length){
-        $(".notificationdropdown").slideUp();
-    }
+	var $trigger = $(".notificationmenu");
+	if($trigger !== event.target && !$trigger.has(event.target).length){
+			$(".notificationdropdown").slideUp();
+	}
 });
 $(document).on("click", function(event){
-    var $trigger = $(".usermenu");
-    if($trigger !== event.target && !$trigger.has(event.target).length){
-        $(".userdropdown").slideUp();
-    }
+	var $trigger = $(".usermenu");
+	if($trigger !== event.target && !$trigger.has(event.target).length){
+			$(".userdropdown").slideUp();
+	}
 });
 
 $(window).scroll(function(){
-    if ($(this).scrollTop() > 50) {
-       $('.navsec').addClass('sticky');
-    } else {
-       $('.navsec').removeClass('sticky');
-    }
-});
-
-
-$(function () {
-  $('#timePicker').datetimepicker({
- 	 format: 'LT',
-  });
-});
-$(function () {
-  $('#datePicker').datetimepicker({
- 	 format: 'L',
-  });
+	if ($(this).scrollTop() > 50) {
+		 $('.navsec').addClass('sticky');
+	} else {
+		 $('.navsec').removeClass('sticky');
+	}
 });
 
 $('.homeSlider').slick({
@@ -98,124 +86,104 @@ $('.homeSlider').slick({
   centerMode: true,
   centerPadding: '60px',
   slidesToShow: 1,
-  responsive: [
-    {
-      breakpoint: 480,
-      settings: {
-        centerMode: false,
-        slidesToShow: 1
-      }
-    }
-  ]
+  responsive: [{
+		breakpoint: 480,
+		settings: {
+			centerMode: false,
+			slidesToShow: 1
+		}
+	}]
 });
 
 $('.exclusiveslider').slick({
   dots: false,
   centerPadding: '10px',
   slidesToShow: 2,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1
-      }
-    }
-  ]
+  responsive: [{
+		breakpoint: 768,
+		settings: {
+			slidesToShow: 1
+		}
+	}]
 });
 
 $('.streamslider').slick({
   dots: false,
   centerPadding: '20px',
   slidesToShow: 8,
-  responsive: [
-    {
+  responsive: [{
       breakpoint: 991,
       settings: {
         slidesToShow:6
       }
-    },
-    {
+    }, {
       breakpoint: 768,
       settings: {
         slidesToShow: 4
       }
-    },
-    {
+    }, {
       breakpoint: 575,
       settings: {
         slidesToShow: 2
       }
-    },
-    {
+    }, {
       breakpoint: 375,
       settings: {
         slidesToShow:1
       }
-    },
-  ]
+    }]
 });
 
 $('.livenowslider').slick({
   dots: false,
   centerPadding: '20px',
   slidesToShow: 4,
-  responsive: [
-    {
+  responsive: [{
       breakpoint: 768,
       settings: {
         slidesToShow: 2
       }
-    },
-    {
+    }, {
       breakpoint: 575,
       settings: {
         slidesToShow: 1
-      }
-    }
-  ]
+			}
+		}]
 });
 
 $('.livestreamer').slick({
   dots: false,
   centerPadding: '20px',
   slidesToShow: 4,
-  responsive: [
-    {
+  responsive: [{
       breakpoint: 768,
       settings: {
         slidesToShow: 2
       }
-    },
-    {
+    }, {
       breakpoint: 575,
       settings: {
         slidesToShow: 1
       }
-    }
-  ]
+    }]
 });
 
 $('.recommendslider').slick({
   dots: false,
   centerPadding: '20px',
   slidesToShow: 3,
-  responsive: [
-    {
+  responsive: [{
       breakpoint: 768,
       settings: {
         slidesToShow: 2
       }
-    },
-    {
+    }, {
       breakpoint: 575,
       settings: {
         slidesToShow: 1
       }
-    }
-  ]
+    }]
 });
-
-
 
 
 /*****************************/
@@ -305,11 +273,20 @@ $(document).ready(function() {
 //       }
 //     };
 // var mySwiper = new Swiper(sliderSelector, options);
-// 
+//
 // // Initialize slider
 // mySwiper.init();
 
 $(document).ready(function() {
+
+  $('#datePicker').datetimepicker({
+ 	 format: 'L'
+  });
+
+  $('#timePicker').datetimepicker({
+ 	 format: 'LT'
+  });
+
 	var carousel = $('.owl-carousel').owlCarousel({
 		items: 4,
 		loop:true,
@@ -324,17 +301,6 @@ $(document).ready(function() {
 		center:true,
 		autoWidth:true,
 		autoHeight:true
-		// responsive:{
-		//       0:{
-		//           items:1
-		//       },
-		//       600:{
-		//           items:3
-		//       },
-		//       1000:{
-		//           items:5
-		//       }
-		//   }
 	});
 
 	window.owlTube = $(carousel).owlTube();

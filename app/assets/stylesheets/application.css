@@ -10,5 +10,6 @@
 	*= require swiper.min.css
 	*= require owl.carousel.css
 	*= require owl.theme.default.css
+	*= require tempusdominus-bootstrap-4.css
 	*= require style.css
 */

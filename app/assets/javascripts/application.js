@@ -14,8 +14,10 @@
 //= require jquery_ujs
 //= require popper.min.js
 //= require bootstrap.min.js
+//= require moment-with-locales.min.js
 //= require swiper.min.js
 //= require jquery.mCustomScrollbar.concat.min.js
+//= require tempusdominus-bootstrap-4.js
 //= require slick.min.js
 //= require owl.carousel.js
 //= require owl-tube.js
