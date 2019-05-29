@@ -1,0 +1,19 @@
+<style>
+body {
+	background-image: none !important;
+	background-color: #000 !important;
+}
+</style>
+<div class="col-lg-auto">
+	<div class="dbSidebarCol">
+		<div class="dbSidebar">
+			<h4 class="pb-md-4 pt-md-4">DASHBOARD</h4>
+			<ul>
+				<li class="<%= 'active' if request.path == profile_dashboard_live_path %>"><a href="<%= profile_dashboard_live_path %>"><span class="dbLinkIcon"><img src="assets/icon-live.png" alt="..." width="16"></span> <span>Live</span></a></li>
+				<li class="<%= 'active' if request.path == profile_dashboard_clips_path %>"><a href="<%= profile_dashboard_clips_path %>"><span class="dbLinkIcon"><img src="assets/icon-db-clips.png" alt="..." width="16"></span> <span>Clips</span></a></li>
+				<li class="<%= 'active' if request.path == profile_analytics_path %>"><a href="<%= profile_analytics_path %>"><span class="dbLinkIcon"><img src="assets/icon-analytics.png" alt="..." width="16"></span> <span>Analytics</span></a></li>
+				<li><a href="javascript:void(0)"><span class="dbLinkIcon"><img src="assets/icon-streaming-tools.png" alt="..." width="16"></span> <span>Streaming Tools</span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>

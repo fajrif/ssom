@@ -1589,11 +1589,19 @@ footer {
 .profile_settings {
 	background-color: #000;
 }
+.profile_dashboard > .container ,
 .profile_settings > .container {
 	padding-right: 0px;
 }
+.profile_dashboard > .container > .dBoardSection > .row.no-gutters > .col-lg ,
 .profile_settings > .container > .dBoardSection > .row.no-gutters > .col-lg {
 	background-color: #222220;
+}
+.uploadleftcol {
+	margin-bottom: 20px;
+}
+.uploadleftcol > img {
+	width: 90%;
 }
 .footerLinks {
   text-align: center;
@@ -2999,7 +3007,7 @@ background-color: #232321 ;
 	text-transform  : uppercase;
 	transition      : all 0.2s;
 }
-.btn:hover {
+.btn-outline-primary:hover {
 	background : #1a44fb;
 }
 .btn.btn-primary:hover {
@@ -3172,6 +3180,9 @@ output#messages {
 .btn-outline-danger {
   color: #db3634;
   border-color: #db3634;
+}
+.btn-outline-danger:hover {
+  color: #000;
 }
 button.btn-outline-danger.clrwhite {
   color: #fff;

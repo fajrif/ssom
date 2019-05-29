@@ -34,6 +34,9 @@ Rails.application.routes.draw do
   match 'profile-payment', to: 'home#profile_payment', via: :get
   match 'profile-guide', to: 'home#profile_guide', via: :get
   match 'profile-voting', to: 'home#profile_voting', via: :get
+  match 'profile-analytics', to: 'home#profile_analytics', via: :get
+  match 'profile-dashboard-clips', to: 'home#profile_dashboard_clips', via: :get
+  match 'profile-dashboard-live', to: 'home#profile_dashboard_live', via: :get
 
 	match 'profile', to: 'home#profile', via: :get
 	match 'profile-clips', to: 'home#profile_clips', via: :get

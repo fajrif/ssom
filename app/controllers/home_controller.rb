@@ -87,6 +87,18 @@ class HomeController < ApplicationController
 		# get public streaming tools
   end
 
+  def profile_analytics
+		# get public streaming tools
+  end
+
+  def profile_dashboard_clips
+		# get public streaming tools
+  end
+
+  def profile_dashboard_live
+		# get public streaming tools
+  end
+
   def event
 		# get public streaming tools
   end

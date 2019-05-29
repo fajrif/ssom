@@ -1,0 +1,144 @@
+<section class="profile_dashboard">
+  <div class="container">
+    <div class="dBoardSection">
+      <div class="row no-gutters">
+				<%= render "home/profiles/sidebar_dashboard" %>
+        <div class="col-lg">
+          <div class="dbContentColBanner">
+            <img src="assets/db-banner-img.jpg" alt="...">
+          </div>
+          <div class="dbContentCol">
+            <div class="titleStyle pb-4">
+              <h4>CREATE EVENT</h4>
+            </div>
+
+            <div class="formStyle">
+              <form>
+                <div class="row my-4">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="newEventFld" class="formLabel lgLbl">Create New Event</label>
+                      <input type="text" class="form-control" id="newEventFld" placeholder="Create name for your streaming">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <h5>Basic Information</h5>
+                      <label for="nameFld" class="formLabel">Name *</label>
+                      <input type="text" class="form-control" id="nameFld" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="descriptionFld" class="formLabel">Description</label>
+                      <textarea class="form-control" id="descriptionFld" placeholder=""></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <h5>Advanced Setting</h5>
+                      <label class="formLabel">Encode</label>
+                      <div class="radioCol">
+                        <div class="custom-control custom-radio custom-control-inline radioStyle">
+                          <input type="radio" id="encodeRadio" name="encodeRadio" class="custom-control-input">
+                          <label class="custom-control-label" for="encodeRadio">Yes</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline radioStyle redRadio">
+                          <input type="radio" id="encodeRadio2" name="encodeRadio" class="custom-control-input">
+                          <label class="custom-control-label" for="encodeRadio2">No</label>
+                        </div>
+                      </div>
+                      <small class="form-text">Lorem ipsum dolor sit amet, volumus propriae periculis qui id</small>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="formLabel">Feed type</label>
+                      <div class="radioCol">
+                        <div class="custom-control custom-radio custom-control-inline radioStyle">
+                          <input type="radio" id="feedTypeRadio" name="feedTypeRadio" class="custom-control-input">
+                          <label class="custom-control-label" for="feedTypeRadio">Pull</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline radioStyle redRadio">
+                          <input type="radio" id="feedTypeRadio2" name="feedTypeRadio" class="custom-control-input">
+                          <label class="custom-control-label" for="feedTypeRadio2">Push</label>
+                        </div>
+                      </div>
+                      <small class="form-text">Lorem ipsum dolor sit amet, volumus propriae periculis qui id. Tritani hendrerit per cu, menandri legendos ad mea.</small>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="formLabel">Record Stream</label>
+                      <div class="radioCol">
+                        <div class="custom-control custom-radio custom-control-inline radioStyle">
+                          <input type="radio" id="rStreamRadio" name="rStreamRadio" class="custom-control-input">
+                          <label class="custom-control-label" for="rStreamRadio">Yes</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline radioStyle redRadio">
+                          <input type="radio" id="rStreamRadio2" name="rStreamRadio" class="custom-control-input">
+                          <label class="custom-control-label" for="rStreamRadio2">No</label>
+                        </div>
+                      </div>
+                      <small class="form-text">Lorem ipsum dolor sit amet, volumus propriae periculis qui id</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row py-3">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="formLabel lgLbl">Front Thumbnail</label>
+                      <div class="uploadBtnColMain">
+                        <div class="uploadBtnCol">
+                          <input type="file" class="uploadFld">
+                          <a href="javascript:void(0)" class="btn btn-outline-primary uploadBtn"><span>Upload</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="inputLinkFld" class="formLabel lgLbl">Input link</label>
+                      <input type="text" class="form-control" id="inputLinkFld" placeholder="">
+                    </div>
+                  </div>
+                </div>
+
+
+                <label class="formLabel lgLbl">Streamers</label>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <select name="" id="" class="custom-select">
+                        <option value="">Info Hardware / Software</option>
+                        <option value="">Option 2</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="newEventFld" placeholder="Live notification / Status">
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="newEventFld" placeholder="Streaming tools">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="formBtnsCol text-center pt-4">
+                  <ul>
+                    <li><button class="btn btn-outline-danger minWdBtn" type="button">Cancel</button></li>
+                    <li><button class="btn btn-outline-primary minWdBtn" type="submit">Stream</button></li>
+                  </ul>
+                </div>
+
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,320 @@
+<section class="profile_dashboard">
+  <div class="container">
+    <div class="dBoardSection">
+      <div class="row no-gutters">
+				<%= render "home/profiles/sidebar_dashboard" %>
+        <div class="col-lg">
+          <div class="dbContentColBanner">
+            <img src="assets/db-banner-img.jpg" alt="...">
+          </div>
+          <div class="dbContentCol">
+            <div class="titleStyle pb-4">
+              <h4>CREATE TASK</h4>
+            </div>
+            <div class="formStyle fileuploadform">
+              <form>
+                <div class="row my-4">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <div class="row align-items-center mb-4">
+                        <div class="col-6">
+                          <label for="newEventFld" class="formLabel lgLbl">Upload</label>
+                          <span class="filesubheading mt-2">Choose Your files to upload</span>
+                        </div>
+                        <div class="col-6 text-right">
+                          <div class="uploadbtn">
+                            <button type="button" name="button"><img width="18" src="assets/icon-upload.png" alt=""><span>Upload</span></button>
+                          </div>
+                        </div>
+                      </div>
+                      <form id="file-upload-form" action="<?php echo $_SERVER['PHP_SELF'] ?>">
+                      	<input id="file-upload" type="file" name="fileUpload" />
+                      	<label for="file-upload" id="file-drag">
+                          <span id="file-upload-btn" class="btn btn-primary"><img src="assets/uploadicon.png" width="14" alt=""> Choose files to upload</span>
+                      		<br /><span class="ortext">OR</span>
+                      		<br /><span class="dragdroptext">Drag and Drop here</span>
+                        	<output for="file-upload" id="messages"></output>
+                      	</label>
+                      </form>
+                    </div>
+                    <div class="form-group">
+                      <label for="newEventFld" class="formLabel lgLbl">Review</label>
+                      <span class="filesubheading mb-4 mt-2">Review your files and confirm for next step</span>
+                      <textarea class="form-control" name="name" rows="8" cols="80"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row align-items-center formgrpm-0">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <select name="" id="" class="custom-select">
+                        <option value="">Select Folder</option>
+                        <option value="">Option 2</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <select name="" id="" class="custom-select">
+                        <option value="">Select Playlist</option>
+                        <option value="">Option 2</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="fileuplaodsearch">
+                      <div class="cstmsearch">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <span><img src="assets/searchicongreen.png" width="11" alt="..."></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="formBtnsCol text-left pt-4">
+                  <ul>
+                    <li><button class="btn-rect publishbtn minWdBtn" type="submit">Publish</button></li>
+                    <li><button class="btn-rect capturebtn minWdBtn" type="submit">Capture</button></li>
+                    <li><button class="btn-rect socialbtn minWdBtn" type="submit">Social</button></li>
+                    <li><button class="btn btn-outline-default minWdBtn btn-sm" type="submit">Move</button></li>
+                    <li><button class="btn btn-outline-danger minWdBtn btn-sm" type="button">Delete</button></li>
+                  </ul>
+                </div>
+
+              </form>
+            </div>
+            <div class="table-responsive uploadformtable">
+              <table class="table tableStyle tdAlignCenter">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col" align="center">Title</th>
+                    <th scope="col" class="text-center">Thumbnail</th>
+                    <th scope="col" class="text-center">Availability</th>
+                    <th scope="col" class="text-center">Public Status</th>
+                    <th scope="col" class="text-center">Social Media</th>
+                    <th scope="col" class="text-center">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="cstmcheck">
+                        <input type="checkbox" name="" id="video2" class="cstmcheckbox" value="">
+                        <label for="video2"></label>
+                      </div>
+                    </td>
+                    <td><span class="cardTitle">Video 01</span></td>
+                    <td align="center"><img src="assets/thumbnail.jpg" alt="" class="clipprofile"></td>
+                    <td align="center">
+                      <div class="form-group m-0">
+                        <span class="switch">
+                          <input type="checkbox" checked class="switch" id="switch-normal">
+                          <label for="switch-normal"></label>
+                        </span>
+                      </div>
+                    </td>
+                    <td align="center">
+                      <button type="button" class="btn-outline-primary btn btn-sm" name="button">Success</button>
+                    </td>
+                    <td align="center">
+                      <a href="JavaScript:void(0)">View</a>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="cstmcheck">
+                        <input type="checkbox" name="" id="video1" class="cstmcheckbox" value="">
+                        <label for="video1"></label>
+                      </div>
+                    </td>
+                    <td><span class="cardTitle">Video 01</span></td>
+                    <td align="center"><img src="assets/clip-img-2.jpg" alt="" class="clipprofile"></td>
+                    <td align="center">
+                      <div class="form-group m-0">
+                        <span class="switch">
+                          <input type="checkbox" class="switch" id="switch-normal1">
+                          <label for="switch-normal1"></label>
+                        </span>
+                      </div>
+                    </td>
+                    <td align="center">
+                      <button type="button" class="btn-outline-danger btn btn-sm clrwhite" name="button">Pending</button>
+                    </td>
+                    <td align="center">
+                      <a href="JavaScript:void(0)">View</a>
+                    </td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row my-4">
+              <div class="col-md-6">
+                <div class="form-group formStyle fileuploadform">
+                  <label for="newEventFld" class="formLabel lgLbl">Upload Clips</label>
+                  <span class="filesubheading mb-4 mt-2">Lorem ipsum dolor sit amet, volumus propirae periculis</span>
+                </div>
+              </div>
+              <div class="col-md-6 text-right">
+                <nav class="cstmpagination">
+                  <ul class="pagination justify-content-end">
+                    <li class="seeallmenu">
+                      <a href="javascript:void(0)">See all</a>
+                    </li>
+                    <li class="active"><a href="javascript:void(0)">1</a></li>
+                    <li><a href="javascript:void(0)">2</a></li>
+                    <li><a href="javascript:void(0)">3</a></li>
+                    <li><a href="javascript:void(0)">22</a></li>
+                    <li class="paginationnext">
+                      <a href="javascript:void(0)"><img src="assets/rightarrow.png" width="10" alt=""></a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="uploadleftcol">
+                  <img src="assets/clip-img-1.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-sm-8">
+                <div class="uploadrightcol">
+                  <div class="row align-items-center">
+                    <div class="col-lg-6">
+                      <div class="form-group m-0 formStyle fileuploadform">
+                        <label for="newEventFld" class="formLabel lgLbl">Title</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 text-right">
+                      <button type="button" class="btn btn-outline-primary btn-sm" name="button">Save</button>
+                    </div>
+                  </div>
+                  <div class="uploadtitle mt-4">
+                    <h4>Clips title goes here</h4>
+                  </div>
+                  <div class="uploadtable table-responsive mt-4">
+                    <table class="table tableStyle tdAlignCenter">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="text-center" width="20">Views</th>
+                          <th scope="col">Created on</th>
+                          <th scope="col">Clip Length</th>
+                          <th scope="col">Category</th>
+                          <th scope="col">Channel</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td align="center">2</td>
+                          <td>01/01/2019</td>
+                          <td>02:30</td>
+                          <td>God of war</td>
+                          <td>Lorem Ipsum</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="uploadleftcol">
+                  <img src="assets/clip-img-2.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-sm-8">
+                <div class="uploadrightcol">
+                  <div class="row align-items-center">
+                    <div class="col-lg-6">
+                      <div class="form-group m-0 formStyle fileuploadform">
+                        <label for="newEventFld" class="formLabel lgLbl">Title</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 text-right">
+                      <button type="button" class="btn btn-outline-primary btn-sm" name="button">Save</button>
+                    </div>
+                  </div>
+                  <div class="uploadtitle mt-4">
+                    <h4>Clips title goes here</h4>
+                  </div>
+                  <div class="uploadtable table-responsive mt-4">
+                    <table class="table tableStyle tdAlignCenter">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="text-center" width="20">Views</th>
+                          <th scope="col">Created on</th>
+                          <th scope="col">Clip Length</th>
+                          <th scope="col">Category</th>
+                          <th scope="col">Channel</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td align="center">2</td>
+                          <td>01/01/2019</td>
+                          <td>02:30</td>
+                          <td>God of war</td>
+                          <td>Lorem Ipsum</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="uploadleftcol">
+                  <img src="assets/clip-img-3.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-sm-8">
+                <div class="uploadrightcol">
+                  <div class="row align-items-center">
+                    <div class="col-lg-6">
+                      <div class="form-group m-0 formStyle fileuploadform">
+                        <label for="newEventFld" class="formLabel lgLbl">Title</label>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 text-right">
+                      <button type="button" class="btn btn-outline-primary btn-sm" name="button">Save</button>
+                    </div>
+                  </div>
+                  <div class="uploadtitle mt-4">
+                    <h4>Clips title goes here</h4>
+                  </div>
+                  <div class="uploadtable table-responsive mt-4">
+                    <table class="table tableStyle tdAlignCenter">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="text-center" width="20">Views</th>
+                          <th scope="col">Created on</th>
+                          <th scope="col">Clip Length</th>
+                          <th scope="col">Category</th>
+                          <th scope="col">Channel</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td align="center">2</td>
+                          <td>01/01/2019</td>
+                          <td>02:30</td>
+                          <td>God of war</td>
+                          <td>Lorem Ipsum</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
