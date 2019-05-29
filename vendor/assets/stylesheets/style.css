@@ -1125,6 +1125,8 @@ a.notificationavailable {
 }
 .navsec .navbar .navbar-nav li.usermenu a .nottext {
     font-size: 12px;
+		line-height: initial;
+		letter-spacing: initial;
 }
 /**************** Search Dropdown Css Starts *****************/
 .headersearch {
@@ -3463,17 +3465,21 @@ label.profilechange {
 .profilechangebtn .btn-primary {
   color: #000;
 }
-.bannerchangebtn .btn-outline-primary {
-  color: #fff;
-}
 .profilechangebtn p {
   margin: 0;
 }
 .bannerimagechange {
-  max-width: 300px;
+  /*max-width: 300px;*/
 }
 label.bannerchange {
   margin: 0;
+  width: 435px;
+  height: 135px;
+  border: 1px solid #76f581;
+  border-radius: 10px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .bannerimagechange img {
   border-radius: 10px 0 0 0;
