@@ -1,0 +1,28 @@
+<style>
+body {
+	background-image: none !important;
+	background-color: #000 !important;
+	padding-top: 0px !important;
+}
+</style>
+<div class="col-lg-auto">
+	<div class="dbSidebarCol">
+		<div class="dbSidebar">
+			<div class="col-md-auto" style="padding-bottom:100px;">
+				<div class="footerLogo">
+					<a href="/"><img src="assets/logo.svg" alt="..."></a>
+				</div>
+			</div>
+			<h4 class="pb-md-4 pt-md-4 mb-4">LEGAL</h4>
+			<ul>
+				<li class="<%= 'active' if request.path == terms_path %>"><a href="<%= terms_path %>"><span>Terms & Condition</span></a></li>
+				<li class="<%= 'active' if request.path == privacy_path %>"><a href="<%= privacy_path %>"><span>Privacy Policy</span></a></li>
+			</ul>
+			<h4 class="pb-md-4 pt-md-4 mb-4 mt-4">ABOUT</h4>
+			<ul>
+				<li class="<%= 'active' if request.path == guidelines_path %>"><a href="<%= guidelines_path %>"><span>Guidelines</span></a></li>
+				<li class="<%= 'active' if request.path == contact_path %>"><a href="<%= contact_path %>"><span>Contact</span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>

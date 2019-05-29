@@ -14,7 +14,7 @@ Rails.application.routes.draw do
 		resources :contacts, :only => [:index, :show, :destroy]
   end
 
-  resource :contact, :only => [:create, :show]
+  #resource :contact, :only => [:create, :show]
 	resources :projects, :only => [:index, :show]
 
 	match 'about', to: 'home#about', via: :get
@@ -44,6 +44,10 @@ Rails.application.routes.draw do
 	match 'registered', to: 'home#registered', via: :get
 	match 'streaming-tools', to: 'home#streaming_tools', via: :get
 	match 'event', to: 'home#event', via: :get
+	match 'terms', to: 'home#terms', via: :get
+	match 'privacy', to: 'home#privacy', via: :get
+	match 'guidelines', to: 'home#guidelines', via: :get
+	match 'contact', to: 'home#contact', via: :get
   root :to => "home#index"
 
 end

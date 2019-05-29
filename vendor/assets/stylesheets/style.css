@@ -1589,10 +1589,16 @@ footer {
 .profile_settings {
 	background-color: #000;
 }
+.single_page > .container ,
 .profile_dashboard > .container ,
 .profile_settings > .container {
 	padding-right: 0px;
 }
+.single_page > .container > .dBoardSection > .row.no-gutters > .col-lg {
+	background-color: #fff;
+	color: #000;
+}
+
 .profile_dashboard > .container > .dBoardSection > .row.no-gutters > .col-lg ,
 .profile_settings > .container > .dBoardSection > .row.no-gutters > .col-lg {
 	background-color: #222220;
@@ -2455,7 +2461,7 @@ span.datesec {
 .dbSidebar > h4 {
 	color: #76f581;
 	font-size: 16px;
-	padding-left: 10px;
+	padding-left: 14px;
   padding-right: 10px;
 }
 .dbLinkIcon {
@@ -3102,11 +3108,11 @@ output#messages {
 .fileuplaodsearch input {
     width: 100%;
     min-width: inherit;
-    border-color: #76f581 !important;
-    height: 24px !important;
+		border-color: #76f581 !important;
+    /*height: 24px !important;*/
 }
 .fileuplaodsearch {
-    max-width: 148px;
+    /*max-width: 148px;*/
     margin-left: auto;
 }
 .btn-outline-default {

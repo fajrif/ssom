@@ -102,4 +102,20 @@ class HomeController < ApplicationController
   def event
 		# get public streaming tools
   end
+
+  def terms
+		# get public streaming tools
+  end
+
+  def privacy
+		# get public streaming tools
+  end
+
+  def guidelines
+		# get public streaming tools
+  end
+
+  def contact
+		# get public streaming tools
+  end
 end
