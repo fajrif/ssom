@@ -601,9 +601,7 @@ a.forgotpassword {
   text-align: center;
 }
 .cardStyle .playicon img {
-  width: 50%;
-  background-color: #000;
-  border-radius: 50px;
+  width: 30%;
 }
 .cardStyle .videotimetag {
   position: absolute;
@@ -743,8 +741,15 @@ a.forgotpassword {
   transition: all 300ms ease-in-out;
 }
 hr.bodrGreen {
-    border-color: #76f581;
-    margin-bottom: 20px;
+	height: 2px;
+	margin-bottom: 20px;
+	box-shadow: inset 0 0 50px #76f581, inset 20px 0 80px #76f581, inset -20px 0 80px #76f581, inset 20px 0 300px #76f581, inset -20px 0 300px #76f581, 0 0 50px #76f581, -10px 0 80px #76f581, 10px 0 80px #76f581;
+}
+.cardContent.imgcontentcol > a:hover > .cardcontentimg > img {
+     border-color: #76f581;
+}
+.cardContent.imgcontentcol > a:hover {
+    color: #76f581;
 }
 
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover,
@@ -769,7 +774,6 @@ hr.bodrGreen {
 .footerLogo img,
 .glitch img {
 	min-height: 30px;
-	max-width: 90%;
 }
 .glitch__color {
   height: 100%;
@@ -1307,6 +1311,7 @@ li.notificationmenu {
   font-size: 14px;
   color: #76f581;
   margin: 0;
+	text-transform: uppercase;
 }
 .notificationicon {
   flex-grow: 1;
@@ -1363,6 +1368,7 @@ li.notificationmenu {
 /**************** Usermenu Dropdown Css Starts *****************/
 li.usermenu {
   position: relative;
+	width: 190px;
 }
 .userdropdown {
   position: absolute;
@@ -2919,7 +2925,14 @@ background-color: #232321 ;
   -webkit-box-shadow: 4px 4px 7px rgba(0,0,0,0.4);
   box-shadow: 4px 4px 7px rgba(0,0,0,0.4);
   padding: 30px;
+  margin-bottom: 20px;
 }
+.form-group .formLabel.lgLbl {
+	font-size: 14px;
+  margin: 0 0 12px;
+  font-weight: 500;
+}
+
 .balanceTitle {
   font-size: 14px;
   margin-bottom: 7px;
@@ -3465,6 +3478,7 @@ label.profilechange {
   display: flex;
   align-items: center;
   justify-content: center;
+	cursor: pointer;
 }
 .profileupdate , .bannerupdate {
   margin-top: 30px;
@@ -3497,6 +3511,7 @@ label.bannerchange {
   display: flex;
   align-items: center;
   justify-content: center;
+	cursor: pointer;
 }
 .bannerimagechange img {
   border-radius: 10px 0 0 0;
