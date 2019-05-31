@@ -118,4 +118,17 @@ class HomeController < ApplicationController
   def contact
 		# get public streaming tools
   end
+
+  def live
+		# get public streaming tools
+  end
+
+  def clip
+		# get public streaming tools
+  end
+
+  def profile_chat
+		# get public streaming tools
+  end
+
 end

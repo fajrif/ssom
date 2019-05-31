@@ -20,6 +20,8 @@ Rails.application.routes.draw do
 	match 'about', to: 'home#about', via: :get
 	match 'theteam', to: 'home#theteam', via: :get
 	match 'explore', to: 'home#explore', via: :get
+	match 'live', to: 'home#live', via: :get
+	match 'clip', to: 'home#clip', via: :get
 	match 'clips', to: 'home#clips', via: :get
 	match 'games', to: 'home#games', via: :get
 	match 'game', to: 'home#game', via: :get
@@ -35,6 +37,7 @@ Rails.application.routes.draw do
   match 'profile-guide', to: 'home#profile_guide', via: :get
   match 'profile-voting', to: 'home#profile_voting', via: :get
   match 'profile-analytics', to: 'home#profile_analytics', via: :get
+  match 'profile-chat', to: 'home#profile_chat', via: :get
   match 'profile-dashboard-clips', to: 'home#profile_dashboard_clips', via: :get
   match 'profile-dashboard-live', to: 'home#profile_dashboard_live', via: :get
 
