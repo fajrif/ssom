@@ -12,188 +12,188 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav main-menu mr-auto align-items-center" style="width:70%;">
-	  <li class="nav-item <%= 'active' if request.path == games_path || request.path == explore_path || request.path == clips_path %>">
+					<li class="nav-item <%= 'active' if request.path == games_path || request.path == explore_path || request.path == clips_path %>">
             <a class="nav-link" href="/explore">Explore</a>
           </li>
 					<li class="nav-item <%= 'active' if request.path == following_path %>">
             <a class="nav-link" href="/following">Following</a>
           </li>
-	<li style="width:50%">
-          <form>
-            <div class="headersearch">
-	      <div class="cstmsearch">
-                <input class="form-control mr-sm-2" id="searchInput" type="search" placeholder="Search" aria-label="Search">
-                <span class="searchImg">
-                  <img class="searchGreen" src="assets/searchicongreen.png" alt="...">
-                  <img class="searchClr" src="assets/searchiconblue.png" alt="...">
-                </span>
-              </div>
-              <div class="searchdropdown" id="searchdropdownsec">
-                <div class="titledropdown">
-                  <h4>Top Results</h4>
-                </div>
-                <div class="searchlist">
-                  <div class="listheader">
-                    <div class="row align-items-center mt-2">
-                      <div class="col-xl-6 col-lg-6">
-                        <div class="searchlisttitle">
-                          <h4>Games</h4>
-                        </div>
-                      </div>
-                      <div class="col-xl-6 col-lg-6 text-right">
-                        <div class="seeallmenu d-flex justify-content-end">
-                          <a href="#">see all</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listcontent mt-2 pb-2 borderbtm">
-                    <div class="style1 d-flex align-items-center">
-                      <div class="listimg">
-                        <img src="assets/cardimg-2.jpg" >
-                      </div>
-                      <div class="listcontentinner">
-                        <h3>Fortnite</h3>
-                        <div class="listimgsec">
-                          <img src="assets/eye.png"  /> 335k viewers
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listheader mt-3">
-                    <div class="row align-items-center mt-2">
-                      <div class="col-xl-6 col-lg-6">
-                        <div class="searchlisttitle">
-                          <h4>Live Now</h4>
-                        </div>
-                      </div>
-                      <div class="col-xl-6 col-lg-6 text-right">
-                        <div class="seeallmenu d-flex justify-content-end">
-                          <a href="#">see all</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listcontent mt-2 pb-2">
-                    <div class="style2 d-flex align-items-center">
-                      <div class="listimg">
-                        <img src="assets/searchbigimg.png" >
-                      </div>
-                      <div class="listcontentinner">
-                        <h3>Clip Title</h3>
-                        <h4>Username a</h4>
-                        <div class="listimgsec">
-                          <img src="assets/remote.png"  /> Fortnite
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listcontent mt-2 pb-2 borderbtm">
-                    <div class="style2 d-flex align-items-center">
-                      <div class="listimg">
-                        <img src="assets/searchbigimg.png" >
-                      </div>
-                      <div class="listcontentinner">
-                        <h3>Clip Title</h3>
-                        <h4>Username a</h4>
-                        <div class="listimgsec">
-                          <img src="assets/remote.png"  /> Fortnite
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listheader mt-3">
-                    <div class="row align-items-center mt-2">
-                      <div class="col-xl-6 col-lg-6">
-                        <div class="searchlisttitle">
-                          <h4>Clips</h4>
-                        </div>
-                      </div>
-                      <div class="col-xl-6 col-lg-6 text-right">
-                        <div class="seeallmenu d-flex justify-content-end">
-                          <a href="#">see all</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listcontent mt-2 pb-2">
-                    <div class="style2 style3 d-flex align-items-center">
-                      <div class="listimg">
-                        <img src="assets/searchbigimg.png" >
-                      </div>
-                      <div class="listcontentinner">
-                        <h3>Clip Title</h3>
-                        <h4>Username a</h4>
-                        <div class="viewsec">
-                          <ul>
-                            <li>137k views</li>
-                            <li>1 hours ago</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listcontent mt-2 pb-2 borderbtm">
-                    <div class="style2 style3 d-flex align-items-center">
-                      <div class="listimg">
-                        <img src="assets/searchbigimg.png" >
-                      </div>
-                      <div class="listcontentinner">
-                        <h3>Clip Title</h3>
-                        <h4>Username a</h4>
-                        <div class="viewsec">
-                          <ul>
-                            <li>137k views</li>
-                            <li>1 hours ago</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listheader">
-                    <div class="row align-items-center mt-2">
-                      <div class="col-xl-6 col-lg-6">
-                        <div class="searchlisttitle">
-                          <h4>Streamers</h4>
-                        </div>
-                      </div>
-                      <div class="col-xl-6 col-lg-6 text-right">
-                        <div class="seeallmenu d-flex justify-content-end">
-                          <a href="#">see all</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listcontent mt-2 pb-2">
-                    <div class="streamer d-flex align-items-center">
-                      <div class="listimg">
-                        <img src="assets/streamer-img-1.jpg" >
-                      </div>
-                      <div class="listcontentinner">
-                        <h3>Lorem <img src="assets/circlecheck.svg" /></h3>
-                        <div class="listimgsec">
-                          2.3M Followers
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listcontent mt-2">
-                    <div class="streamer d-flex align-items-center">
-                      <div class="listimg">
-                        <img src="assets/streamer-img-1.jpg" >
-                      </div>
-                      <div class="listcontentinner">
-                        <h3>Lorem <img src="assets/circlecheck.svg" /></h3>
-                        <div class="listimgsec">
-                          2.3M Followers
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </form>
+					<li style="width:50%">
+						<form>
+							<div class="headersearch">
+								<div class="cstmsearch">
+									<input class="form-control mr-sm-2" id="searchInput" type="search" placeholder="Search" aria-label="Search">
+									<span class="searchImg">
+										<img class="searchGreen" src="assets/searchicongreen.png" alt="...">
+										<img class="searchClr" src="assets/searchiconblue.png" alt="...">
+									</span>
+								</div>
+								<div class="searchdropdown" id="searchdropdownsec">
+									<div class="titledropdown">
+										<h4>Top Results</h4>
+									</div>
+									<div class="searchlist">
+										<div class="listheader">
+											<div class="row align-items-center mt-2">
+												<div class="col-xl-6 col-lg-6">
+													<div class="searchlisttitle">
+														<h4>Games</h4>
+													</div>
+												</div>
+												<div class="col-xl-6 col-lg-6 text-right">
+													<div class="seeallmenu d-flex justify-content-end">
+														<a href="#">see all</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="listcontent mt-2 pb-2 borderbtm">
+											<div class="style1 d-flex align-items-center">
+												<div class="listimg">
+													<img src="assets/cardimg-2.jpg" >
+												</div>
+												<div class="listcontentinner">
+													<h3>Fortnite</h3>
+													<div class="listimgsec">
+														<img src="assets/eye.png"  /> 335k viewers
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="listheader mt-3">
+											<div class="row align-items-center mt-2">
+												<div class="col-xl-6 col-lg-6">
+													<div class="searchlisttitle">
+														<h4>Live Now</h4>
+													</div>
+												</div>
+												<div class="col-xl-6 col-lg-6 text-right">
+													<div class="seeallmenu d-flex justify-content-end">
+														<a href="#">see all</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="listcontent mt-2 pb-2">
+											<div class="style2 d-flex align-items-center">
+												<div class="listimg">
+													<img src="assets/searchbigimg.png" >
+												</div>
+												<div class="listcontentinner">
+													<h3>Clip Title</h3>
+													<h4>Username a</h4>
+													<div class="listimgsec">
+														<img src="assets/remote.png"  /> Fortnite
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="listcontent mt-2 pb-2 borderbtm">
+											<div class="style2 d-flex align-items-center">
+												<div class="listimg">
+													<img src="assets/searchbigimg.png" >
+												</div>
+												<div class="listcontentinner">
+													<h3>Clip Title</h3>
+													<h4>Username a</h4>
+													<div class="listimgsec">
+														<img src="assets/remote.png"  /> Fortnite
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="listheader mt-3">
+											<div class="row align-items-center mt-2">
+												<div class="col-xl-6 col-lg-6">
+													<div class="searchlisttitle">
+														<h4>Clips</h4>
+													</div>
+												</div>
+												<div class="col-xl-6 col-lg-6 text-right">
+													<div class="seeallmenu d-flex justify-content-end">
+														<a href="#">see all</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="listcontent mt-2 pb-2">
+											<div class="style2 style3 d-flex align-items-center">
+												<div class="listimg">
+													<img src="assets/searchbigimg.png" >
+												</div>
+												<div class="listcontentinner">
+													<h3>Clip Title</h3>
+													<h4>Username a</h4>
+													<div class="viewsec">
+														<ul>
+															<li>137k views</li>
+															<li>1 hours ago</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="listcontent mt-2 pb-2 borderbtm">
+											<div class="style2 style3 d-flex align-items-center">
+												<div class="listimg">
+													<img src="assets/searchbigimg.png" >
+												</div>
+												<div class="listcontentinner">
+													<h3>Clip Title</h3>
+													<h4>Username a</h4>
+													<div class="viewsec">
+														<ul>
+															<li>137k views</li>
+															<li>1 hours ago</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="listheader">
+											<div class="row align-items-center mt-2">
+												<div class="col-xl-6 col-lg-6">
+													<div class="searchlisttitle">
+														<h4>Streamers</h4>
+													</div>
+												</div>
+												<div class="col-xl-6 col-lg-6 text-right">
+													<div class="seeallmenu d-flex justify-content-end">
+														<a href="#">see all</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="listcontent mt-2 pb-2">
+											<div class="streamer d-flex align-items-center">
+												<div class="listimg">
+													<img src="assets/streamer-img-1.jpg" >
+												</div>
+												<div class="listcontentinner">
+													<h3>Lorem <img src="assets/circlecheck.svg" /></h3>
+													<div class="listimgsec">
+														2.3M Followers
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="listcontent mt-2">
+											<div class="streamer d-flex align-items-center">
+												<div class="listimg">
+													<img src="assets/streamer-img-1.jpg" >
+												</div>
+												<div class="listcontentinner">
+													<h3>Lorem <img src="assets/circlecheck.svg" /></h3>
+													<div class="listimgsec">
+														2.3M Followers
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
          </li>
         </ul>
         <ul class="navbar-nav ml-auto acountsmenu <%= 'd-none' if request.path == registered_path || request.path.include?('profile') %>">

@@ -46,7 +46,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="columnBox columnSpace">
+								<div class="pt-4">
 									<div class="mainBlackBox">
 										<div class="formStyle fileuploadform mb-4 pb-4">
 											<label class="formLabel lgLbl text-uppercase">PAYMENT HISTORY</label>
@@ -132,3 +132,7 @@
 		</div>
 	</div>
 </section>
+
+<%= content_for :bottom do %>
+	<%= render "home/profiles/payment_modals" %>
+<% end %>

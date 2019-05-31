@@ -299,6 +299,10 @@ a:hover {
   display: flex;
   align-items: center;
 }
+.listcontent > .style1 > a:hover h3 ,
+.listcontent > .style1 > a:hover h4 {
+	color: #76f581;
+}
 .cardUserName {
   display: inline-block;
   position: relative;
@@ -1208,7 +1212,8 @@ a.notificationavailable {
   font-family: 'Rubik', sans-serif;
   margin: 0;
   font-weight: 700;
-	letter-spacing: inherit;
+	text-transform: initial;
+	letter-spacing: initial;
 }
 .listcontentinner h4 {
   color: #fff;
