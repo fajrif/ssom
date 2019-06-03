@@ -592,6 +592,31 @@ a.forgotpassword {
 .videocontent .cardStyle:hover .cardcontentimg img {
 	border-color: transparent;
 }
+.leaderBoard {
+	margin: 0px 0px 20px 0px;
+	padding: 20px 30px 40px 30px;
+	background-color: #222220;
+}
+.leaderBoard .text {
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	font-weight:700;
+	margin-bottom: 10px;
+}
+.chatsection > .row.leaderBoard > .col-md-3 {
+	margin: 10px;
+}
+.chatsection > .row.leaderBoard .frame {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.chatsection > .row.leaderBoard .user {
+	margin-top: 10px;
+}
 .optiondots {
   position: absolute;
   right: 0;
