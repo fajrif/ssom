@@ -12,15 +12,16 @@
 						<div class="contact-info contactAdd">
 							<h4>JAKARTA</h4>
 							<h6>Jl. Ahmad Dahlan No.22, Kramat Pela, Kebayoran Baru, South Jakarta, Jakarta 12130</h6>
-							<h6>P : +62 812 34567</h6>
+							<h6>P : <a href="tel:+6281234567">+62 812 34567</a></h6>
 							<h6>F : +62 876 54321</h6>
-							<h6>E : build@ssomstudio.com</h6>
+							<h6>E : <a href="mailto:build@ssomstudio.com">build@ssomstudio.com</a></h6>
 						</div>
 					</div>
 					<div class="col-md-7">
 						<%= flash_message %>
 						<div class="contact-info">
 						<%= simple_form_for @contact, as: :contact, url: contact_path, html: { method: :post, class: "quform" } do |f| %>
+							<%= invisible_captcha %>
 							<div class="form-group">
 								<input type="text" name="contact[name]" id="contact_name" placeholder="NAME" class="form-control">
 							</div>

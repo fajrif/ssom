@@ -57,6 +57,7 @@ gem 'nokogiri'                                  #, '1.6.5'
 gem 'fabrication'
 gem 'jquery-fileupload-rails', '0.4.0'
 gem 'mobylette', git: 'https://github.com/fajrif/mobylette'
+gem 'invisible_captcha'
 
 group :development, :test do
   # Call 'binding.pry' anywhere in the code to stop execution and get a debugger console
